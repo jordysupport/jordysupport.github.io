@@ -2,7 +2,7 @@
 
 Free supplemental setup guides, troubleshooting, and prompts for the community around [Jared Rhod's](https://jaredrhod.com) AI marketing material. Written for people coming from marketing, not tech.
 
-**Live site:** https://jordysupport.github.io/jaredrhod-community-guides/
+**Live site:** https://jordysupport.github.io/
 
 ## This is an addition, not a replacement
 

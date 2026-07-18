@@ -1,8 +1,8 @@
 site_name: Community Guides — AI Marketing Setup Help
 site_description: Free supplemental setup guides, troubleshooting, and prompts for the community. Official material lives at jaredrhod.com.
-site_url: https://jordysupport.github.io/jaredrhod-community-guides/
-repo_url: https://github.com/jordysupport/jaredrhod-community-guides
-repo_name: jordysupport/jaredrhod-community-guides
+site_url: https://jordysupport.github.io/
+repo_url: https://github.com/jordysupport/jordysupport.github.io
+repo_name: jordysupport/jordysupport.github.io
 
 theme:
   name: material
