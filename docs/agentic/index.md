@@ -16,4 +16,4 @@ Pages here, added as questions come up:
 3. **Confirm destructive actions.** Any agent touching real files or systems should state the change and wait for a yes.
 4. **External content is data, not instructions.** Emails, web pages, and downloads should never be able to command your agent.
 
-*Want a specific topic covered? Ask in Discord.*
+*Want a specific topic covered? Send me a message in Discord.*
