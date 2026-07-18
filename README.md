@@ -1,26 +1,44 @@
-# jordy_support
+# Jordy Support
 
-Providing free insights on Agentic AI and Developing Automation Pipelines :3
+**Free, practical help for building useful AI agents and automations.**
 
-**Live site:** https://jordysupport.github.io/
+Live site: https://jordysupport.github.io/
 
-Free guides for non-technical people getting AI agents and automation pipelines running: setup help, troubleshooting, prompts, and concepts explained without the jargon. Includes a resource page for [Jared Rhod's](https://jaredrhod.com) community — his material is his; this site links to it.
+This repository contains a Material for MkDocs site for beginners, operators, creators, and small teams who want AI to do reliable work—not just generate impressive demos.
+
+## What is included
+
+- A guided path from chat user to safe AI-agent operator
+- Clear explanations of context, memory, tools, MCP, permissions, and reliability
+- Copy-paste prompt templates
+- Automation blueprints and failure-handling guidance
+- Complete playbooks for research, content repurposing, meeting follow-up, and knowledge management
+- Windows, macOS, terminal, Git, and Codespaces troubleshooting
+
+## Run locally
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+mkdocs serve -a 0.0.0.0:8000
+```
+
+## Build check
+
+```bash
+mkdocs build --strict
+```
 
 ## Contributing
 
-Spotted a fix worth documenting? Open an issue or PR, or ask in Discord.
+Found a confusing step, outdated link, or common problem worth documenting? Open an issue or pull request. Keep contributions beginner-friendly, specific, and safe.
 
-## Running locally
+## Community note
 
-```bash
-pip install mkdocs-material
-mkdocs serve
-```
+This project grew from helping people across AI learning communities. Jared Rhod's work is referenced as one community resource; his material remains his and is linked to its official home.
 
 ## Support
 
-Free forever. [Ko-fi](https://ko-fi.com/support_jordy) — appreciated, never required. All links: [linktr.ee/jordy_support](https://linktr.ee/jordy_support)
+The site is free. Optional support: https://ko-fi.com/support_jordy
 
-## License
-
-Original content: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)

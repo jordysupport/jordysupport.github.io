@@ -1,63 +1,125 @@
-site_name: jordy_support
-site_description: "Providing free insights on Agentic AI and Developing Automation Pipelines :3"
+site_name: Jordy Support
+site_description: "Free, practical guidance for AI agents, prompting, automation, safety, and troubleshooting."
 site_url: https://jordysupport.github.io/
 repo_url: https://github.com/jordysupport/jordysupport.github.io
 repo_name: jordysupport/jordysupport.github.io
+edit_uri: edit/main/docs/
+
+copyright: >-
+  Jordy Support — practical AI help, free to use.
+  <a href="https://ko-fi.com/support_jordy">Support on Ko-fi</a> ·
+  <a href="https://linktr.ee/jordy_support">All links</a>
 
 theme:
   name: material
+  language: en
+  icon:
+    logo: material/robot-outline
+    repo: fontawesome/brands/github
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
-      accent: deep purple
+      primary: deep purple
+      accent: cyan
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
-      accent: deep purple
+      primary: deep purple
+      accent: cyan
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.indexes
     - navigation.top
+    - navigation.footer
     - search.suggest
+    - search.highlight
+    - toc.follow
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+plugins:
+  - search:
+      lang: en
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
   - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - toc:
-      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
-nav:
-  - Home: index.md
-  - Agentic AI: agentic/index.md
-  - Automation Pipelines: pipelines/index.md
-  - Setup Help:
-      - Windows gotchas: setup/windows.md
-      - Mac gotchas: setup/mac.md
-      - Troubleshooting: setup/troubleshooting.md
-  - Prompts: prompts/index.md
-  - Jared Rhod: jared/index.md
+extra_css:
+  - stylesheets/extra.css
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/jordysupport
-    - icon: simple/kofi
+      name: Jordy Support on GitHub
+    - icon: material/coffee-outline
       link: https://ko-fi.com/support_jordy
-    - icon: simple/linktree
+      name: Support Jordy on Ko-fi
+    - icon: material/link-variant
       link: https://linktr.ee/jordy_support
+      name: Jordy Support links
 
-copyright: >
-  jordy_support — free forever.
-  <a href="https://ko-fi.com/support_jordy">Tip on Ko-fi</a> ·
-  <a href="https://linktr.ee/jordy_support">linktr.ee/jordy_support</a>
+nav:
+  - Home: index.md
+  - Start Here:
+      - Start Here: getting-started/index.md
+      - Choose Your Setup: getting-started/choose-a-setup.md
+      - Build Your First Agent: getting-started/first-agent.md
+  - Agentic AI:
+      - Agentic AI Basics: fundamentals/index.md
+      - The Agent Loop: fundamentals/agent-loop.md
+      - Context & Memory: fundamentals/context-memory.md
+      - Tools & MCP: fundamentals/tools-mcp.md
+      - Safety & Permissions: fundamentals/safety-permissions.md
+  - Prompting:
+      - Prompting That Works: prompting/index.md
+      - Prompt Builder: prompting/prompt-builder.md
+      - Project Instructions: prompting/system-instructions.md
+      - Copy-Paste Prompt Library: prompting/prompt-library.md
+  - Automation:
+      - Automation Basics: automation/index.md
+      - Workflow Blueprint: automation/workflow-blueprint.md
+      - Reliability & Error Handling: automation/reliability.md
+      - Automation Ideas: automation/ideas.md
+  - Playbooks:
+      - Playbook Library: playbooks/index.md
+      - Research Brief: playbooks/research-brief.md
+      - Content Repurposing: playbooks/content-repurpose.md
+      - Meeting Follow-up: playbooks/meeting-follow-up.md
+      - Knowledge Base: playbooks/knowledge-base.md
+  - Troubleshooting:
+      - Universal Checklist: troubleshooting/index.md
+      - Terminal Basics: troubleshooting/terminal-basics.md
+      - Windows: troubleshooting/windows.md
+      - macOS: troubleshooting/macos.md
+      - Git & Codespaces: troubleshooting/git-codespaces.md
+  - Resources:
+      - Resource Hub: resources/index.md
+      - Glossary: resources/glossary.md
+      - Learning Links: resources/learning-links.md
+      - About: about.md
