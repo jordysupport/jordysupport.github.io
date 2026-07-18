@@ -1,28 +1,21 @@
-# Community Guides
+# jordy_support
 
-Free, community-made help for getting Claude Code and the AI Memory Vault running — written for people coming from marketing, not tech.
+Providing free insights on Agentic AI and Developing Automation Pipelines :3
 
-!!! info "This is a supplement, not the source"
-    All official material lives with Jared:
+I help people who are new to AI get real agents and automation running — the stuff between "I watched the video" and "it actually works on my machine."
 
-    - **Start here:** [jaredrhod.com/start](https://jaredrhod.com/start) — install Claude Code + the full beginner path
-    - **Prompts:** [jaredrhod.com/prompts](https://jaredrhod.com/prompts)
-    - **Rules file:** [jaredrhod.com/rules](https://jaredrhod.com/rules)
-    - **AI Memory Vault:** [github.com/jaredrhod/ai-memory-vault](https://github.com/jaredrhod/ai-memory-vault)
-    - **AI Marketing Skills:** [github.com/jaredrhod/ai-marketing-skills](https://github.com/jaredrhod/ai-marketing-skills)
+## Start here
 
-    This site covers what happens *between* those steps — the errors, the gotchas, the "wait, what's a terminal" questions.
+- **New to all of this?** → [Setup Help](setup/troubleshooting.md) — install gotchas and fixes for the errors everyone hits
+- **Want to understand agents?** → [Agentic AI](agentic/index.md) — what agents actually are and how to run them well
+- **Ready to automate?** → [Automation Pipelines](pipelines/index.md) — chaining AI into workflows that run without you
+- **Copy-paste stuff** → [Prompts](prompts/index.md)
+- **Here from Jared's Discord?** → [Jared Rhod resources](jared/index.md) — all his official links in one place
 
-## What's here
+## Who this is for
 
-- **[Setup Help](setup/troubleshooting.md)** — fixes for the errors that actually come up in Discord
-- **[Prompts](prompts/index.md)** — community-tested extras (Jared's official prompts are [here](https://jaredrhod.com/prompts))
-- **[Guides](guides/index.md)** — deeper walkthroughs for common tasks
-
-## Stuck?
-
-Ask in the Discord — that's what it's for. If a question keeps coming up, it gets a page here.
+People coming from marketing, business, or anywhere non-technical who want AI doing real work for them — not another prompt-tips listicle. Everything here is free, written from actually helping people get unstuck.
 
 ---
 
-*Everything on this site is free, forever. If it saved you an hour, [tips are appreciated](https://ko-fi.com/support_jordy) but never required.*
+*Free forever. If something here saved you an hour: [ko-fi.com/support_jordy](https://ko-fi.com/support_jordy) — appreciated, never required. All my links: [linktr.ee/jordy_support](https://linktr.ee/jordy_support)*
