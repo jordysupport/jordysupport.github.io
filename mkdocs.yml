@@ -1,0 +1,60 @@
+site_name: Community Guides — AI Marketing Setup Help
+site_description: Free supplemental setup guides, troubleshooting, and prompts for the community. Official material lives at jaredrhod.com.
+site_url: https://jordysupport.github.io/jaredrhod-community-guides/
+repo_url: https://github.com/jordysupport/jaredrhod-community-guides
+repo_name: jordysupport/jaredrhod-community-guides
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Setup Help:
+      - Windows gotchas: setup/windows.md
+      - Mac gotchas: setup/mac.md
+      - Troubleshooting: setup/troubleshooting.md
+  - Prompts: prompts/index.md
+  - Guides: guides/index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jordysupport
+    - icon: simple/kofi
+      link: https://ko-fi.com/support_jordy
+    - icon: simple/linktree
+      link: https://linktr.ee/jordy_support
+
+copyright: >
+  Community-made, free forever. Official material: <a href="https://jaredrhod.com">jaredrhod.com</a>.
+  Found this useful? <a href="https://ko-fi.com/support_jordy">Tip on Ko-fi</a>.
