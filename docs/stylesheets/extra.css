@@ -1,314 +1,299 @@
+/* ============================================================
+   Jordy Support — "field manual" theme
+   Ink on paper. One tool-green accent. Flat borders, square
+   corners, no gradients, no shadows, no pill buttons.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&display=swap");
+
 :root {
-  --jordy-purple: #6d28d9;
-  --jordy-purple-dark: #4c1d95;
-  --jordy-cyan: #0891b2;
-  --jordy-ink: #172033;
-  --jordy-soft: #f5f3ff;
-  --jordy-border: rgba(109, 40, 217, 0.18);
+  --js-ink: #23281f;
+  --js-paper: #fbfaf6;
+  --js-green: #2e6b4f;
+  --js-green-dark: #22503b;
+  --js-border: #d9d7cc;
+  --js-muted: #5d6157;
+  --js-panel: #f3f2ea;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #22503b;
+  --md-primary-fg-color--light: #2e6b4f;
+  --md-primary-fg-color--dark: #1a3d2d;
+  --md-accent-fg-color: #2e6b4f;
+  --md-default-bg-color: var(--js-paper);
+  --md-default-fg-color: var(--js-ink);
+  --md-typeset-a-color: #22503b;
 }
 
 [data-md-color-scheme="slate"] {
-  --jordy-ink: #f5f7ff;
-  --jordy-soft: rgba(109, 40, 217, 0.13);
-  --jordy-border: rgba(165, 180, 252, 0.22);
+  --md-primary-fg-color: #1a2420;
+  --md-primary-fg-color--light: #2e6b4f;
+  --md-primary-fg-color--dark: #131b17;
+  --md-accent-fg-color: #86c2a4;
+  --md-typeset-a-color: #9ccdb4;
+  --js-ink: #e8eae4;
+  --js-border: #3a4038;
+  --js-muted: #a5aa9f;
+  --js-panel: #232823;
+  --js-green: #86c2a4;
+  --js-green-dark: #86c2a4;
 }
 
-.md-grid {
-  max-width: 82rem;
-}
+.md-grid { max-width: 76rem; }
 
+/* --- Type: Plex Serif headings, Plex Sans body ------------- */
 .md-typeset h1,
 .md-typeset h2,
-.md-typeset h3 {
-  font-weight: 750;
-  letter-spacing: -0.02em;
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--js-ink);
 }
 
+/* Signature: every h1 carries a short chapter rule above it. */
 .md-typeset h1 {
-  color: var(--jordy-ink);
-}
-
-.hero {
   position: relative;
-  overflow: hidden;
-  margin: 0 0 2rem;
-  padding: clamp(2rem, 6vw, 4.5rem);
-  border: 1px solid var(--jordy-border);
-  border-radius: 1.4rem;
-  background:
-    radial-gradient(circle at 88% 15%, rgba(8, 145, 178, 0.18), transparent 30%),
-    radial-gradient(circle at 10% 90%, rgba(109, 40, 217, 0.22), transparent 38%),
-    linear-gradient(135deg, var(--jordy-soft), transparent 72%);
+  padding-top: 0.9rem;
+  font-weight: 700;
 }
-
-.hero::after {
+.md-typeset h1::before {
   content: "";
   position: absolute;
-  inset: auto -7rem -9rem auto;
-  width: 18rem;
-  height: 18rem;
-  border: 2rem solid rgba(109, 40, 217, 0.07);
-  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 2.6rem;
+  height: 0.28rem;
+  background: var(--js-green);
 }
 
-.hero > * {
-  position: relative;
-  z-index: 1;
-}
-
-.hero__eyebrow {
+/* Monospace kickers, like a manual's section code. */
+.kicker {
   display: inline-block;
-  margin-bottom: 0.65rem;
-  color: var(--jordy-purple);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.11em;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
   text-transform: uppercase;
+  color: var(--js-muted);
 }
 
+/* --- Hero: plain, typographic ------------------------------ */
+.hero {
+  margin: 0.5rem 0 2rem;
+  padding: 0 0 1.6rem;
+  border-bottom: 1px solid var(--js-border);
+}
 .hero h1 {
-  max-width: 16ch;
-  margin: 0 0 0.8rem;
-  font-size: clamp(2.35rem, 7vw, 4.9rem);
-  line-height: 0.98;
+  max-width: 22ch;
+  margin: 0 0 0.7rem;
+  font-size: clamp(2.1rem, 5.5vw, 3.6rem);
+  line-height: 1.05;
 }
-
 .hero__lead {
-  max-width: 48rem;
+  max-width: 42rem;
   margin: 0;
-  font-size: clamp(1.02rem, 2.2vw, 1.28rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
   line-height: 1.65;
+  color: var(--js-muted);
 }
-
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
-  margin-top: 1.5rem;
+  gap: 0.6rem;
+  margin-top: 1.3rem;
 }
 
-.md-button {
-  border-radius: 999px !important;
-  font-weight: 750 !important;
+/* --- Buttons: rectangular, solid or outlined --------------- */
+.md-typeset .md-button {
+  border-radius: 3px;
+  border: 1.5px solid var(--js-green-dark);
+  color: var(--js-green-dark);
+  font-weight: 600;
+  box-shadow: none;
+  transition: background-color 120ms ease, color 120ms ease;
 }
-
-.md-button--primary {
-  background: linear-gradient(135deg, var(--jordy-purple), var(--jordy-purple-dark)) !important;
-  border-color: transparent !important;
+.md-typeset .md-button:hover {
+  background: var(--js-panel);
+  border-color: var(--js-green-dark);
+  color: var(--js-green-dark);
 }
+.md-typeset .md-button--primary {
+  background: var(--js-green-dark);
+  border-color: var(--js-green-dark);
+  color: #fff;
+}
+.md-typeset .md-button--primary:hover {
+  background: var(--js-green);
+  border-color: var(--js-green);
+  color: #fff;
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  color: #10160f;
+}
+.md-typeset a.md-button + a.md-button { margin-left: 0.35rem; }
 
+/* --- Cards: flat panels, no lift, no shadow ---------------- */
 .grid.cards > ul > li,
-.feature-card {
-  border: 1px solid var(--jordy-border);
-  border-radius: 1rem;
-  box-shadow: 0 12px 30px rgba(29, 20, 70, 0.05);
-  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+.feature-card,
+.checklist-card {
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  box-shadow: none !important;
+  transition: border-color 120ms ease;
 }
-
 .grid.cards > ul > li:hover,
 .feature-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(109, 40, 217, 0.42);
-  box-shadow: 0 18px 36px rgba(29, 20, 70, 0.1);
+  transform: none;
+  border-color: var(--js-green);
+  box-shadow: none !important;
 }
 
+/* --- Step strip: a numbered row, flat ---------------------- */
 .path-strip {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0.55rem;
-  margin: 1.4rem 0 2rem;
-}
-
-.path-strip > div {
-  padding: 0.9rem 0.75rem;
-  border: 1px solid var(--jordy-border);
-  border-radius: 0.8rem;
-  background: var(--md-code-bg-color);
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 750;
-}
-
-.path-strip .path-arrow {
-  color: var(--jordy-purple);
-}
-
-.kicker {
-  color: var(--jordy-purple);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.value-banner {
-  margin: 2rem 0;
-  padding: 1.25rem 1.4rem;
-  border-left: 0.25rem solid var(--jordy-cyan);
-  border-radius: 0.75rem;
-  background: rgba(8, 145, 178, 0.08);
-}
-
-.checklist-card {
-  padding: 1.1rem 1.25rem;
-  border: 1px solid var(--jordy-border);
-  border-radius: 0.9rem;
-  background: var(--md-code-bg-color);
-}
-
-.small-note {
-  font-size: 0.86rem;
-  opacity: 0.82;
-}
-
-.md-typeset table:not([class]) {
+  gap: 0;
+  margin: 1.3rem 0 1.8rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
   overflow: hidden;
-  border-radius: 0.75rem;
-  box-shadow: 0 0 0 1px var(--jordy-border);
+}
+.path-strip > div {
+  padding: 0.85rem 0.75rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.path-strip > div:last-child { border-right: 0; }
+.path-strip .step-no {
+  display: block;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.68rem;
+  color: var(--js-green);
+  margin-bottom: 0.15rem;
 }
 
+/* --- Callout banner ---------------------------------------- */
+.value-banner {
+  margin: 1.8rem 0;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--js-border);
+  border-left: 4px solid var(--js-green);
+  border-radius: 0 4px 4px 0;
+  background: var(--js-panel);
+}
+
+.small-note { font-size: 0.86rem; color: var(--js-muted); }
+
+/* --- Tables, code, admonitions: quiet ---------------------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  box-shadow: none;
+  overflow: hidden;
+}
 .md-typeset table:not([class]) th {
-  background: rgba(109, 40, 217, 0.09);
+  background: var(--js-panel);
+  color: var(--js-ink);
 }
-
-.md-typeset code {
-  border-radius: 0.3rem;
-}
-
+.md-typeset code { border-radius: 2px; }
 .md-typeset .admonition,
 .md-typeset details {
-  border-radius: 0.75rem;
+  border-radius: 4px;
+  box-shadow: none;
 }
 
-@media screen and (max-width: 52rem) {
-  .path-strip {
-    grid-template-columns: 1fr;
-  }
-
-  .path-strip .path-arrow {
-    display: none;
-  }
-
-  .hero {
-    padding: 2rem 1.35rem;
-  }
-}
-
-/* PLAYBOOK REDESIGN START */
-.playbook-hero {
-  margin: 0 0 1.25rem;
-  padding: clamp(1.5rem, 4vw, 2.4rem);
-  border: 1px solid var(--jordy-border);
-  border-radius: 1.15rem;
-  background:
-    radial-gradient(circle at 95% 5%, rgba(8, 145, 178, 0.14), transparent 34%),
-    linear-gradient(135deg, var(--jordy-soft), transparent 80%);
-}
-
-.playbook-hero h1 {
-  max-width: 19ch;
-  margin: 0.25rem 0 0.65rem;
-  font-size: clamp(2rem, 5vw, 3.25rem);
-  line-height: 1.04;
-}
-
-.playbook-hero p:last-child {
-  max-width: 52rem;
-  margin-bottom: 0;
-  font-size: 1.02rem;
-}
-
-.playbook-meta {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.7rem;
-  margin: 1rem 0 1.4rem;
-}
-
-.playbook-meta > div,
-.playbook-steps > div {
-  padding: 0.9rem 1rem;
-  border: 1px solid var(--jordy-border);
-  border-radius: 0.85rem;
-  background: var(--md-code-bg-color);
-}
-
-.playbook-meta strong,
-.playbook-meta span,
-.playbook-steps strong,
-.playbook-steps span {
-  display: block;
-}
-
-.playbook-meta strong {
-  margin-bottom: 0.2rem;
-  color: var(--jordy-purple);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.playbook-meta span,
-.playbook-steps span {
-  font-size: 0.86rem;
-  line-height: 1.45;
-}
-
-.playbook-meta span,
-.playbook-steps strong {
-  font-weight: 700;
-}
-
-.playbook-steps {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin: 1rem 0 1.5rem;
-}
-
-.playbook-steps strong {
-  margin-bottom: 0.3rem;
-}
-
-/* Keep Material's one-click copy control visible instead of hover-only. */
+/* Keep the copy button always visible on prompts. */
 .md-typeset .md-clipboard {
   opacity: 1 !important;
   color: var(--md-accent-fg-color);
 }
 
-.md-typeset .highlight,
-.md-typeset pre {
-  scroll-margin-top: 5rem;
+/* --- Playbook blocks --------------------------------------- */
+.playbook-hero {
+  margin: 0.5rem 0 1.4rem;
+  padding: 0 0 1.3rem;
+  border-bottom: 1px solid var(--js-border);
+}
+.playbook-hero h1 {
+  max-width: 24ch;
+  margin: 0.3rem 0 0.55rem;
+  font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+  line-height: 1.08;
+}
+.playbook-hero p:last-child {
+  max-width: 46rem;
+  margin-bottom: 0;
+  color: var(--js-muted);
 }
 
-.md-typeset .highlight > .filename {
-  font-weight: 750;
+.playbook-meta,
+.playbook-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 1rem 0 1.5rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
 }
-
-.md-typeset a.md-button + a.md-button {
-  margin-left: 0.35rem;
+.playbook-meta > div,
+.playbook-steps > div {
+  padding: 0.85rem 1rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+}
+.playbook-meta > div:last-child,
+.playbook-steps > div:last-child { border-right: 0; }
+.playbook-meta strong,
+.playbook-steps strong,
+.playbook-meta span,
+.playbook-steps span { display: block; }
+.playbook-meta strong,
+.playbook-steps strong {
+  margin-bottom: 0.2rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--js-green-dark);
+}
+[data-md-color-scheme="slate"] .playbook-meta strong,
+[data-md-color-scheme="slate"] .playbook-steps strong { color: var(--js-green); }
+.playbook-meta span,
+.playbook-steps span {
+  font-size: 0.86rem;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 52rem) {
+  .path-strip,
   .playbook-meta,
-  .playbook-steps {
-    grid-template-columns: 1fr;
+  .playbook-steps { grid-template-columns: 1fr; }
+  .path-strip > div,
+  .playbook-meta > div,
+  .playbook-steps > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--js-border);
   }
-
-  .playbook-hero {
-    padding: 1.45rem 1.1rem;
-  }
-
+  .path-strip > div:last-child,
+  .playbook-meta > div:last-child,
+  .playbook-steps > div:last-child { border-bottom: 0; }
   .md-typeset a.md-button {
     display: block;
     width: 100%;
     margin: 0.45rem 0 0;
     text-align: center;
   }
-
-  .md-typeset a.md-button + a.md-button {
-    margin-left: 0;
-  }
+  .md-typeset a.md-button + a.md-button { margin-left: 0; }
 }
-/* PLAYBOOK REDESIGN END */
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

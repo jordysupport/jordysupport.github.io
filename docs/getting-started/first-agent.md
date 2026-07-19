@@ -1,173 +1,51 @@
-# Build your first agent
+<span class="kicker">Start here · First agent</span>
 
-This walkthrough creates a small, safe workspace and asks an agent to turn raw notes into a useful project brief. The purpose is to practice the full agent loop—not to chase maximum autonomy.
+# Your first agent
 
-## What you will build
+This walkthrough gives an AI a folder of its own, one small job, and clear rules — the whole loop, start to finish, with nothing at risk.
+
+## 1. Make the folder
+
+Create a new folder anywhere easy to find. Inside it, make two more:
 
 ```text
 ai-practice/
-├── input/
-│   └── notes.txt
-├── output/
-├── AGENT_BRIEF.md
-└── README.md
+├── input/     ← copies of a few non-private files
+└── output/    ← where the AI puts its drafts
 ```
 
-The agent may read `input/` and write only to `output/`. It must not delete files, install software, contact anyone, or publish anything.
+Put 2–3 **copies** of harmless files in `input/` — some notes, an article you saved, anything you'd like summarized or reorganized.
 
-## 1. Create the workspace
+## 2. Open your agent in that folder
 
-=== "macOS, Linux, or Codespaces"
+In a folder agent (like Claude Code), open or start it *inside* `ai-practice/`. If it asks for permissions, that's normal — but it should only need this folder.
 
-    ```bash
-    mkdir -p ~/ai-practice/input ~/ai-practice/output
-    cd ~/ai-practice
-    printf "# AI Practice Workspace\n\nSource files go in input/. Agent drafts go in output/.\n" > README.md
-    printf "Customer onboarding feels inconsistent. New clients ask the same questions. We need a welcome checklist, a list of required materials, and clear owners for each step. Current handoff happens through email and sometimes tasks are missed.\n" > input/notes.txt
-    ```
+## 3. Give it the job
 
-=== "Windows PowerShell"
-
-    ```powershell
-    New-Item -ItemType Directory -Force "$HOME\ai-practice\input" | Out-Null
-    New-Item -ItemType Directory -Force "$HOME\ai-practice\output" | Out-Null
-    Set-Location "$HOME\ai-practice"
-    "# AI Practice Workspace`n`nSource files go in input/. Agent drafts go in output/." | Set-Content README.md
-    "Customer onboarding feels inconsistent. New clients ask the same questions. We need a welcome checklist, a list of required materials, and clear owners for each step. Current handoff happens through email and sometimes tasks are missed." | Set-Content input\notes.txt
-    ```
-
-Not comfortable with commands? Create the same folders and files using Finder or File Explorer.
-
-## 2. Create the agent brief
-
-Save this as `AGENT_BRIEF.md`:
-
-```markdown
-# Role
-You are a careful project assistant working inside this folder.
-
-# Goal
-Turn the raw notes in `input/` into a practical client-onboarding improvement brief.
-
-# Allowed actions
-- Read files inside `input/`.
-- Create new Markdown files inside `output/`.
-- Explain your plan and your completed work.
-
-# Forbidden actions
-- Do not modify or delete source files.
-- Do not write outside `output/`.
-- Do not install software, use external services, send messages, or publish anything.
-- Do not invent company facts, names, dates, or commitments.
-
-# Required output
-Create `output/onboarding-brief.md` with:
-1. a short problem statement;
-2. assumptions and unanswered questions;
-3. a proposed onboarding checklist;
-4. suggested owners expressed as roles, not invented names;
-5. risks and safeguards;
-6. the next three actions a human should take.
-
-# Quality checks
-Before finishing:
-- confirm every claim is supported by the source notes or labeled as an assumption;
-- confirm the source file was not changed;
-- confirm only the required output file was created;
-- summarize what you did and stop.
+```text title="Copy this — your first agent job"
+Work only inside this folder. Read the files in input/ and write
+a clear one-page summary of them to output/summary.md. Before
+writing anything, tell me your plan in two sentences and wait
+for my OK. Don't change anything in input/.
 ```
 
-## 3. Start the agent in the correct folder
+## 4. Watch and approve
 
-Open your AI terminal or editor agent **from `ai-practice`**. The exact command depends on the tool you use.
+It should tell you its plan, wait, then write one file. If it tries to do more, say stop. You're the supervisor.
 
-Before asking it to act, check the working directory:
+## 5. Check the work
 
-=== "macOS, Linux, or Codespaces"
+Open `output/summary.md` and ask yourself:
 
-    ```bash
-    pwd
-    ls -la
-    ```
+- [ ] Did it only use what's in `input/`?
+- [ ] Did it invent anything?
+- [ ] Did it touch anything it shouldn't have?
+- [ ] Is the summary actually useful?
 
-=== "Windows PowerShell"
+## That's it — you supervised an agent
 
-    ```powershell
-    Get-Location
-    Get-ChildItem -Force
-    ```
+Everything bigger on this site is this same loop with more steps: clear job, limited access, plan first, human check.
 
-You should see `AGENT_BRIEF.md`, `README.md`, `input`, and `output`.
+**Next:** install a [playbook](../playbooks/index.md) — a job your agent saves and remembers, so you never have to explain it twice.
 
-## 4. Give the task
-
-Copy this prompt:
-
-```text
-Read AGENT_BRIEF.md and inspect the available source files.
-
-First, restate the goal, allowed actions, forbidden actions, required output, and your plan. Do not make changes until I approve the plan.
-```
-
-Review the plan. It should mention only reading `input/notes.txt` and creating `output/onboarding-brief.md`.
-
-Then reply:
-
-```text
-Approved. Complete the task, run the quality checks in AGENT_BRIEF.md, and report the files you created or changed.
-```
-
-## 5. Verify the result yourself
-
-Do not accept “done” as proof.
-
-=== "macOS, Linux, or Codespaces"
-
-    ```bash
-    find . -maxdepth 2 -type f -print
-    cat input/notes.txt
-    cat output/onboarding-brief.md
-    ```
-
-=== "Windows PowerShell"
-
-    ```powershell
-    Get-ChildItem -Recurse -File | Select-Object FullName
-    Get-Content input\notes.txt
-    Get-Content output\onboarding-brief.md
-    ```
-
-Check:
-
-- [ ] The original notes are unchanged.
-- [ ] The output is in the correct folder.
-- [ ] Unsupported claims are labeled as assumptions.
-- [ ] The checklist is usable rather than generic.
-- [ ] No messages were sent and no external systems were changed.
-
-## 6. Improve the instructions, not just the answer
-
-When the output is weak, record the correction in `AGENT_BRIEF.md`.
-
-Examples:
-
-- “Every checklist item must begin with an action verb.”
-- “Separate tasks required before kickoff from tasks required after kickoff.”
-- “Do not use vague owners such as ‘the team’; choose a functional role.”
-- “Include a completion signal for each step.”
-
-This creates reusable project knowledge instead of a one-time chat fix.
-
-## 7. Repeat before automating
-
-Run the same process with two or three different note files. Only consider automation after the structure holds up across varied inputs.
-
-## What you just learned
-
-You practiced the core pattern behind most useful agents:
-
-```text
-bounded workspace → durable instructions → plan review → tool use → output → verification → improved instructions
-```
-
-Continue with [The Agent Loop](../fundamentals/agent-loop.md) or learn how to organize [Context and Memory](../fundamentals/context-memory.md).
+[How playbooks work](../playbooks/index.md){ .md-button .md-button--primary }

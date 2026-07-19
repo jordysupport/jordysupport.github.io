@@ -1,135 +1,68 @@
 <div class="hero" markdown>
-<span class="hero__eyebrow">Free practical AI support</span>
 
-# Build AI that actually helps.
+<span class="kicker">Free · Plain English · No signup</span>
 
-<p class="hero__lead">Learn how to give AI useful context, connect tools safely, design reliable workflows, and fix the problems that stop good ideas from becoming working systems.</p>
+# AI help for people who aren't techies.
 
-<div class="hero__actions">
-<a class="md-button md-button--primary" href="getting-started/">Start with the beginner path</a>
-<a class="md-button" href="playbooks/">Use a complete playbook</a>
+Short guides that show you what to type, what to check, and how to stay in control — whether you use a normal AI chat or a full agent.
+
+[I'm brand new — start here](getting-started/index.md){ .md-button .md-button--primary }
+[Skip to the playbooks](playbooks/index.md){ .md-button }
+
 </div>
-</div>
 
-## Pick the help you need
+## What do you want to get done?
 
 <div class="grid cards" markdown>
 
--   **I am new to AI agents**
+-   **Get research you can actually trust**
 
-    Learn what an agent is, choose a sensible setup, and complete a first low-risk task.
+    Ask one question, get a short answer with real sources you can click and check.
 
-    [Start here →](getting-started/index.md)
+    [Research a topic →](playbooks/research-brief.md)
 
--   **My prompts are inconsistent**
+-   **Turn one thing into many posts**
 
-    Turn vague requests into clear task contracts and reusable project instructions.
+    One article or video becomes newsletter, social, and script drafts — without making things up.
 
-    [Improve prompting →](prompting/index.md)
+    [Repurpose content →](playbooks/content-repurpose.md)
 
--   **I want to automate work**
+-   **Never lose a meeting again**
 
-    Map the trigger, inputs, AI step, validation, approval, delivery, and failure path.
+    Messy notes in, clean decisions, to-dos, and a ready-to-send follow-up out.
 
-    [Design a workflow →](automation/workflow-blueprint.md)
+    [Process a meeting →](playbooks/meeting-follow-up.md)
 
--   **Something is broken**
+-   **Something's broken**
 
-    Use a universal diagnostic order before reinstalling everything or starting over.
+    A fix-it-in-order checklist that beats reinstalling everything.
 
     [Troubleshoot it →](troubleshooting/index.md)
 
 </div>
 
-## The practical path
+## The five habits that make AI useful
 
 <div class="path-strip">
-<div>1. Define the job</div>
-<div class="path-arrow">2. Add context</div>
-<div>3. Limit access</div>
-<div class="path-arrow">4. Verify output</div>
-<div>5. Automate carefully</div>
+  <div><span class="step-no">01</span>Say the job clearly</div>
+  <div><span class="step-no">02</span>Give it the right info</div>
+  <div><span class="step-no">03</span>Limit what it can touch</div>
+  <div><span class="step-no">04</span>Check the result</div>
+  <div><span class="step-no">05</span>Then automate</div>
 </div>
 
-Most failed AI projects skip at least one of those steps. A powerful model cannot rescue a vague goal, missing information, unsafe permissions, or an automation with no failure plan.
+Most AI projects fail because a step got skipped — usually checking the result or limiting access. A smarter model can't rescue a vague job.
 
-## Popular free guides
+## What's an "agent"? (30-second version)
 
-<div class="grid cards" markdown>
+An **agent** is just an AI that can do things — read your files, write drafts, run steps — instead of only chatting. A good one works inside one folder, shows you what it changed, and waits for your OK.
 
--   **Build your first agent workspace**
+The goal here is never maximum automation. It's **help you can check**.
 
-    A safe practice folder, a reusable brief, and a first task that teaches the whole loop.
+## New: playbooks your AI remembers
 
-    [Open the walkthrough](getting-started/first-agent.md)
+Each playbook now comes as a small download. Hand it to your AI once, and it saves the playbook to your notes. After that you just say "start my research playbook" — it interviews you and does the rest. No re-downloading, no re-explaining.
 
--   **Context and memory without the hype**
+[See how playbooks work](playbooks/index.md){ .md-button .md-button--primary }
 
-    Understand what the model can currently see, what persists, and what should remain the source of truth.
-
-    [Learn context and memory](fundamentals/context-memory.md)
-
--   **Obsidian vaults for agents**
-
-    Set up a transparent file-based memory system, direct an agent safely, and maintain notes without losing control.
-
-    [Build a vault workspace](fundamentals/obsidian-vaults.md)
-
--   **Subagents without the confusion**
-
-    Learn automatic delegation, explicit requests, custom specialist roles, and safe multi-agent patterns.
-
-    [Understand subagents](fundamentals/subagents.md)
-
--   **Copy-paste prompt library**
-
-    Templates for troubleshooting, research, planning, extraction, comparison, SOPs, and quality control.
-
-    [Browse the prompts](prompting/prompt-library.md)
-
--   **Agent safety checklist**
-
-    Use least privilege, protect secrets, recognize prompt injection, and add confirmation gates.
-
-    [Make agents safer](fundamentals/safety-permissions.md)
-
--   **Workflow reliability guide**
-
-    Add schemas, retries, timeouts, duplicate protection, logs, alerts, and human review.
-
-    [Make automation reliable](automation/reliability.md)
-
--   **Git and Codespaces help**
-
-    Preview changes, commit safely, recover from mistakes, and understand what Git is telling you.
-
-    [Open the Git guide](troubleshooting/git-codespaces.md)
-
-</div>
-
-## What “agentic” means here
-
-An AI agent is not magic and it does not need to be fully autonomous. On this site, an agent is simply a model working through a loop with some combination of **instructions, context, tools, actions, checks, and stop conditions**.
-
-A useful agent may only:
-
-1. read files from one folder,
-2. create a draft in another folder,
-3. explain what it changed, and
-4. wait for approval.
-
-That is often more valuable than an impressive system with broad access and no controls.
-
-<div class="value-banner" markdown>
-**The goal is dependable assistance, not maximum autonomy.** Start with a task you can check. Give access only where needed. Keep important actions reversible.
-</div>
-
-## Built for people doing real work
-
-This site is for creators, operators, small teams, community helpers, marketers, developers, and curious beginners. The examples focus on work people actually repeat: research, content transformation, meeting follow-up, knowledge capture, file-based projects, and troubleshooting.
-
-The project also grew from helping people in AI learning communities. [Jared Rhod's official site](https://jaredrhod.com/) is included in the resource directory as one community reference; his work remains his and there is no dedicated site section reproducing it.
-
----
-
-Everything here is free. Optional support: [Ko-fi](https://ko-fi.com/support_jordy) · [All Jordy Support links](https://linktr.ee/jordy_support)
+<p class="small-note">Everything here is free. If it helped, you can <a href="https://ko-fi.com/support_jordy">tip on Ko-fi</a> · <a href="https://linktr.ee/jordy_support">all links</a>.</p>

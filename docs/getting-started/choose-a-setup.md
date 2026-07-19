@@ -1,112 +1,33 @@
-# Choose your AI setup
+<span class="kicker">Start here · Setup</span>
 
-The best setup is the least complicated one that can safely complete the task. Installing more tools does not automatically create more value.
+# Choose your setup
 
-## Five common levels
+Use the smallest tool that does your job. Bigger setups mean more power *and* more ways to make a mess.
 
-### Level 1: Chat assistant
+## The 2-minute picker
 
-**Best for:** brainstorming, explanations, rewriting, small decisions, and one-off drafts.
+| If you want to… | Use this | Examples |
+| --- | --- | --- |
+| Get advice or a one-off draft | A normal AI chat | Claude, ChatGPT, Gemini |
+| Work with a few files you upload | A chat that accepts files | Claude, ChatGPT (attach the file) |
+| Let AI read & edit a project folder | A folder agent | Claude Code, Cursor |
+| Move info between apps automatically | An automation tool | Zapier, Make, n8n |
 
-**Strengths:** fast, simple, no environment setup.
+Start at the top. Move down only when the row above genuinely can't do the job.
 
-**Limits:** context may be temporary; it cannot reliably manage a project folder or external workflow unless the product provides those tools.
+## What's the difference, in plain words?
 
-Choose chat when the work can be pasted in, reviewed, and copied out.
+**Chat** — you paste things in, it talks back. Nothing on your computer changes. Safest place to start.
 
-### Level 2: Assistant with files or connected sources
+**Chat with files** — same, but you attach a document and it can read it. Still can't change anything on your computer.
 
-**Best for:** summarizing documents, comparing files, answering questions from a collection, and drafting from approved source material.
+**Folder agent** — an AI that can open, create, and edit files inside a folder you choose. Powerful, and the reason this site talks so much about practice folders and checking results.
 
-**Strengths:** more grounded than a blank chat; useful for nontechnical users.
+**Automation tool** — steps that run on their own ("when a form comes in, do X"). Only automate something *after* you've done it manually with AI a few times and trust the result.
 
-**Limits:** file limits, unclear persistence, and connector permissions vary by product.
+## One honest warning
 
-Choose this when the task needs documents but not direct file-system changes.
+Skipping ahead doesn't save time. People who start with a folder agent before they can write a clear request in chat usually end up back at chat anyway — just more frustrated.
 
-### Level 3: Terminal or editor-based agent
-
-**Best for:** working across many local files, maintaining a knowledge folder, editing a website, running scripts, or assisting with code.
-
-**Strengths:** transparent files, reusable instructions, version control, and command execution.
-
-**Limits:** it can make real changes. Working directory, permissions, Git, and command safety matter.
-
-Choose this when the work lives in a folder and you are willing to supervise changes.
-
-### Level 4: No-code or low-code automation platform
-
-**Best for:** moving structured data between forms, spreadsheets, databases, email, calendars, CRMs, and AI steps.
-
-**Strengths:** visual workflows, triggers, app connectors, schedules, and logs.
-
-**Limits:** costs can grow; error handling is easy to overlook; AI output must be validated before it reaches another app.
-
-Choose this when the value comes from repeatable movement between systems.
-
-### Level 5: Custom coded agent or workflow
-
-**Best for:** product features, high volume, custom interfaces, specialized rules, complex data, or strict testing.
-
-**Strengths:** maximum control, observability, and integration depth.
-
-**Limits:** engineering, security, evaluation, maintenance, and operational costs.
-
-Choose this only when simpler options cannot meet the requirement.
-
-## Decision questions
-
-Work through these in order:
-
-1. **Can a normal chat complete the task?** If yes, stop there.
-2. **Does the model need source files?** Use file upload or a connected knowledge source.
-3. **Does it need to edit many files or run commands?** Use a terminal/editor agent in a limited folder.
-4. **Does the task start from an event or schedule?** Consider an automation platform.
-5. **Does it need to serve many users or enforce custom logic?** Consider a coded workflow.
-
-## Data boundary first
-
-Before selecting a product, classify the data.
-
-| Data type | Example | Starting rule |
-|---|---|---|
-| Public | published articles, public websites | Usually suitable for normal experimentation |
-| Internal | draft plans, internal process notes | Use approved tools and limited access |
-| Confidential | customer records, private contracts | Confirm policy, retention, and permissions first |
-| Regulated or highly sensitive | health, legal, financial, authentication data | Do not experiment casually; involve the responsible owner |
-
-!!! warning "A connector is a permission decision"
-    Connecting email, cloud storage, a database, or a project tool gives the AI system a path to real information. Review the exact scopes, not just the product name.
-
-## Local versus cloud
-
-**Local file work** gives you visible folders, Git history, and direct control over copies. It still may send content to a cloud model depending on the tool.
-
-**Cloud app work** is easier to access from anywhere and may simplify collaboration. It also requires you to understand storage, sharing, retention, and connector settings.
-
-The important question is not “local or cloud?” It is:
-
-> Where does the data travel, what is stored, who can access it, and how can I revoke that access?
-
-## Recommended beginner progression
-
-1. Complete the task manually in chat.
-2. Turn the successful prompt into a reusable template.
-3. Move the work into a dedicated project folder.
-4. Let an agent create drafts inside an output folder.
-5. Add a checklist or structured output.
-6. Add automation only after several supervised runs succeed.
-
-## Setup scorecard
-
-Give each candidate setup 0–2 points for each item:
-
-- I can understand what it can access.
-- I can review actions before they happen.
-- I can export or inspect the source files.
-- I can recover from a bad change.
-- I can see errors and logs.
-- The cost is predictable enough for the expected volume.
-- A nontechnical helper could understand the workflow later.
-
-A setup with more features but a lower clarity score is usually the wrong first choice.
+[Back to Start Here](index.md){ .md-button }
+[Build your first agent](first-agent.md){ .md-button .md-button--primary }

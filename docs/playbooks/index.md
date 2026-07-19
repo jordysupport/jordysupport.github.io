@@ -1,90 +1,67 @@
 <div class="playbook-hero" markdown>
 
-<span class="kicker">Practical AI projects</span>
+<span class="kicker">Playbooks</span>
 
-# Pick a result. Copy a prompt. Review the answer.
+# Teach your AI a job once. Use it forever.
 
-A playbook is a short recipe for getting one useful result from AI. You do **not** need to copy the whole page or build an automation first.
+A playbook is one useful job — research, meeting notes, content — packaged so your AI learns it in a minute and can run it any time you ask.
 
 </div>
 
-## How to use any playbook
+## How it works
 
 <div class="playbook-steps">
-  <div><strong>1. Pick a result</strong><span>Choose the page that matches what you need today.</span></div>
-  <div><strong>2. Fill in the blanks</strong><span>Replace the words inside <code>[square brackets]</code>.</span></div>
-  <div><strong>3. Copy and review</strong><span>Click the copy icon, paste the prompt into your AI, then check the output.</span></div>
+  <div><strong>1 · Download</strong><span>Grab the small zip file for the playbook you want.</span></div>
+  <div><strong>2 · Hand it over</strong><span>Give the file to your AI with one short message (below). It saves the playbook to your notes.</span></div>
+  <div><strong>3 · Just ask</strong><span>From then on, say "start my research playbook." It interviews you — no forms, no re-downloads.</span></div>
 </div>
 
-!!! tip "Start with normal AI chat"
-    ChatGPT, Claude, Gemini, or another capable assistant is enough for a first run. Agent and subagent options are included only when they add value.
+After you download, attach or drop the zip into your AI and send this:
 
-## What do you need?
+```text title="Copy this message"
+Unzip this file and follow the instructions in INSTALL.md.
+```
+
+That's the whole setup. The AI will ask where you keep your notes, save the playbook there, and tell you the magic phrase to start it later.
+
+!!! tip "No agent? No problem."
+    Every playbook page also has a plain copy-paste prompt that works in any normal AI chat.
+
+## Pick a playbook
 
 <div class="grid cards" markdown>
 
--   **Research something**
+-   **Research a topic**
 
-    Turn a question, company, tool, person, or decision into a source-backed brief.
+    You answer a few questions. It comes back with a short brief and real sources.
 
-    **You provide:** a question<br>
-    **You receive:** findings, uncertainty, and sources<br>
-    **First run:** about 15–30 minutes
+    [Open playbook →](research-brief.md){ .md-button .md-button--primary }
 
-    [Research a topic →](research-brief.md){ .md-button .md-button--primary }
+-   **Repurpose content**
 
--   **Turn one piece of content into more**
+    One source in, drafts for newsletter, social, and video out.
 
-    Create newsletter, social, video, or summary drafts from one approved source.
-
-    **You provide:** one source<br>
-    **You receive:** channel-ready drafts<br>
-    **First run:** about 10–20 minutes
-
-    [Repurpose content →](content-repurpose.md){ .md-button .md-button--primary }
+    [Open playbook →](content-repurpose.md){ .md-button .md-button--primary }
 
 -   **Process a meeting**
 
-    Convert notes or a transcript into decisions, actions, questions, and a draft follow-up.
+    Notes in, decisions, to-dos, and a draft follow-up out.
 
-    **You provide:** notes or transcript<br>
-    **You receive:** a reviewable follow-up package<br>
-    **First run:** about 10–15 minutes
+    [Open playbook →](meeting-follow-up.md){ .md-button .md-button--primary }
 
-    [Process a meeting →](meeting-follow-up.md){ .md-button .md-button--primary }
+-   **Build a knowledge base**
 
--   **Add knowledge to a vault**
+    Turn something worth keeping into a clean note in your vault.
 
-    Turn a trusted source into a clean, linked, maintainable knowledge note.
-
-    **You provide:** one source<br>
-    **You receive:** a reviewed note with provenance<br>
-    **First run:** about 10–20 minutes
-
-    [Build a knowledge base →](knowledge-base.md){ .md-button .md-button--primary }
+    [Open playbook →](knowledge-base.md){ .md-button .md-button--primary }
 
 </div>
 
-## What every page contains
+## Why the interview beats a form
 
-Each playbook has only four required parts:
+Old way: copy a prompt, fill in `[the blanks]`, hope you guessed the format right. New way: the AI asks you one question at a time, in plain English, and fills in the playbook itself. You can't do it wrong.
 
-1. **Fill this in** — the few details the AI needs.
-2. **Copy this prompt** — one main prompt with a one-click copy button.
-3. **Example** — a concrete way someone might use it.
-4. **Check the result** — a short human review list.
+## Two rules that never change
 
-Agent workspaces, Obsidian, subagents, starter ZIPs, and automation are optional extras near the bottom of each page.
-
-## Copy buttons across the site
-
-Every fenced prompt and terminal command uses the site's copy-to-clipboard button. On a prompt, click the copy icon in the upper-right corner, paste it into your AI, and replace anything inside `[square brackets]`.
-
-## Starter downloads
-
-The downloads are optional. They contain the same short prompt plus blank input and review templates.
-
-[Research starter](../downloads/research-brief-starter.zip){ .md-button }
-[Content starter](../downloads/content-repurpose-starter.zip){ .md-button }
-[Meeting starter](../downloads/meeting-follow-up-starter.zip){ .md-button }
-[Knowledge-base starter](../downloads/knowledge-base-starter.zip){ .md-button }
+1. **You review before anything is used, sent, or published.**
+2. **The AI stays inside the folder you gave it.** Every playbook is built with those rules baked in.
