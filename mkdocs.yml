@@ -109,11 +109,11 @@ nav:
       - Reliability & Error Handling: automation/reliability.md
       - Automation Ideas: automation/ideas.md
   - Playbooks:
-      - Playbook Library: playbooks/index.md
-      - Research Brief: playbooks/research-brief.md
-      - Content Repurposing: playbooks/content-repurpose.md
-      - Meeting Follow-up: playbooks/meeting-follow-up.md
-      - Knowledge Base: playbooks/knowledge-base.md
+      - Choose a Playbook: playbooks/index.md
+      - Research a Topic: playbooks/research-brief.md
+      - Repurpose Content: playbooks/content-repurpose.md
+      - Follow Up After a Meeting: playbooks/meeting-follow-up.md
+      - Build a Knowledge Base: playbooks/knowledge-base.md
   - Troubleshooting:
       - Universal Checklist: troubleshooting/index.md
       - Terminal Basics: troubleshooting/terminal-basics.md
