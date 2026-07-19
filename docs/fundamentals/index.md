@@ -131,5 +131,7 @@ If any answer is no, reduce scope before increasing capability.
 
 - [Understand the agent loop](agent-loop.md)
 - [Organize context and memory](context-memory.md)
+- [Build and maintain an Obsidian vault for agents](obsidian-vaults.md)
+- [Understand automatic and explicit subagents](subagents.md)
 - [Connect tools and understand MCP](tools-mcp.md)
 - [Design permissions and safety controls](safety-permissions.md)

@@ -160,6 +160,12 @@ For a large project, use layers:
 3. **Retrieve on demand:** archive, past runs, or large references.
 4. **Never auto-load:** secrets, unrelated private data, and untrusted external content.
 
+## Use an Obsidian vault as external project memory
+
+Obsidian can provide an inspectable file-based memory layer because its notes are Markdown files inside a normal folder. The vault still needs explicit source priority, write boundaries, backup, and maintenance rules.
+
+Use the full [Obsidian vaults for AI agents guide](obsidian-vaults.md) to create the folder structure, instruction file, prompts, approval gates, and maintenance schedule.
+
 ## A memory-maintenance prompt
 
 ```text

@@ -151,6 +151,14 @@ Start smaller. Add a folder only when its meaning is clear.
 
 <div class="grid cards" markdown>
 
+-   **Building an agent memory vault?**
+
+    [Use the Obsidian vault guide](../fundamentals/obsidian-vaults.md)
+
+-   **Coordinating specialist agents?**
+
+    [Learn automatic and explicit subagents](../fundamentals/subagents.md)
+
 -   **Need terminology?**
 
     [Open the glossary](glossary.md)
