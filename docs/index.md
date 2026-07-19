@@ -1,6 +1,6 @@
 <div class="hero" markdown>
 
-<span class="kicker">Free · Plain English · No signup</span>
+<span class="kicker">Agentic AI &amp; Automation Pipeline Guides · Free · Plain English</span>
 
 # AI help for people who aren't techies.
 

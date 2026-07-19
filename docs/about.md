@@ -2,7 +2,7 @@
 
 # About Jordy Support
 
-Plain-English AI help, free, for people doing real work — creators, small business owners, community folks, and curious beginners.
+Free, plain-English guides to agentic AI and automation pipelines, for people doing real work — creators, small business owners, community folks, and curious beginners.
 
 ## Why this exists
 
