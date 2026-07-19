@@ -39,6 +39,12 @@ Short guides that show you what to type, what to check, and how to stay in contr
 
     [Troubleshoot it →](troubleshooting/index.md)
 
+-   **Meet VALE**
+
+    A living, music-reactive visualizer and local voice line for Windows.
+
+    [See VALE and download →](vale/index.md)
+
 </div>
 
 ## The five habits that make AI useful

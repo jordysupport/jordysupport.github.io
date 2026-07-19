@@ -83,6 +83,8 @@ extra:
 
 nav:
   - Home: index.md
+  - VALE:
+      - Download VALE: vale/index.md
   - Start Here:
       - Start Here: getting-started/index.md
       - Choose Your Setup: getting-started/choose-a-setup.md

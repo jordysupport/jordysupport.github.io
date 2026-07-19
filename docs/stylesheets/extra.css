@@ -297,3 +297,116 @@
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* --- VALE download page ------------------------------------ */
+.vale-hero {
+  margin: 0.5rem 0 1.2rem;
+  padding: clamp(1.4rem, 4vw, 2.7rem);
+  border: 1px solid #374148;
+  border-top: 4px solid #d74b55;
+  border-radius: 4px;
+  background: #0d1216;
+  color: #e8eff1;
+}
+.vale-hero .kicker { color: #81cbd7; }
+.vale-hero h1 {
+  max-width: 18ch;
+  margin: 0.35rem 0 0.75rem;
+  padding-top: 0;
+  color: #fff;
+  font-size: clamp(2.25rem, 6vw, 4.4rem);
+  line-height: 0.98;
+}
+.vale-hero h1::before { display: none; }
+.vale-hero p {
+  max-width: 46rem;
+  color: #b7c4c9;
+  font-size: 1.05rem;
+}
+.vale-hero .md-button {
+  border-color: #d95a64;
+  color: #fff;
+}
+.vale-hero .md-button:hover {
+  border-color: #ef7c85;
+  background: #1a2329;
+  color: #fff;
+}
+.vale-hero .md-button--primary,
+.vale-hero .md-button--primary:hover {
+  border-color: #d74b55;
+  background: #d74b55;
+  color: #fff;
+}
+.vale-preview {
+  margin: 0 0 1.4rem;
+  padding: 0.35rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: #080b0d;
+}
+.vale-preview img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.vale-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 0 1.8rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vale-facts > div {
+  padding: 0.8rem 0.9rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+}
+.vale-facts > div:last-child { border-right: 0; }
+.vale-facts strong,
+.vale-facts span { display: block; }
+.vale-facts strong {
+  margin-bottom: 0.15rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--js-green-dark);
+}
+.vale-facts span { font-size: 0.86rem; }
+.vale-install {
+  counter-reset: vale-step;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.7rem;
+}
+.vale-install > div {
+  min-height: 8.5rem;
+  padding: 1rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: var(--js-panel);
+}
+.vale-install > div::before {
+  counter-increment: vale-step;
+  content: "0" counter(vale-step);
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #c84751;
+}
+.vale-install strong { display: block; margin-bottom: 0.3rem; }
+
+@media screen and (max-width: 52rem) {
+  .vale-facts,
+  .vale-install { grid-template-columns: 1fr; }
+  .vale-facts > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--js-border);
+  }
+  .vale-facts > div:last-child { border-bottom: 0; }
+}
