@@ -16,12 +16,20 @@ AI products, installation steps, model names, limits, and pricing change. Use of
 - [Claude Code overview](https://code.claude.com/docs/en/overview)
 - [Claude Code quickstart](https://code.claude.com/docs/en/quickstart)
 - [Claude Code project memory](https://code.claude.com/docs/en/memory)
+- [Claude Code subagents](https://code.claude.com/docs/en/sub-agents)
 
 ### Model Context Protocol
 
 - [MCP introduction](https://modelcontextprotocol.io/docs/getting-started/intro)
 - [MCP architecture](https://modelcontextprotocol.io/docs/learn/architecture)
 - [MCP specification](https://modelcontextprotocol.io/specification/2025-11-25)
+
+### Obsidian
+
+- [Obsidian Help](https://obsidian.md/help)
+- [Create a vault](https://obsidian.md/help/vault)
+- [How Obsidian stores data](https://obsidian.md/help/data-storage)
+- [Back up your Obsidian files](https://obsidian.md/help/backup)
 
 ### Google terminal tooling
 

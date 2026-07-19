@@ -69,6 +69,18 @@ Most failed AI projects skip at least one of those steps. A powerful model canno
 
     [Learn context and memory](fundamentals/context-memory.md)
 
+-   **Obsidian vaults for agents**
+
+    Set up a transparent file-based memory system, direct an agent safely, and maintain notes without losing control.
+
+    [Build a vault workspace](fundamentals/obsidian-vaults.md)
+
+-   **Subagents without the confusion**
+
+    Learn automatic delegation, explicit requests, custom specialist roles, and safe multi-agent patterns.
+
+    [Understand subagents](fundamentals/subagents.md)
+
 -   **Copy-paste prompt library**
 
     Templates for troubleshooting, research, planning, extraction, comparison, SOPs, and quality control.

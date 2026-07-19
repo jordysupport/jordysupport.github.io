@@ -40,6 +40,10 @@ The practical limit on how much information a model can actively consider in one
 
 An integration that gives an AI application access to another source or service. A connector is also a permission decision.
 
+## Delegation
+
+Assigning a bounded part of a task to another worker, tool, or subagent while the main agent remains responsible for combining and evaluating the result.
+
 ## Deterministic
 
 Expected to produce the same defined result from the same input under the same rules. Required-field validation and exact calculations are common deterministic steps.
@@ -120,6 +124,10 @@ The underlying system that generates or reasons from the supplied input. The pro
 
 A design with more than one agent role or worker coordinating on a task. It adds communication, handoff, and consistency problems and is not automatically better.
 
+## Obsidian vault
+
+A local folder opened by Obsidian that contains Markdown notes, attachments, subfolders, and a hidden `.obsidian/` configuration folder. An AI agent can work with the files only when it has access to that folder.
+
 ## Observability
 
 The ability to understand a system's state and behavior through logs, traces, metrics, run records, and outputs.
@@ -187,6 +195,10 @@ The approved authoritative location for a particular type of information.
 ## State
 
 The current stage or recorded condition of a workflow, such as `AWAITING_APPROVAL` or `COMPLETED`.
+
+## Subagent
+
+A specialized agent used for one bounded responsibility inside a larger task. It commonly has its own context, instructions, tools, and permissions, then returns a result to the main agent. Exact behavior varies by product.
 
 ## Structured output
 

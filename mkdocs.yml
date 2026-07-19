@@ -94,6 +94,8 @@ nav:
       - Agentic AI Basics: fundamentals/index.md
       - The Agent Loop: fundamentals/agent-loop.md
       - Context & Memory: fundamentals/context-memory.md
+      - Obsidian Vaults for Agents: fundamentals/obsidian-vaults.md
+      - Subagents: fundamentals/subagents.md
       - Tools & MCP: fundamentals/tools-mcp.md
       - Safety & Permissions: fundamentals/safety-permissions.md
   - Prompting:
