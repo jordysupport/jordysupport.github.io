@@ -45,6 +45,7 @@ theme:
     - content.code.annotate
     - content.tabs.link
 
+    - content.tooltips
 plugins:
   - search:
       lang: en
@@ -109,10 +110,10 @@ nav:
       - Reliability & Error Handling: automation/reliability.md
       - Automation Ideas: automation/ideas.md
   - Playbooks:
-      - Choose a Playbook: playbooks/index.md
+      - Start Here: playbooks/index.md
       - Research a Topic: playbooks/research-brief.md
       - Repurpose Content: playbooks/content-repurpose.md
-      - Follow Up After a Meeting: playbooks/meeting-follow-up.md
+      - Process a Meeting: playbooks/meeting-follow-up.md
       - Build a Knowledge Base: playbooks/knowledge-base.md
   - Troubleshooting:
       - Universal Checklist: troubleshooting/index.md
