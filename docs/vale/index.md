@@ -30,7 +30,7 @@ VALE turns listening, thinking, speaking, and music into a living full-screen en
   <div><strong>Connect your model</strong>Enter your local or hosted OpenAI-compatible API URL, model ID, and optional key.</div>
 </div>
 
-The first setup downloads the local Kokoro voice runtime, so allow several minutes and roughly **3 GB of free disk space**. After that, launch VALE from the desktop or Start Menu.
+The first setup downloads the local Kokoro voice runtime, so allow several minutes and at least **4 GB of free disk space**. After that, launch VALE from the desktop or Start Menu.
 
 [Download the Windows preview](https://github.com/jordysupport/jordysupport.github.io/releases/latest/download/VALE-Windows-x64.zip){ .md-button .md-button--primary }
 [SHA-256 checksum](https://github.com/jordysupport/jordysupport.github.io/releases/latest/download/VALE-Windows-x64.zip.sha256){ .md-button }
@@ -80,6 +80,8 @@ The visualizer, Spotify controls, local transcription, and Kokoro speech engine 
 | **M** | Toggle cinema mode |
 | **C** | Toggle captions |
 | Spotify Desktop | Drive music visuals and playback controls |
+
+If setup or audio ever behaves unexpectedly, run **Check VALE** from the Start Menu. It verifies the download, local runtimes, microphone visibility, browser, and port conflicts without showing your API key.
 
 !!! note "Windows preview"
     This release is built and tested for 64-bit Windows. It requires Chrome or Microsoft Edge and an internet connection during the first installation.
