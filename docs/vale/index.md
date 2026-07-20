@@ -19,11 +19,15 @@ VALE turns listening, thinking, speaking, and music into a living full-screen en
 <p class="vale-preview-note">Captured from the current Windows build. <a href="demo/">See the full silent demo and download the new render assets →</a></p>
 
 <div class="vale-facts">
+  <div><strong>Current release</strong><span>0.2.1 Preview</span></div>
   <div><strong>Platform</strong><span>Windows 10 / 11</span></div>
   <div><strong>Visual fields</strong><span>Four distinct worlds</span></div>
   <div><strong>Speech</strong><span>Local Whisper + Kokoro</span></div>
   <div><strong>AI connection</strong><span>Your Codex or Claude subscription</span></div>
 </div>
+
+!!! success "Updated July 20, 2026"
+    Version 0.2.1 improves Windows service ownership detection so **Start VALE** and **Stop VALE** reliably recognize and manage the local Kokoro voice process.
 
 ## Give your agent one prompt
 
