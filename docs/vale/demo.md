@@ -12,9 +12,9 @@ This is VALE running on Windows, not a concept mockup. The COSMOS field layers a
 </div>
 
 <div class="vale-demo-stage">
-  <video autoplay loop muted playsinline controls preload="metadata" poster="../assets/vale-demo/vale-cosmos-hero.webp" aria-label="Silent screen capture of the VALE COSMOS field moving in real time">
-    <source src="../assets/vale-demo/vale-cosmos-demo-silent.mp4" type="video/mp4">
-    <img src="../assets/vale-demo/vale-cosmos-loop-compact.gif" alt="VALE COSMOS field moving in a silent loop">
+  <video autoplay loop muted playsinline controls preload="metadata" poster="/assets/vale-demo/vale-cosmos-hero.webp" aria-label="Silent screen capture of the VALE COSMOS field moving in real time">
+    <source src="/assets/vale-demo/vale-cosmos-demo-silent.mp4" type="video/mp4">
+    <img src="/assets/vale-demo/vale-cosmos-loop-compact.gif" alt="VALE COSMOS field moving in a silent loop">
   </video>
 </div>
 
@@ -47,15 +47,15 @@ This is VALE running on Windows, not a concept mockup. The COSMOS field layers a
 
 <div class="vale-still-grid">
   <figure>
-    <a href="../assets/vale-demo/vale-cosmos-still-01.webp"><img loading="lazy" src="../assets/vale-demo/vale-cosmos-still-01.webp" alt="VALE COSMOS render with the stellar core opening into a bright spiral"></a>
+    <a href="/assets/vale-demo/vale-cosmos-still-01.webp"><img loading="lazy" src="/assets/vale-demo/vale-cosmos-still-01.webp" alt="VALE COSMOS render with the stellar core opening into a bright spiral"></a>
     <figcaption>Stellar tide opening</figcaption>
   </figure>
   <figure>
-    <a href="../assets/vale-demo/vale-cosmos-still-02.webp"><img loading="lazy" src="../assets/vale-demo/vale-cosmos-still-02.webp" alt="VALE COSMOS render with dense particles around the music-active center"></a>
+    <a href="/assets/vale-demo/vale-cosmos-still-02.webp"><img loading="lazy" src="/assets/vale-demo/vale-cosmos-still-02.webp" alt="VALE COSMOS render with dense particles around the music-active center"></a>
     <figcaption>Music-active center</figcaption>
   </figure>
   <figure>
-    <a href="../assets/vale-demo/vale-cosmos-still-03.webp"><img loading="lazy" src="../assets/vale-demo/vale-cosmos-still-03.webp" alt="VALE COSMOS render with the gold core framed by blue and red nebula clouds"></a>
+    <a href="/assets/vale-demo/vale-cosmos-still-03.webp"><img loading="lazy" src="/assets/vale-demo/vale-cosmos-still-03.webp" alt="VALE COSMOS render with the gold core framed by blue and red nebula clouds"></a>
     <figcaption>Late-loop nebula field</figcaption>
   </figure>
 </div>
@@ -66,12 +66,12 @@ Every asset below comes from the supplied VALE capture. The video contains **no 
 
 <div class="vale-media-downloads" markdown>
 
-- [Hero still · WebP · 1600 × 900](../assets/vale-demo/vale-cosmos-hero.webp)
-- [Compact motion loop · GIF · 720 × 404](../assets/vale-demo/vale-cosmos-loop-compact.gif)
-- [Full silent demo · MP4 · 1280 × 720](../assets/vale-demo/vale-cosmos-demo-silent.mp4)
-- [Still 01 · WebP](../assets/vale-demo/vale-cosmos-still-01.webp)
-- [Still 02 · WebP](../assets/vale-demo/vale-cosmos-still-02.webp)
-- [Still 03 · WebP](../assets/vale-demo/vale-cosmos-still-03.webp)
+- [Hero still · WebP · 1600 × 900](/assets/vale-demo/vale-cosmos-hero.webp)
+- [Compact motion loop · GIF · 720 × 404](/assets/vale-demo/vale-cosmos-loop-compact.gif)
+- [Full silent demo · MP4 · 1280 × 720](/assets/vale-demo/vale-cosmos-demo-silent.mp4)
+- [Still 01 · WebP](/assets/vale-demo/vale-cosmos-still-01.webp)
+- [Still 02 · WebP](/assets/vale-demo/vale-cosmos-still-02.webp)
+- [Still 03 · WebP](/assets/vale-demo/vale-cosmos-still-03.webp)
 
 </div>
 
