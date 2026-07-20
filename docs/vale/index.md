@@ -16,7 +16,7 @@ VALE turns listening, thinking, speaking, and music into a living full-screen en
   <img src="/assets/vale-demo/vale-cosmos-hero.webp" alt="Fresh VALE COSMOS render showing its music-active stellar field and playback interface">
 </div>
 
-<p class="vale-preview-note">Captured from the current Windows build. <a href="demo.md">See the full silent demo and download the new render assets →</a></p>
+<p class="vale-preview-note">Captured from the current Windows build. <a href="demo/">See the full silent demo and download the new render assets →</a></p>
 
 <div class="vale-facts">
   <div><strong>Platform</strong><span>Windows 10 / 11</span></div>
