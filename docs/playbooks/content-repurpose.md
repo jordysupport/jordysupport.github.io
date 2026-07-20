@@ -21,7 +21,7 @@ Turn one good article, video, or post into ready-to-edit drafts for every other 
 Give the zip to your AI and send:
 
 ```text title="Copy this message"
-Unzip this file and follow the instructions in INSTALL.md.
+Locate the most recently downloaded copy of content-repurpose-skill.zip, extract it, open INSTALL.md, and follow the instructions inside.
 ```
 
 From then on, just say:

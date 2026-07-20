@@ -21,7 +21,7 @@ Turn things worth keeping — articles, decisions, how-tos — into short notes 
 Give the zip to your AI and send:
 
 ```text title="Copy this message"
-Unzip this file and follow the instructions in INSTALL.md.
+Locate the most recently downloaded copy of knowledge-base-skill.zip, extract it, open INSTALL.md, and follow the instructions inside.
 ```
 
 From then on, just say:
