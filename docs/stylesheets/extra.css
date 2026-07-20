@@ -350,6 +350,11 @@
   width: 100%;
   margin: 0;
 }
+.vale-preview-note {
+  margin: -0.75rem 0 1.4rem;
+  color: var(--js-muted);
+  font-size: 0.84rem;
+}
 .vale-facts {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -401,12 +406,151 @@
 }
 .vale-install strong { display: block; margin-bottom: 0.3rem; }
 
+/* --- VALE demo page ---------------------------------------- */
+.vale-demo-hero {
+  margin: 0.5rem 0 1.2rem;
+  padding: clamp(1.4rem, 4vw, 2.7rem);
+  border: 1px solid #374148;
+  border-top: 4px solid #81cbd7;
+  border-radius: 4px;
+  background: #0b1014;
+  color: #e8eff1;
+}
+.vale-demo-hero .kicker { color: #81cbd7; }
+.vale-demo-hero h1 {
+  max-width: 16ch;
+  margin: 0.35rem 0 0.75rem;
+  padding-top: 0;
+  color: #fff;
+  font-size: clamp(2.25rem, 6vw, 4.4rem);
+  line-height: 0.98;
+}
+.vale-demo-hero h1::before { display: none; }
+.vale-demo-hero p {
+  max-width: 48rem;
+  color: #b7c4c9;
+  font-size: 1.05rem;
+}
+.vale-demo-hero .md-button {
+  border-color: #81cbd7;
+  color: #fff;
+}
+.vale-demo-hero .md-button:hover {
+  border-color: #a4e5ee;
+  background: #172229;
+  color: #fff;
+}
+.vale-demo-hero .md-button--primary,
+.vale-demo-hero .md-button--primary:hover {
+  border-color: #d74b55;
+  background: #d74b55;
+  color: #fff;
+}
+.vale-demo-stage {
+  margin: 0 0 1.1rem;
+  padding: 0.35rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: #05080a;
+}
+.vale-demo-stage video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  background: #05080a;
+}
+.vale-capture-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 0 2rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vale-capture-facts > div {
+  padding: 0.8rem 0.9rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+}
+.vale-capture-facts > div:last-child { border-right: 0; }
+.vale-capture-facts strong,
+.vale-capture-facts span { display: block; }
+.vale-capture-facts strong {
+  margin-bottom: 0.15rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--js-green-dark);
+}
+.vale-capture-facts span { font-size: 0.86rem; }
+.vale-demo-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 2rem;
+}
+.vale-demo-notes > ul { display: contents; }
+.vale-demo-notes > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: var(--js-panel);
+}
+.vale-demo-notes > ul > li p:last-child { margin-bottom: 0; }
+.vale-still-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 2rem;
+}
+.vale-still-grid figure {
+  margin: 0;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #080b0d;
+}
+.vale-still-grid img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.vale-still-grid figcaption {
+  padding: 0.55rem 0.7rem;
+  border-top: 1px solid var(--js-border);
+  background: var(--js-panel);
+  color: var(--js-muted);
+  font-size: 0.8rem;
+}
+.vale-media-downloads {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--js-border);
+  border-left: 4px solid #81cbd7;
+  border-radius: 0 4px 4px 0;
+  background: var(--js-panel);
+}
+.vale-media-downloads ul { margin: 0; }
+
 @media screen and (max-width: 52rem) {
   .vale-facts,
-  .vale-install { grid-template-columns: 1fr; }
+  .vale-install,
+  .vale-capture-facts,
+  .vale-demo-notes,
+  .vale-still-grid { grid-template-columns: 1fr; }
   .vale-facts > div {
     border-right: 0;
     border-bottom: 1px solid var(--js-border);
   }
   .vale-facts > div:last-child { border-bottom: 0; }
+  .vale-capture-facts > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--js-border);
+  }
+  .vale-capture-facts > div:last-child { border-bottom: 0; }
 }

@@ -21,7 +21,7 @@ Get a short, honest answer to a real question — with sources you can click —
 Give the zip to your AI and send:
 
 ```text title="Copy this message"
-Unzip this file and follow the instructions in INSTALL.md.
+Locate the most recently downloaded copy of research-brief-skill.zip, extract it, open INSTALL.md, and follow the instructions inside.
 ```
 
 Your AI saves the playbook to your notes. From then on, just say:

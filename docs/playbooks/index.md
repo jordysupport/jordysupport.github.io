@@ -12,15 +12,11 @@ A playbook is one useful job — research, meeting notes, content — packaged s
 
 <div class="playbook-steps">
   <div><strong>1 · Download</strong><span>Grab the small zip file for the playbook you want.</span></div>
-  <div><strong>2 · Hand it over</strong><span>Give the file to your AI with one short message (below). It saves the playbook to your notes.</span></div>
+  <div><strong>2 · Hand it over</strong><span>Open its page and copy the filename-specific install message. Your AI saves the playbook to your notes.</span></div>
   <div><strong>3 · Just ask</strong><span>From then on, say "start my research playbook." It interviews you — no forms, no re-downloads.</span></div>
 </div>
 
-After you download, attach or drop the zip into your AI and send this:
-
-```text title="Copy this message"
-Unzip this file and follow the instructions in INSTALL.md.
-```
+After you download, open that playbook's page and copy its install message. The exact downloaded filename is already filled in, so your AI knows what to locate and extract.
 
 That's the whole setup. The AI will ask where you keep your notes, save the playbook there, and tell you the magic phrase to start it later.
 

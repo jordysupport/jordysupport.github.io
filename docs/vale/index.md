@@ -7,13 +7,16 @@
 VALE turns listening, thinking, speaking, and music into a living full-screen environment. Four visual fields, local speech, a cinematic interface, and music reactions that belong to each world.
 
 [Download VALE for Windows](https://github.com/jordysupport/jordysupport.github.io/releases/latest/download/VALE-Windows-x64.zip){ .md-button .md-button--primary }
+[Watch the real-time demo](demo.md){ .md-button }
 [Release details](https://github.com/jordysupport/jordysupport.github.io/releases/latest){ .md-button }
 
 </div>
 
 <div class="vale-preview">
-  <img src="../assets/vale-cosmos.png" alt="VALE COSMOS field reacting around a luminous galactic center">
+  <img src="../assets/vale-demo/vale-cosmos-hero.webp" alt="Fresh VALE COSMOS render showing its music-active stellar field and playback interface">
 </div>
+
+<p class="vale-preview-note">Captured from the current Windows build. <a href="demo.md">See the full silent demo and download the new render assets →</a></p>
 
 <div class="vale-facts">
   <div><strong>Platform</strong><span>Windows 10 / 11</span></div>
