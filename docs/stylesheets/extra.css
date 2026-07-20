@@ -323,6 +323,19 @@
   color: #b7c4c9;
   font-size: 1.05rem;
 }
+.vale-hero > p:last-child,
+.vale-demo-hero > p:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0 0;
+}
+.vale-hero > p:last-child .md-button,
+.vale-hero > p:last-child .md-button + .md-button,
+.vale-demo-hero > p:last-child .md-button,
+.vale-demo-hero > p:last-child .md-button + .md-button {
+  margin: 0;
+}
 .vale-hero .md-button {
   border-color: #d95a64;
   color: #fff;
