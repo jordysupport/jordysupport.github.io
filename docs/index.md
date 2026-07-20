@@ -41,7 +41,7 @@ Short guides that show you what to type, what to check, and how to stay in contr
 
 -   **Meet VALE**
 
-    A living, music-reactive visualizer and local voice line for Windows.
+    A living, music-reactive visualizer and local voice line for Windows. Give Codex or Claude one prompt and let your agent install it for you.
 
     [See VALE and download →](vale/index.md)
 

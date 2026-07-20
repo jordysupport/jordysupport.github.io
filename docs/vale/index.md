@@ -22,18 +22,37 @@ VALE turns listening, thinking, speaking, and music into a living full-screen en
   <div><strong>Platform</strong><span>Windows 10 / 11</span></div>
   <div><strong>Visual fields</strong><span>Four distinct worlds</span></div>
   <div><strong>Speech</strong><span>Local Whisper + Kokoro</span></div>
-  <div><strong>Price</strong><span>Free preview</span></div>
+  <div><strong>AI connection</strong><span>Your Codex or Claude subscription</span></div>
 </div>
 
-## One download. Three steps.
+## Give your agent one prompt
 
 <div class="vale-install">
-  <div><strong>Extract the ZIP</strong>Keep the included folders together, then open the extracted VALE folder.</div>
-  <div><strong>Run Install VALE</strong>Setup works inside your Windows account. No administrator password is required.</div>
-  <div><strong>Connect your model</strong>Enter your local or hosted OpenAI-compatible API URL, model ID, and optional key.</div>
+  <div><strong>Copy the prompt</strong>Use the copy button on the setup prompt below.</div>
+  <div><strong>Paste it into your agent</strong>Use Codex or Claude Code on the Windows PC where VALE will run.</div>
+  <div><strong>Let the agent verify everything</strong>It downloads, checks, installs, connects, tests, and starts VALE.</div>
 </div>
 
-The first setup downloads the local Kokoro voice runtime, so allow several minutes and at least **4 GB of free disk space**. After that, launch VALE from the desktop or Start Menu.
+```text
+Install the latest public VALE for Windows release from:
+https://github.com/jordysupport/jordysupport.github.io/releases/latest
+
+Complete and verify the setup for me. Do not ask me to run terminal commands that you can safely run yourself.
+
+1. Confirm this is 64-bit Windows 10 or Windows 11.
+2. Download VALE-Windows-x64.zip and VALE-Windows-x64.zip.sha256 from the latest release into a new temporary folder.
+3. Verify the ZIP against the SHA-256 checksum. Stop if verification fails.
+4. Extract it and read README.md, RELEASE_NOTES.md, and INSTALL WITH YOUR AI AGENT.md.
+5. Confirm your own CLI is authenticated with my existing subscription: use `codex login status` if you are Codex or `claude auth status` if you are Claude Code. Never request, reveal, copy, or manufacture an API key or authentication token. If the official CLI is unavailable, install it from the provider's official documentation and ask me only to complete an official browser sign-in if required.
+6. Run scripts\Install-VALEForAgent.ps1 with `-AgentRuntime Codex` or `-AgentRuntime Claude`, matching the agent you are. Use the default per-user install location. Do not skip integrity checks, dependencies, the response probe, or diagnostics.
+7. Run the installed scripts\Test-VALEInstallation.ps1, resolve every required failure, start VALE, and report the version, selected agent runtime, diagnostic result, and remaining warnings. Never include credentials or authentication-file contents.
+
+VALE must use my authenticated agent CLI as its language-model backend. Whisper transcription and Kokoro speech generation must remain local. Do not configure a metered API key unless I explicitly reject subscription-agent mode and request an API endpoint instead.
+```
+
+This reuses the agent CLI's existing subscription session. VALE does not read, copy, or store the login. Codex runs ephemerally in a read-only sandbox; Claude runs with tools disabled and session persistence off. Agent usage is still subject to the limits of the person's plan.
+
+The first setup downloads the local Kokoro voice runtime, so the agent may need several minutes and at least **4 GB of free disk space**.
 
 [Download the Windows preview](https://github.com/jordysupport/jordysupport.github.io/releases/latest/download/VALE-Windows-x64.zip){ .md-button .md-button--primary }
 [SHA-256 checksum](https://github.com/jordysupport/jordysupport.github.io/releases/latest/download/VALE-Windows-x64.zip.sha256){ .md-button }
@@ -60,18 +79,19 @@ The first setup downloads the local Kokoro voice runtime, so allow several minut
 
 </div>
 
-## Bring your own AI connection
+## No separate API billing required
 
-VALE does **not** include Jordy's private agent, server address, login, or API key. During setup, each person connects the voice line to an OpenAI-compatible endpoint they control. That can be a local service such as Ollama or a hosted provider.
+The recommended setup connects VALE to an already-authenticated Codex or Claude Code CLI. It does not turn a subscription login into an API key, and it never copies agent credentials. Instead, a loopback-only bridge asks the signed-in CLI for each response using the person's existing plan access.
 
-The visualizer, Spotify controls, local transcription, and Kokoro speech engine are included. Voice conversations require the configured AI endpoint.
+People who prefer Ollama or another OpenAI-compatible endpoint can still use the manual **Install VALE.cmd** path and provide their own endpoint. An API key is needed only when that chosen endpoint requires one.
 
 ## Privacy in plain English
 
 - Your microphone recording is transcribed on your PC.
 - Kokoro generates VALE's speech on your PC.
-- Only the transcribed text is sent to the AI endpoint you choose.
-- Your API key stays in your local VALE installation.
+- In agent mode, only the conversation text is handed to the authenticated local agent CLI.
+- VALE does not read or store the agent CLI's credentials.
+- In manual endpoint mode, any optional API key stays in the local VALE installation.
 - The public download contains no personal token, machine path, or private network address.
 
 ## Controls
@@ -84,7 +104,7 @@ The visualizer, Spotify controls, local transcription, and Kokoro speech engine 
 | **C** | Toggle captions |
 | Spotify Desktop | Drive music visuals and playback controls |
 
-If setup or audio ever behaves unexpectedly, run **Check VALE** from the Start Menu. It verifies the download, local runtimes, microphone visibility, browser, and port conflicts without showing your API key.
+If setup or audio ever behaves unexpectedly, run **Check VALE** from the Start Menu. It verifies the download, local runtimes, agent authentication, microphone visibility, browser, and port conflicts without showing credentials.
 
 !!! note "Windows preview"
     This release is built and tested for 64-bit Windows. It requires Chrome or Microsoft Edge and an internet connection during the first installation.
