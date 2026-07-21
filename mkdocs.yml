@@ -98,6 +98,7 @@ nav:
       - Subagents: fundamentals/subagents.md
       - Tools & Connections: fundamentals/tools-mcp.md
       - Keeping It Safe: fundamentals/safety-permissions.md
+  - Tokenomics: tokenomics.md
   - Prompting:
       - Prompting That Works: prompting/index.md
       - Prompt Builder: prompting/prompt-builder.md
