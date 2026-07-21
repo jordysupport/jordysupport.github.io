@@ -1,0 +1,569 @@
+/* ============================================================
+   Jordy Support — "field manual" theme
+   Ink on paper. One tool-green accent. Flat borders, square
+   corners, no gradients, no shadows, no pill buttons.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&display=swap");
+
+:root {
+  --js-ink: #23281f;
+  --js-paper: #fbfaf6;
+  --js-green: #2e6b4f;
+  --js-green-dark: #22503b;
+  --js-border: #d9d7cc;
+  --js-muted: #5d6157;
+  --js-panel: #f3f2ea;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #22503b;
+  --md-primary-fg-color--light: #2e6b4f;
+  --md-primary-fg-color--dark: #1a3d2d;
+  --md-accent-fg-color: #2e6b4f;
+  --md-default-bg-color: var(--js-paper);
+  --md-default-fg-color: var(--js-ink);
+  --md-typeset-a-color: #22503b;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #1a2420;
+  --md-primary-fg-color--light: #2e6b4f;
+  --md-primary-fg-color--dark: #131b17;
+  --md-accent-fg-color: #86c2a4;
+  --md-typeset-a-color: #9ccdb4;
+  --js-ink: #e8eae4;
+  --js-border: #3a4038;
+  --js-muted: #a5aa9f;
+  --js-panel: #232823;
+  --js-green: #86c2a4;
+  --js-green-dark: #86c2a4;
+}
+
+.md-grid { max-width: 76rem; }
+
+/* --- Type: Plex Serif headings, Plex Sans body ------------- */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--js-ink);
+}
+
+/* Signature: every h1 carries a short chapter rule above it. */
+.md-typeset h1 {
+  position: relative;
+  padding-top: 0.9rem;
+  font-weight: 700;
+}
+.md-typeset h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.6rem;
+  height: 0.28rem;
+  background: var(--js-green);
+}
+
+/* Monospace kickers, like a manual's section code. */
+.kicker {
+  display: inline-block;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--js-muted);
+}
+
+/* --- Hero: plain, typographic ------------------------------ */
+.hero {
+  margin: 0.5rem 0 2rem;
+  padding: 0 0 1.6rem;
+  border-bottom: 1px solid var(--js-border);
+}
+.hero h1 {
+  max-width: 22ch;
+  margin: 0 0 0.7rem;
+  font-size: clamp(2.1rem, 5.5vw, 3.6rem);
+  line-height: 1.05;
+}
+.hero__lead {
+  max-width: 42rem;
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.65;
+  color: var(--js-muted);
+}
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.3rem;
+}
+
+/* --- Buttons: rectangular, solid or outlined --------------- */
+.md-typeset .md-button {
+  border-radius: 3px;
+  border: 1.5px solid var(--js-green-dark);
+  color: var(--js-green-dark);
+  font-weight: 600;
+  box-shadow: none;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.md-typeset .md-button:hover {
+  background: var(--js-panel);
+  border-color: var(--js-green-dark);
+  color: var(--js-green-dark);
+}
+.md-typeset .md-button--primary {
+  background: var(--js-green-dark);
+  border-color: var(--js-green-dark);
+  color: #fff;
+}
+.md-typeset .md-button--primary:hover {
+  background: var(--js-green);
+  border-color: var(--js-green);
+  color: #fff;
+}
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  color: #10160f;
+}
+.md-typeset a.md-button + a.md-button { margin-left: 0.35rem; }
+
+/* --- Cards: flat panels, no lift, no shadow ---------------- */
+.grid.cards > ul > li,
+.feature-card,
+.checklist-card {
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  box-shadow: none !important;
+  transition: border-color 120ms ease;
+}
+.grid.cards > ul > li:hover,
+.feature-card:hover {
+  transform: none;
+  border-color: var(--js-green);
+  box-shadow: none !important;
+}
+
+/* --- Step strip: a numbered row, flat ---------------------- */
+.path-strip {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  margin: 1.3rem 0 1.8rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.path-strip > div {
+  padding: 0.85rem 0.75rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.path-strip > div:last-child { border-right: 0; }
+.path-strip .step-no {
+  display: block;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.68rem;
+  color: var(--js-green);
+  margin-bottom: 0.15rem;
+}
+
+/* --- Callout banner ---------------------------------------- */
+.value-banner {
+  margin: 1.8rem 0;
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--js-border);
+  border-left: 4px solid var(--js-green);
+  border-radius: 0 4px 4px 0;
+  background: var(--js-panel);
+}
+
+.small-note { font-size: 0.86rem; color: var(--js-muted); }
+
+/* --- Tables, code, admonitions: quiet ---------------------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  box-shadow: none;
+  overflow: hidden;
+}
+.md-typeset table:not([class]) th {
+  background: var(--js-panel);
+  color: var(--js-ink);
+}
+.md-typeset code { border-radius: 2px; }
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+/* Keep the copy button always visible on prompts. */
+.md-typeset .md-clipboard {
+  opacity: 1 !important;
+  color: var(--md-accent-fg-color);
+}
+
+/* --- Playbook blocks --------------------------------------- */
+.playbook-hero {
+  margin: 0.5rem 0 1.4rem;
+  padding: 0 0 1.3rem;
+  border-bottom: 1px solid var(--js-border);
+}
+.playbook-hero h1 {
+  max-width: 24ch;
+  margin: 0.3rem 0 0.55rem;
+  font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+  line-height: 1.08;
+}
+.playbook-hero p:last-child {
+  max-width: 46rem;
+  margin-bottom: 0;
+  color: var(--js-muted);
+}
+
+.playbook-meta,
+.playbook-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 1rem 0 1.5rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.playbook-meta > div,
+.playbook-steps > div {
+  padding: 0.85rem 1rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+}
+.playbook-meta > div:last-child,
+.playbook-steps > div:last-child { border-right: 0; }
+.playbook-meta strong,
+.playbook-steps strong,
+.playbook-meta span,
+.playbook-steps span { display: block; }
+.playbook-meta strong,
+.playbook-steps strong {
+  margin-bottom: 0.2rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--js-green-dark);
+}
+[data-md-color-scheme="slate"] .playbook-meta strong,
+[data-md-color-scheme="slate"] .playbook-steps strong { color: var(--js-green); }
+.playbook-meta span,
+.playbook-steps span {
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 52rem) {
+  .path-strip,
+  .playbook-meta,
+  .playbook-steps { grid-template-columns: 1fr; }
+  .path-strip > div,
+  .playbook-meta > div,
+  .playbook-steps > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--js-border);
+  }
+  .path-strip > div:last-child,
+  .playbook-meta > div:last-child,
+  .playbook-steps > div:last-child { border-bottom: 0; }
+  .md-typeset a.md-button {
+    display: block;
+    width: 100%;
+    margin: 0.45rem 0 0;
+    text-align: center;
+  }
+  .md-typeset a.md-button + a.md-button { margin-left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* --- VALE download page ------------------------------------ */
+.vale-hero {
+  margin: 0.5rem 0 1.2rem;
+  padding: clamp(1.4rem, 4vw, 2.7rem);
+  border: 1px solid #374148;
+  border-top: 4px solid #d74b55;
+  border-radius: 4px;
+  background: #0d1216;
+  color: #e8eff1;
+}
+.vale-hero .kicker { color: #81cbd7; }
+.vale-hero h1 {
+  max-width: 18ch;
+  margin: 0.35rem 0 0.75rem;
+  padding-top: 0;
+  color: #fff;
+  font-size: clamp(2.25rem, 6vw, 4.4rem);
+  line-height: 0.98;
+}
+.vale-hero h1::before { display: none; }
+.vale-hero p {
+  max-width: 46rem;
+  color: #b7c4c9;
+  font-size: 1.05rem;
+}
+.vale-hero > p:last-child,
+.vale-demo-hero > p:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0 0;
+}
+.vale-hero > p:last-child .md-button,
+.vale-hero > p:last-child .md-button + .md-button,
+.vale-demo-hero > p:last-child .md-button,
+.vale-demo-hero > p:last-child .md-button + .md-button {
+  margin: 0;
+}
+.vale-hero .md-button {
+  border-color: #d95a64;
+  color: #fff;
+}
+.vale-hero .md-button:hover {
+  border-color: #ef7c85;
+  background: #1a2329;
+  color: #fff;
+}
+.vale-hero .md-button--primary,
+.vale-hero .md-button--primary:hover {
+  border-color: #d74b55;
+  background: #d74b55;
+  color: #fff;
+}
+.vale-preview {
+  margin: 0 0 1.4rem;
+  padding: 0.35rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: #080b0d;
+}
+.vale-preview img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.vale-preview-note {
+  margin: -0.75rem 0 1.4rem;
+  color: var(--js-muted);
+  font-size: 0.84rem;
+}
+.vale-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 0 1.8rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vale-facts > div {
+  padding: 0.8rem 0.9rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+}
+.vale-facts > div:last-child { border-right: 0; }
+.vale-facts strong,
+.vale-facts span { display: block; }
+.vale-facts strong {
+  margin-bottom: 0.15rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--js-green-dark);
+}
+.vale-facts span { font-size: 0.86rem; }
+.vale-install {
+  counter-reset: vale-step;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 1.7rem;
+}
+.vale-install > div {
+  min-height: 8.5rem;
+  padding: 1rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: var(--js-panel);
+}
+.vale-install > div::before {
+  counter-increment: vale-step;
+  content: "0" counter(vale-step);
+  display: block;
+  margin-bottom: 0.55rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #c84751;
+}
+.vale-install strong { display: block; margin-bottom: 0.3rem; }
+
+/* --- VALE demo page ---------------------------------------- */
+.vale-demo-hero {
+  margin: 0.5rem 0 1.2rem;
+  padding: clamp(1.4rem, 4vw, 2.7rem);
+  border: 1px solid #374148;
+  border-top: 4px solid #81cbd7;
+  border-radius: 4px;
+  background: #0b1014;
+  color: #e8eff1;
+}
+.vale-demo-hero .kicker { color: #81cbd7; }
+.vale-demo-hero h1 {
+  max-width: 16ch;
+  margin: 0.35rem 0 0.75rem;
+  padding-top: 0;
+  color: #fff;
+  font-size: clamp(2.25rem, 6vw, 4.4rem);
+  line-height: 0.98;
+}
+.vale-demo-hero h1::before { display: none; }
+.vale-demo-hero p {
+  max-width: 48rem;
+  color: #b7c4c9;
+  font-size: 1.05rem;
+}
+.vale-demo-hero .md-button {
+  border-color: #81cbd7;
+  color: #fff;
+}
+.vale-demo-hero .md-button:hover {
+  border-color: #a4e5ee;
+  background: #172229;
+  color: #fff;
+}
+.vale-demo-hero .md-button--primary,
+.vale-demo-hero .md-button--primary:hover {
+  border-color: #d74b55;
+  background: #d74b55;
+  color: #fff;
+}
+.vale-demo-stage {
+  margin: 0 0 1.1rem;
+  padding: 0.35rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: #05080a;
+}
+.vale-demo-stage video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0;
+  background: #05080a;
+}
+.vale-capture-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 0 2rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.vale-capture-facts > div {
+  padding: 0.8rem 0.9rem;
+  border-right: 1px solid var(--js-border);
+  background: var(--js-panel);
+}
+.vale-capture-facts > div:last-child { border-right: 0; }
+.vale-capture-facts strong,
+.vale-capture-facts span { display: block; }
+.vale-capture-facts strong {
+  margin-bottom: 0.15rem;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.67rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--js-green-dark);
+}
+.vale-capture-facts span { font-size: 0.86rem; }
+.vale-demo-notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 2rem;
+}
+.vale-demo-notes > ul { display: contents; }
+.vale-demo-notes > ul > li {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  background: var(--js-panel);
+}
+.vale-demo-notes > ul > li p:last-child { margin-bottom: 0; }
+.vale-still-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 2rem;
+}
+.vale-still-grid figure {
+  margin: 0;
+  border: 1px solid var(--js-border);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #080b0d;
+}
+.vale-still-grid img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.vale-still-grid figcaption {
+  padding: 0.55rem 0.7rem;
+  border-top: 1px solid var(--js-border);
+  background: var(--js-panel);
+  color: var(--js-muted);
+  font-size: 0.8rem;
+}
+.vale-media-downloads {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--js-border);
+  border-left: 4px solid #81cbd7;
+  border-radius: 0 4px 4px 0;
+  background: var(--js-panel);
+}
+.vale-media-downloads ul { margin: 0; }
+
+@media screen and (max-width: 52rem) {
+  .vale-facts,
+  .vale-install,
+  .vale-capture-facts,
+  .vale-demo-notes,
+  .vale-still-grid { grid-template-columns: 1fr; }
+  .vale-facts > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--js-border);
+  }
+  .vale-facts > div:last-child { border-bottom: 0; }
+  .vale-capture-facts > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--js-border);
+  }
+  .vale-capture-facts > div:last-child { border-bottom: 0; }
+}
