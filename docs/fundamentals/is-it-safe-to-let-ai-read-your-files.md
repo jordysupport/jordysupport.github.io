@@ -7,9 +7,6 @@ description: >-
 
 # Is it safe to let an AI read my files?
 
-!!! warning "Draft"
-    This page is a draft awaiting review. Remove this banner when it's approved.
-
 Short answer: yes — if you limit what it can touch. The risk isn't "AI reads a file." The risk is giving it access to everything and hoping for the best.
 
 ## The one habit that does most of the work

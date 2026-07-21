@@ -7,9 +7,6 @@ description: >-
 
 # Why AI makes things up (and how to catch it)
 
-!!! warning "Draft"
-    This page is a draft awaiting review. Remove this banner when it's approved.
-
 Sometimes an AI states something false with total confidence — a fact, a quote, a source that doesn't exist. People call this [**hallucination**](../resources/glossary.md#hallucination). It's not lying, and it's not a glitch you can turn off. It's how the tool works, so the fix is a checking habit, not a setting.
 
 ## Why it happens, in plain words
