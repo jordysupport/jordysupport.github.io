@@ -1,3 +1,8 @@
+---
+description: >-
+  Git and GitHub Codespaces for beginners: what commits and pushes are in plain English, plus fixes for the errors that most often trip people up.
+---
+
 <span class="kicker">Troubleshooting · Git & Codespaces</span>
 
 # Git & Codespaces
@@ -38,3 +43,5 @@ git restore .        ← put every file back to the last commit
 ```
 
 That's the beginner-safe undo. For anything scarier (undoing pushed commits), ask AI to walk you through it one step at a time rather than pasting internet commands.
+
+[Next step: Your first agent](../getting-started/first-agent.md){ .md-button }

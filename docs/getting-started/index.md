@@ -1,3 +1,8 @@
+---
+description: >-
+  How to start using AI when you're not technical: pick one small job, choose a tool, make a safe practice folder, and check results. About 30 minutes.
+---
+
 <span class="kicker">Start here</span>
 
 # Start here
@@ -52,3 +57,5 @@ Not "wow, the AI amazed me." Just: *it did the small job, stayed where I put it,
 
 [Choose your setup](choose-a-setup.md){ .md-button .md-button--primary }
 [Build your first agent](first-agent.md){ .md-button }
+
+[Next step: Choose your setup](choose-a-setup.md){ .md-button }

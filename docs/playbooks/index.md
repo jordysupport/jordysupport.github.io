@@ -1,10 +1,15 @@
+---
+description: >-
+  AI playbooks: teach your AI a job once — research, meeting notes, content — then run it any time with one phrase. Free downloads, plain English.
+---
+
 <div class="playbook-hero" markdown>
 
 <span class="kicker">Playbooks</span>
 
 # Teach your AI a job once. Use it forever.
 
-A playbook is one useful job — research, meeting notes, content — packaged so your AI learns it in a minute and can run it any time you ask.
+A [playbook](../resources/glossary.md#playbook) is one useful job — research, meeting notes, content — packaged so your AI learns it in a minute and can run it any time you ask.
 
 </div>
 

@@ -1,3 +1,8 @@
+---
+description: >-
+  Fix common Mac problems when setting up AI tools: plain-English solutions for installs, permissions, and errors that stop beginners on macOS.
+---
+
 <span class="kicker">Troubleshooting · macOS</span>
 
 # macOS
@@ -26,3 +31,5 @@ Guides will tell you to "brew install" things. **Homebrew** is a free installer 
 ## Where your stuff is
 
 Your files live under `/Users/yourname/` — the terminal shortcut for it is `~`. So `cd ~/Documents/ai-practice` means "go to the ai-practice folder in my Documents." When a command fails with "no such file or directory," you're usually one `cd` away from where you meant to be.
+
+[Next step: Terminal basics](terminal-basics.md){ .md-button }

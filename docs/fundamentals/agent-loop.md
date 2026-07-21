@@ -1,3 +1,8 @@
+---
+description: >-
+  How AI agents actually work: the look, plan, act, check loop explained in plain words, so agent behavior stops looking like magic and gets predictable.
+---
+
 <span class="kicker">How agents work · The loop</span>
 
 # The agent loop
@@ -26,3 +31,9 @@ A good agent goes around this loop in small hops, and pauses to ask you at the i
 That single line turns the loop from *act → oops* into *plan → approve → act*. It's on almost every prompt on this site for a reason.
 
 [Next: context & memory](context-memory.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If the loop finally clicked, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Context & memory](context-memory.md){ .md-button }

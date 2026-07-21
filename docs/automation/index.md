@@ -1,8 +1,13 @@
+---
+description: >-
+  AI automation basics in plain English: what automation really means, the honest path from manual to automatic, and why automating comes last, not first.
+---
+
 <span class="kicker">Automation</span>
 
 # Automation basics
 
-**Automation** means a job runs without you starting it each time. It's the last step, not the first: automate only what you've already done manually with AI and trust.
+[**Automation**](../resources/glossary.md#automation) means a job runs without you starting it each time. It's the last step, not the first: automate only what you've already done manually with AI and trust.
 
 ## The honest promotion path
 
@@ -29,3 +34,9 @@ Every automation needs an answer to: **"What happens when it fails?"** Because i
 - [Plan a workflow](workflow-blueprint.md) — the 7 boxes every automation needs.
 - [Make it reliable](reliability.md) — the failure-proofing checklist, in plain words.
 - [Ideas to steal](ideas.md) — starter automations ranked by risk.
+
+!!! tip "If this helped"
+    If this saved you from automating too early, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Plan a workflow](workflow-blueprint.md){ .md-button }

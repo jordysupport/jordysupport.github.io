@@ -1,3 +1,8 @@
+---
+description: >-
+  Fix computer and AI problems in the right order: read the error, retry once, ask what changed, shrink the problem, search the message, then reinstall.
+---
+
 <span class="kicker">Troubleshooting</span>
 
 # Fix it in order
@@ -30,3 +35,5 @@ The "one step per message" part matters — it stops the AI from dumping ten com
 - [Terminal basics](terminal-basics.md) — the five commands that cover 90% of it.
 - [Windows](windows.md) · [macOS](macos.md) — the usual suspects on each.
 - [Git & Codespaces](git-codespaces.md) — for site and code projects.
+
+[Next step: Terminal basics](terminal-basics.md){ .md-button }

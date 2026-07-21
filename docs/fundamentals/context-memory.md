@@ -1,3 +1,8 @@
+---
+description: >-
+  Why AI forgets what you told it: context windows and memory explained in plain English, plus simple habits that make an AI remember what matters.
+---
+
 <span class="kicker">How agents work · Memory</span>
 
 # Context & memory
@@ -31,3 +36,9 @@ left off.
 ```
 
 [Next: a vault for your agent](obsidian-vaults.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If this explained why your AI "forgot," a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: A vault for your agent](obsidian-vaults.md){ .md-button }

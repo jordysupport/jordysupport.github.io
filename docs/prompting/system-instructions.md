@@ -1,3 +1,8 @@
+---
+description: >-
+  How to write project instructions (custom instructions) for AI: rules you write once that apply to every chat in a project, so you stop repeating yourself.
+---
+
 <span class="kicker">Prompting · Project instructions</span>
 
 # Project instructions
@@ -36,3 +41,5 @@ Instructions are seasoning, not the meal. A page is plenty. When answers drift, 
 If you use a [vault](../fundamentals/obsidian-vaults.md), keep the same text in `About-Me.md` so folder agents get it too.
 
 [Browse the prompt library](prompt-library.md){ .md-button .md-button--primary }
+
+[Next step: The prompt library](prompt-library.md){ .md-button }

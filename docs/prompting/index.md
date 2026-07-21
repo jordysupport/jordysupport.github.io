@@ -1,8 +1,13 @@
+---
+description: >-
+  How to write AI prompts that work: five plain-English ingredients — the job, the material, the audience, the shape, and the rules — with examples.
+---
+
 <span class="kicker">Prompting</span>
 
 # Prompting that works
 
-A **prompt** is just your request. Good ones aren't clever — they're clear. Five ingredients cover 95% of it.
+A [**prompt**](../resources/glossary.md#prompt) is just your request. Good ones aren't clever — they're clear. Five ingredients cover 95% of it.
 
 ## The five ingredients
 
@@ -32,3 +37,5 @@ Same AI. The second one wins every time.
 - [Prompt builder](prompt-builder.md) — assemble a good prompt by filling in blanks.
 - [Project instructions](system-instructions.md) — write your rules once, reuse them everywhere.
 - [Prompt library](prompt-library.md) — copy-paste prompts for common jobs.
+
+[Next step: The prompt builder](prompt-builder.md){ .md-button }

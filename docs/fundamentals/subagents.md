@@ -1,3 +1,8 @@
+---
+description: >-
+  What AI subagents are, when they genuinely help, and when they're overkill — a plain-English guide to helper agents for big jobs and checking work.
+---
+
 <span class="kicker">How agents work · Subagents</span>
 
 # Subagents
@@ -30,3 +35,9 @@ approve its own claims.
 Subagents follow the same rules as the main agent: stay in the folder, plan first, you review the result. More agents never means less supervision.
 
 [Next: tools & connections](tools-mcp.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If this saved you from an over-built setup, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Tools & connections](tools-mcp.md){ .md-button }

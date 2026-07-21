@@ -1,3 +1,8 @@
+---
+description: >-
+  Ready-to-copy AI prompts for everyday jobs — summarizing, drafting, checking work — each with a plan-first line so nothing runs away from you.
+---
+
 <span class="kicker">Prompting · Library</span>
 
 # Prompt library
@@ -72,3 +77,5 @@ don't rewrite yet.
 ```
 
 Want jobs the AI remembers instead of prompts you re-paste? That's what [playbooks](../playbooks/index.md) are for.
+
+[Next step: Answers with sources you can check](ai-answers-with-sources.md){ .md-button }

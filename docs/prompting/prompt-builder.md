@@ -1,3 +1,8 @@
+---
+description: >-
+  A fill-in-the-blanks AI prompt template: state the job, paste your material, name the audience, set the shape, and add rules. Copy, fill in, paste.
+---
+
 <span class="kicker">Prompting · Builder</span>
 
 # Prompt builder
@@ -54,3 +59,5 @@ time until you have what you need, then do the job.
 ```
 
 [Save your rules as project instructions](system-instructions.md){ .md-button .md-button--primary }
+
+[Next step: Project instructions](system-instructions.md){ .md-button }

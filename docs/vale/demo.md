@@ -1,3 +1,8 @@
+---
+description: >-
+  Watch VALE running live on Windows: a real screen capture of the COSMOS field reacting to music — not a mockup — plus download links and stills.
+---
+
 <div class="vale-demo-hero" markdown>
 
 <span class="kicker">VALE / Live Render Capture</span>

@@ -1,3 +1,8 @@
+---
+description: >-
+  Who makes Jordy Support and why every guide is free. Plain-English AI help for creators, small business owners, and beginners doing real work.
+---
+
 <span class="kicker">About</span>
 
 # About Jordy Support
@@ -22,3 +27,5 @@ This project grew out of helping people in AI learning communities, including [J
 ## Support it (optional)
 
 If something here saved you an evening: [tip on Ko-fi](https://ko-fi.com/support_jordy) · [all links](https://linktr.ee/jordy_support). Either way, it stays free.
+
+[Next step: Start here](getting-started/index.md){ .md-button }

@@ -49,6 +49,10 @@ theme:
 plugins:
   - search:
       lang: en
+  - git-revision-date-localized:
+      type: date
+      enable_creation_date: false
+      fallback_to_build_date: true
 
 markdown_extensions:
   - admonition
@@ -98,12 +102,15 @@ nav:
       - Subagents: fundamentals/subagents.md
       - Tools & Connections: fundamentals/tools-mcp.md
       - Keeping It Safe: fundamentals/safety-permissions.md
+      - Is It Safe to Share Files?: fundamentals/is-it-safe-to-let-ai-read-your-files.md
+      - Why AI Makes Things Up: fundamentals/why-ai-makes-things-up.md
   - Tokenomics: tokenomics.md
   - Prompting:
       - Prompting That Works: prompting/index.md
       - Prompt Builder: prompting/prompt-builder.md
       - Project Instructions: prompting/system-instructions.md
       - Prompt Library: prompting/prompt-library.md
+      - Answers With Real Sources: prompting/ai-answers-with-sources.md
   - Automation:
       - Automation Basics: automation/index.md
       - Plan a Workflow: automation/workflow-blueprint.md
@@ -112,6 +119,7 @@ nav:
   - Playbooks:
       - How Playbooks Work: playbooks/index.md
       - Research a Topic: playbooks/research-brief.md
+      - 'Example: Research Brief': playbooks/research-brief-example.md
       - Repurpose Content: playbooks/content-repurpose.md
       - Process a Meeting: playbooks/meeting-follow-up.md
       - Build a Knowledge Base: playbooks/knowledge-base.md

@@ -1,10 +1,15 @@
+---
+description: >-
+  Build a personal knowledge base with AI: turn articles and decisions into short, sourced notes in your vault that future-you can actually use.
+---
+
 <div class="playbook-hero" markdown>
 
 <span class="kicker">Playbook · Knowledge</span>
 
 # Build a knowledge base
 
-Turn things worth keeping — articles, decisions, how-tos — into short notes your future self (and your AI) can actually use.
+Turn things worth keeping — articles, decisions, how-tos — into short notes your future self (and your AI) can actually use. Works best with [a vault](../fundamentals/obsidian-vaults.md).
 
 </div>
 
@@ -17,6 +22,49 @@ Turn things worth keeping — articles, decisions, how-tos — into short notes 
 ## Option 1 — Install it once (recommended)
 
 [Download the knowledge playbook](../downloads/knowledge-base-skill.zip){ .md-button .md-button--primary }
+
+Never give an AI a file you haven't looked inside. Here's everything in this one.
+
+??? note "What's inside this zip (read before handing it to your AI)"
+    Two plain-text files you can open yourself:
+
+    - `knowledge-base-skill/INSTALL.md` — install instructions for your AI. Full text below.
+    - `knowledge-base-skill/SKILL.md` — the playbook itself, saved to your vault during install.
+
+    Full text of `INSTALL.md`, word for word:
+
+    ```text
+    # INSTALL.md — instructions for the AI agent
+
+    You have been given this folder by the person you are helping.
+    Your job: install the skill inside it so they can reuse it in any
+    future conversation, then offer to run it now.
+
+    Follow these steps exactly.
+
+    1. **Find their home base.** Ask: "Where do you keep your permanent
+       notes or project files? (This is often called a vault or
+       workspace.)" If they don't have one, offer to create a folder
+       called `Vault` in the current location and use that.
+
+    2. **Install the skill.** Copy `SKILL.md` from this folder to:
+       `<their vault>/Skills/knowledge-base/SKILL.md`
+       Create the `Skills` folder if it doesn't exist. Do not modify
+       the file. Do not touch anything else in their vault.
+
+    3. **Confirm out loud.** Tell them exactly this:
+       "Installed. From now on, just say **'Start my knowledge playbook'**
+       and I'll walk you through it — no download needed. If we're in a
+       brand-new conversation, say: *Read Skills/knowledge-base/SKILL.md
+       and start it.*"
+
+    4. **Offer to run it now.** If they say yes, open `SKILL.md` and
+       follow it from the top.
+
+    Safety rules: stay inside the folder the person chose, ask before
+    creating or overwriting any file, and never send anything anywhere
+    without showing it to them first.
+    ```
 
 Give the zip to your AI and send:
 
@@ -52,5 +100,9 @@ Keep your own opinions out, or label them "my read."
 ## You're done when
 
 The note is short, sourced, and filed where you'll find it — and adding the next one feels easy.
+
+!!! tip "If this helped"
+    This playbook just gave your notes a system. If it helped, a small tip keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
 
 [Choose another playbook](index.md){ .md-button }

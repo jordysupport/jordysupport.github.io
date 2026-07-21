@@ -1,3 +1,8 @@
+---
+description: >-
+  Fix common Windows problems when setting up AI tools: plain-English solutions for installs, paths, permissions, and errors that block beginners.
+---
+
 <span class="kicker">Troubleshooting · Windows</span>
 
 # Windows
@@ -30,3 +35,5 @@ Windows hides `.txt`/`.md` by default, so `notes.md` shows as "notes." In File E
 ## Antivirus quietly blocking
 
 If a tool worked yesterday and silently fails today, check your antivirus's quarantine or "protected folders" screen. Add your practice folder as an allowed location if it got flagged.
+
+[Next step: Terminal basics](terminal-basics.md){ .md-button }

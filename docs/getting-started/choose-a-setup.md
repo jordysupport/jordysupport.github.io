@@ -1,3 +1,8 @@
+---
+description: >-
+  Which AI setup do you actually need? A 2-minute picker comparing normal chat, file uploads, and folder agents — use the smallest tool that does the job.
+---
+
 <span class="kicker">Start here · Setup</span>
 
 # Choose your setup
@@ -31,3 +36,5 @@ Skipping ahead doesn't save time. People who start with a folder agent before th
 
 [Back to Start Here](index.md){ .md-button }
 [Build your first agent](first-agent.md){ .md-button .md-button--primary }
+
+[Next step: Your first agent](first-agent.md){ .md-button }

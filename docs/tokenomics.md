@@ -1,3 +1,8 @@
+---
+description: >-
+  What AI tokens are in plain English: how they're counted, why chats hit limits, and what actually affects cost, speed, and memory in AI tools.
+---
+
 <div class="hero" markdown>
 
 <span class="kicker">Tokenomics / Plain English</span>
@@ -19,7 +24,7 @@ Tokens are how AI tools measure reading and writing. You do not need to become a
 
 ## What is a token?
 
-A token is a piece of text an AI model reads or writes. It might be a whole short word, part of a longer word, a number, punctuation, or a bit of formatting.
+A [token](resources/glossary.md#token) is a piece of text an AI model reads or writes. It might be a whole short word, part of a longer word, a number, punctuation, or a bit of formatting.
 
 The simple version:
 
@@ -102,3 +107,5 @@ Use enough context for the AI to make a good decision, then stop. Tokens are not
 
 [Learn context and memory](fundamentals/context-memory.md){ .md-button }
 [See reusable playbooks](playbooks/index.md){ .md-button }
+
+[Next step: Prompting that works](prompting/index.md){ .md-button }

@@ -1,3 +1,8 @@
+---
+description: >-
+  AI automation ideas ranked by risk: safe starters where nothing sends or deletes, then medium and higher-risk workflows to earn your way into.
+---
+
 <span class="kicker">Automation · Ideas</span>
 
 # Ideas to steal
@@ -32,3 +37,9 @@ Sends, changes, or spends without a human in the moment. Only with months of tru
 Notice every good idea has the same shape: **AI does the boring assembly, a human does the judging.** Automations fail when that line gets blurry.
 
 [Plan yours with the blueprint](workflow-blueprint.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If one of these ideas is now on your list, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Plan your first workflow](workflow-blueprint.md){ .md-button }

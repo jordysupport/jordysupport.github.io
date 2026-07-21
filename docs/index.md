@@ -1,3 +1,8 @@
+---
+description: >-
+  Free, plain-English AI guides for people who aren't techies. Learn what to type, what to check, and how to stay in control of AI agents and automation.
+---
+
 <div class="hero" markdown>
 
 <span class="kicker">Agentic AI &amp; Automation Pipeline Guides · Free · Plain English</span>

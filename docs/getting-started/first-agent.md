@@ -1,3 +1,8 @@
+---
+description: >-
+  Set up your first AI agent step by step: give it one folder, one small job, and clear rules — a safe walkthrough with nothing important at risk.
+---
+
 <span class="kicker">Start here · First agent</span>
 
 # Your first agent
@@ -49,3 +54,5 @@ Everything bigger on this site is this same loop with more steps: clear job, lim
 **Next:** install a [playbook](../playbooks/index.md) — a job your agent saves and remembers, so you never have to explain it twice.
 
 [How playbooks work](../playbooks/index.md){ .md-button .md-button--primary }
+
+[Next step: How agents work](../fundamentals/index.md){ .md-button }

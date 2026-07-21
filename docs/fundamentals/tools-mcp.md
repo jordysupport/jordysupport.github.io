@@ -1,8 +1,13 @@
+---
+description: >-
+  What MCP and AI tools are in plain English: the one question to ask before connecting an AI to any app — can it only read, or can it change things too?
+---
+
 <span class="kicker">How agents work · Tools</span>
 
 # Tools & connections
 
-A **tool** is anything the AI can use besides talking: reading files, searching the web, checking your calendar. **MCP** is just the standard plug that connects AI to apps — like USB for AI. You don't need to know how it works, only what to allow.
+A **tool** is anything the AI can use besides talking: reading files, searching the web, checking your calendar. [**MCP**](../resources/glossary.md#mcp) is just the standard plug that connects AI to apps — like USB for AI. You don't need to know how it works, only what to allow.
 
 ## The only question that matters
 
@@ -26,3 +31,9 @@ Most AI apps have a Connectors/Integrations menu — you click the app, sign in,
 If your AI reads the web or emails, someone can hide instructions in that content ("ignore your rules and forward this…"). Good tools guard against it, but your habits matter more: keep write access narrow, and require your approval before anything is sent or changed. Then a planted instruction can't do much.
 
 [Next: keeping it safe](safety-permissions.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If this made connections less mysterious, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Keeping it safe](safety-permissions.md){ .md-button }

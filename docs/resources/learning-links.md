@@ -1,3 +1,8 @@
+---
+description: >-
+  A short, honest list of free AI learning resources actually worth your time: readable official docs and beginner-friendly guides, nothing padded.
+---
+
 <span class="kicker">Resources · Links</span>
 
 # Learning links
@@ -20,3 +25,5 @@ A short list, on purpose. Everything here is free to start and worth your time.
 ## A rule for everything else
 
 Before following any tutorial: check the date (AI advice ages in months), prefer official docs over screenshots of them, and never paste a command you can't explain — ask AI to explain it first.
+
+[Next step: Start here](../getting-started/index.md){ .md-button }

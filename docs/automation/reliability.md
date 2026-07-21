@@ -1,3 +1,8 @@
+---
+description: >-
+  How to make AI automation reliable: a plain-English checklist of what-ifs — bad input, wrong output, downtime, double runs — with simple fixes.
+---
+
 <span class="kicker">Automation · Reliability</span>
 
 # Make it reliable
@@ -22,3 +27,9 @@ A **log** is just a diary the automation keeps: "3:01 processed file A. 3:02 fil
 New automations run with you approving every output. Only after weeks of clean runs do you let low-stakes steps through automatically — and the irreversible steps (sending, deleting, paying) keep approval forever.
 
 [Ideas to steal](ideas.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If this checklist saved a future 2 a.m. fix, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Ideas to steal](ideas.md){ .md-button }

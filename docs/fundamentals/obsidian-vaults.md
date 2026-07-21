@@ -1,8 +1,13 @@
+---
+description: >-
+  How to give your AI long-term memory with a vault: a plain folder of notes (often in free Obsidian) that any AI can read — and you can always check.
+---
+
 <span class="kicker">How agents work · Vaults</span>
 
 # A vault for your agent
 
-A **vault** is just a folder of plain-text notes — often managed with a free app called [Obsidian](https://obsidian.md). It becomes your AI's long-term memory: everything important lives in files you can open, read, and fix.
+A [**vault**](../resources/glossary.md#vault) is just a folder of plain-text notes — often managed with a free app called [Obsidian](https://obsidian.md). It becomes your AI's long-term memory: everything important lives in files you can open, read, and fix.
 
 ## Why files beat "AI memory" features
 
@@ -42,3 +47,9 @@ show me before saving.
 This is also where [playbooks](../playbooks/index.md) install themselves — into `Skills/` — which is why your AI can run them in any future chat.
 
 [Next: subagents](subagents.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If this helped you set up a vault, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Subagents](subagents.md){ .md-button }

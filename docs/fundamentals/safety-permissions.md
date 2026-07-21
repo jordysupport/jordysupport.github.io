@@ -1,3 +1,8 @@
+---
+description: >-
+  Five simple habits that keep AI agents safe: least access, copies first, approval before action, secrets out of chat, and logs you can actually read.
+---
+
 <span class="kicker">How agents work · Safety</span>
 
 # Keeping it safe
@@ -29,3 +34,9 @@ for my OK.
 That's the whole security posture for a beginner — and honestly, for most experts too.
 
 [Back to the basics](index.md){ .md-button }
+
+!!! tip "If this helped"
+    If these five habits saved you a future headache, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Is it safe to share files?](is-it-safe-to-let-ai-read-your-files.md){ .md-button }

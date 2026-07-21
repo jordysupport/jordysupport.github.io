@@ -1,3 +1,8 @@
+---
+description: >-
+  Terminal basics for beginners: what the command line is, the few commands you actually need, and how to run things safely without breaking your computer.
+---
+
 <span class="kicker">Troubleshooting · Terminal</span>
 
 # Terminal basics
@@ -35,3 +40,5 @@ Read the message. The classics:
 
 [Windows help](windows.md){ .md-button }
 [macOS help](macos.md){ .md-button }
+
+[Next step: Git & Codespaces](git-codespaces.md){ .md-button }

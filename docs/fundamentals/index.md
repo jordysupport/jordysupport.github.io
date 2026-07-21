@@ -1,8 +1,13 @@
+---
+description: >-
+  What an AI agent is, in plain English: the six pieces of every agent, how they fit together, and what to watch, so you can supervise one with confidence.
+---
+
 <span class="kicker">How agents work</span>
 
 # The basics
 
-An **agent** is an AI that can *do* things — read files, write drafts, run steps — not just chat. This section explains how they work, in plain words, so you can supervise one with confidence.
+An [**agent**](../resources/glossary.md#agent) is an AI that can *do* things — read files, write drafts, run steps — not just chat. This section explains how they work, in plain words, so you can supervise one with confidence.
 
 ## The six pieces of every agent
 
@@ -27,3 +32,9 @@ Every problem you'll ever have with an agent traces back to one of those six. Th
 -   **Keeping it safe** — the short list of habits that prevent almost every disaster. [Read →](safety-permissions.md)
 
 </div>
+
+!!! tip "If this helped"
+    If this section made agents make sense, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: The agent loop](agent-loop.md){ .md-button }

@@ -1,3 +1,8 @@
+---
+description: >-
+  Plan an AI workflow before you build it: seven boxes — trigger, input, AI step, check, output, failure plan, off switch — you fill in on paper first.
+---
+
 <span class="kicker">Automation · Blueprint</span>
 
 # Plan a workflow
@@ -29,3 +34,9 @@ Before you build anything, fill in seven boxes on paper. If you can't fill a box
 People love designing boxes 1–3 and skip 4–7. Flip it: **design the failure plan and approval point first.** They're what make the rest safe to build.
 
 [Make it reliable](reliability.md){ .md-button .md-button--primary }
+
+!!! tip "If this helped"
+    If the seven boxes saved you a false start, a small tip on Ko-fi keeps every guide here free.
+    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+
+[Next step: Make it reliable](reliability.md){ .md-button }

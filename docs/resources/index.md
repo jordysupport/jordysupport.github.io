@@ -1,3 +1,8 @@
+---
+description: >-
+  The Jordy Support reference shelf: a plain-English AI glossary, a short list of learning links worth your time, and what this free site is about.
+---
+
 <span class="kicker">Resources</span>
 
 # Resource hub
