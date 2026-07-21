@@ -7,9 +7,6 @@ description: >-
 
 # How to get AI answers with sources you can actually check
 
-!!! warning "Draft"
-    This page is a draft awaiting review. Remove this banner when it's approved.
-
 An AI answer without sources is an opinion with good posture. If you'll act on the answer, you need links you can click — and a habit of clicking them.
 
 ## Ask for sources up front
