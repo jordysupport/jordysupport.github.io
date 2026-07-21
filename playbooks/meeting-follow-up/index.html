@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Free, plain-English guides to agentic AI and automation pipelines.">
+        <meta name="description" content="Turn messy meeting notes into decisions, to-dos with owners, and a ready-to-review follow-up message with AI. A free plain-English playbook.">
       
       
       
@@ -774,6 +774,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -996,6 +1000,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentals/is-it-safe-to-let-ai-read-your-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Is It Safe to Share Files?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fundamentals/why-ai-makes-things-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why AI Makes Things Up
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1041,6 +1101,8 @@
       
         
           
+        
+      
         
       
         
@@ -1174,6 +1236,34 @@
     
   
     Prompt Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prompting/ai-answers-with-sources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Answers With Real Sources
   
 
     
@@ -1381,6 +1471,8 @@
       
         
       
+        
+      
     
     
     
@@ -1453,6 +1545,34 @@
     
   
     Research a Topic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../research-brief-example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Example: Research Brief
   
 
     
@@ -2109,31 +2229,77 @@
 
 <h2 id="option-1-install-it-once-recommended">Option 1 — Install it once (recommended)<a class="headerlink" href="#option-1-install-it-once-recommended" title="Permanent link">&para;</a></h2>
 <p><a class="md-button md-button--primary" href="../../downloads/meeting-follow-up-skill.zip">Download the meeting playbook</a></p>
+<p>Never give an AI a file you haven't looked inside. Here's everything in this one.</p>
+<details class="note">
+<summary>What's inside this zip (read before handing it to your AI)</summary>
+<p>Two plain-text files you can open yourself:</p>
+<ul>
+<li><code>meeting-follow-up-skill/INSTALL.md</code> — install instructions for your AI. Full text below.</li>
+<li><code>meeting-follow-up-skill/SKILL.md</code> — the playbook itself, saved to your vault during install.</li>
+</ul>
+<p>Full text of <code>INSTALL.md</code>, word for word:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># INSTALL.md — instructions for the AI agent
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>You have been given this folder by the person you are helping.
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>Your job: install the skill inside it so they can reuse it in any
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>future conversation, then offer to run it now.
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Follow these steps exactly.
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>1. **Find their home base.** Ask: &quot;Where do you keep your permanent
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   notes or project files? (This is often called a vault or
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>   workspace.)&quot; If they don&#39;t have one, offer to create a folder
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>   called `Vault` in the current location and use that.
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>2. **Install the skill.** Copy `SKILL.md` from this folder to:
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>   `&lt;their vault&gt;/Skills/meeting-follow-up/SKILL.md`
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>   Create the `Skills` folder if it doesn&#39;t exist. Do not modify
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>   the file. Do not touch anything else in their vault.
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>3. **Confirm out loud.** Tell them exactly this:
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>   &quot;Installed. From now on, just say **&#39;Start my meeting playbook&#39;**
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>   and I&#39;ll walk you through it — no download needed. If we&#39;re in a
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>   brand-new conversation, say: *Read Skills/meeting-follow-up/SKILL.md
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>   and start it.*&quot;
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>4. **Offer to run it now.** If they say yes, open `SKILL.md` and
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>   follow it from the top.
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>Safety rules: stay inside the folder the person chose, ask before
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>creating or overwriting any file, and never send anything anywhere
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>without showing it to them first.
+</code></pre></div>
+</details>
 <p>Give the zip to your AI and send:</p>
-<div class="highlight"><span class="filename">Copy this message</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Locate the most recently downloaded copy of meeting-follow-up-skill.zip, extract it, open INSTALL.md, and follow the instructions inside.
+<div class="highlight"><span class="filename">Copy this message</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Locate the most recently downloaded copy of meeting-follow-up-skill.zip, extract it, open INSTALL.md, and follow the instructions inside.
 </code></pre></div>
 <p>From then on, just say:</p>
-<div class="highlight"><span class="filename">Your start phrase, forever</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Start my meeting playbook
+<div class="highlight"><span class="filename">Your start phrase, forever</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Start my meeting playbook
 </code></pre></div>
 <p><strong>What happens next:</strong> it asks for your notes, what the meeting was about, who the follow-up goes to, and anything sensitive to leave out. Then it delivers decisions, to-dos, open questions, and the draft message.</p>
 <h2 id="option-2-quick-copy-paste-any-ai-chat">Option 2 — Quick copy-paste (any AI chat)<a class="headerlink" href="#option-2-quick-copy-paste-any-ai-chat" title="Permanent link">&para;</a></h2>
-<div class="highlight"><span class="filename">Copy this prompt</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Interview me one question at a time: my meeting notes or
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>transcript, what the meeting was about, who the follow-up goes
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>to and how formal it should be, and anything sensitive to leave
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>out. Then produce: decisions, action items (owner / task / due
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>date — mark &quot;unassigned&quot; or &quot;no date&quot; rather than guessing),
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>open questions, and a draft follow-up message. It stays a draft;
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>I send it.
+<div class="highlight"><span class="filename">Copy this prompt</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Interview me one question at a time: my meeting notes or
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>transcript, what the meeting was about, who the follow-up goes
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>to and how formal it should be, and anything sensitive to leave
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>out. Then produce: decisions, action items (owner / task / due
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>date — mark &quot;unassigned&quot; or &quot;no date&quot; rather than guessing),
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>open questions, and a draft follow-up message. It stays a draft;
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>I send it.
 </code></pre></div>
 <h2 id="before-you-send-it">Before you send it<a class="headerlink" href="#before-you-send-it" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Every to-do really came from the meeting.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Unassigned items are obvious, not guessed.</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Everyone on the list would be comfortable reading it.</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nothing sensitive slipped in.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nothing sensitive slipped in. (See <a href="../../fundamentals/safety-permissions/">keeping it safe</a>.)</li>
 </ul>
 <h2 id="youre-done-when">You're done when<a class="headerlink" href="#youre-done-when" title="Permanent link">&para;</a></h2>
 <p>The follow-up could go out with one quick read — and you'd stand behind every line.</p>
+<div class="admonition tip">
+<p class="admonition-title">If this helped</p>
+<p>This playbook just turned messy notes into a follow-up you can send. If it helped, a small tip keeps every guide here free.
+<a href="https://ko-fi.com/support_jordy">Tip on Ko-fi</a></p>
+</div>
 <p><a class="md-button" href="../">Choose another playbook</a></p>
 
 
@@ -2142,6 +2308,27 @@
 
 
 
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 21, 2026 16:50:51 UTC">July 21, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
 
 
 
