@@ -1,0 +1,98 @@
+name: Publish approved Prompt Academy 002 archive
+
+# Schedule behavior and GITHUB_TOKEN dispatch semantics:
+# https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
+# https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow
+
+on:
+  schedule:
+    # October 19: 7:17, 8:17 and 8:47 AM Eastern (EDT, UTC-4).
+    # The Python date gate rejects every other day and year.
+    - cron: '17 11,12 19 10 *'
+    - cron: '47 12 19 10 *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: prompt-academy-002-publication
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Apply only approved issue on its publication date
+        id: prepare
+        run: python scripts/publish-newsletter-002.py
+      - uses: actions/setup-python@v5
+        if: steps.prepare.outputs.due == 'true'
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install site build dependencies
+        if: steps.prepare.outputs.due == 'true'
+        run: pip install -r requirements.txt
+      - name: Check the complete site before committing publication
+        if: steps.prepare.outputs.due == 'true'
+        run: mkdocs build --strict
+      - name: Commit only approved issue, archive row and navigation entry
+        if: steps.prepare.outputs.changed == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/newsletter/002.md docs/newsletter/index.md mkdocs.yml
+          git commit -m 'Publish approved Prompt Academy issue 002'
+          git push origin HEAD:main
+      - name: Deploy through the existing site workflow and verify the archive
+        if: steps.prepare.outputs.due == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          # If an earlier wake completed, do not deploy again.
+          if [[ '${{ steps.prepare.outputs.changed }}' != 'true' ]] &&
+             curl --fail --silent --show-error https://jordysupport.com/newsletter/002/ -o /tmp/issue-002.html &&
+             grep -Fq 'Give your agent a smaller job' /tmp/issue-002.html &&
+             grep -Fq 'Issue #002 · October 19, 2026' /tmp/issue-002.html &&
+             curl --fail --silent --show-error https://jordysupport.com/newsletter/ -o /tmp/newsletter-index.html &&
+             grep -Fq '002/' /tmp/newsletter-index.html; then
+            echo 'Approved issue is already published; no deployment needed.'
+            exit 0
+          fi
+
+          # GITHUB_TOKEN pushes do not trigger push workflows. Dispatch directly.
+          export PUBLISH_SHA="$(git rev-parse HEAD)"
+          export DISPATCHED_AT="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          gh workflow run deploy.yml --ref main
+          run_id=''
+          for attempt in $(seq 1 18); do
+            run_id="$(gh run list --workflow deploy.yml --branch main --event workflow_dispatch --limit 20 --json databaseId,headSha,createdAt --jq '[.[] | select(.headSha == env.PUBLISH_SHA and .createdAt >= env.DISPATCHED_AT)] | sort_by(.databaseId) | last | .databaseId // empty')"
+            [[ -n "$run_id" ]] && break
+            sleep 10
+          done
+          [[ -n "$run_id" ]] || { echo 'Dispatched deployment was not found.' >&2; exit 1; }
+          gh run watch "$run_id" --exit-status
+
+          # The gh-pages deployment can finish before the public domain updates.
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent --show-error https://jordysupport.com/newsletter/002/ -o /tmp/issue-002.html &&
+               grep -Fq 'Give your agent a smaller job' /tmp/issue-002.html &&
+               grep -Fq 'Issue #002 · October 19, 2026' /tmp/issue-002.html &&
+               curl --fail --silent --show-error https://jordysupport.com/newsletter/ -o /tmp/newsletter-index.html &&
+               grep -Fq '002/' /tmp/newsletter-index.html; then
+              echo 'Free issue #002 and the archive are live.'
+              exit 0
+            fi
+            sleep 20
+          done
+          echo 'Deployment completed, but the public issue/archive check failed.' >&2
+          exit 1
