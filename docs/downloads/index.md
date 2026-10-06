@@ -1,54 +1,44 @@
 ---
 hide_support_outro: true
 description: >-
-  Free downloads: VALE, a music-reactive voice assistant for Windows, and TUSK, a local-first CRM for selling websites to local businesses. Plus installable AI playbooks.
+  Free AI playbooks, VALE for Windows, and the self-hosted TUSK CRM. Read the setup requirements before choosing a download.
 ---
 
-<span class="kicker">Downloads · Free · Built in the open</span>
+# Free downloads { #two-free-tools-no-strings }
 
-# Two free tools, no strings.
-
-Both run entirely on your own computer, both install in minutes with an AI agent or by hand, and both are free. If one earns its keep, there's a [tip jar](https://ko-fi.com/support_jordy).
-
-<div class="dl-product dl-tusk">
-  <figure class="dl-shot">
-    <img src="/assets/tusk/tusk-01-dashboard.webp" alt="TUSK dashboard with lead stats and today's actions">
-  </figure>
-  <div class="dl-body">
-    <p class="dl-tags">Sales CRM · Windows / Mac / Linux · Node 18+</p>
-    <h2>TUSK</h2>
-    <p>A local-first CRM for one specific hustle: selling websites to local businesses. Scrape real leads from Google Maps, grade their sites A to F, run full-screen call sessions with talking points from their own data, generate homepage mockups, and invoice the wins.</p>
-    <p>
-      <a class="md-button md-button--primary" href="../tusk/">Install &amp; tour →</a>
-      <a class="md-button" href="https://github.com/jordysupport/tusk">GitHub</a>
-    </p>
-  </div>
-</div>
-
-<div class="dl-product dl-vale">
-  <figure class="dl-shot">
-    <img src="/assets/vale-demo/vale-cosmos-hero.webp" alt="VALE COSMOS visual field reacting to music">
-  </figure>
-  <div class="dl-body">
-    <p class="dl-tags">Voice Assistant · Windows 10 / 11</p>
-    <h2>VALE</h2>
-    <p>A voice assistant you can see. Four living full-screen worlds, local speech in and out, and music reactions that belong to each field. One prompt to your AI agent installs the whole thing against your existing Codex or Claude subscription.</p>
-    <p>
-      <a class="md-button md-button--primary" href="../vale/">Install &amp; tour →</a>
-      <a class="md-button" href="../vale/demo/">Watch the demo</a>
-    </p>
-  </div>
-</div>
+Save a playbook for a job you do often, or explore the software below. All downloads on this page are free and available without signing up.
 
 ## Playbook skills
 
-Smaller downloads: each playbook comes as a ZIP you hand to your AI once. It saves the playbook to your notes and runs it on command, no re-explaining.
+Each ZIP contains a playbook and installation instructions. Save it in your notes, then ask your agent to read it when you want to run the task. It needs access to that file; saving it doesn't guarantee automatic recall.
 
-| Playbook | What it does | |
-| --- | --- | --- |
-| Research Brief | One question in, a sourced answer out | [How it works](../playbooks/research-brief.md) |
-| Content Repurpose | One article becomes many posts | [How it works](../playbooks/content-repurpose.md) |
-| Meeting Follow-Up | Messy notes become decisions and to-dos | [How it works](../playbooks/meeting-follow-up.md) |
-| Knowledge Base | Your files become an answerable library | [How it works](../playbooks/knowledge-base.md) |
+| Playbook | Use it for |
+| --- | --- |
+| [Research Brief](../playbooks/research-brief.md) | Investigating a question and writing a sourced brief |
+| [Content Repurpose](../playbooks/content-repurpose.md) | Adapting your source material into new drafts |
+| [Meeting Follow-Up](../playbooks/meeting-follow-up.md) | Extracting decisions, tasks, and open questions |
+| [Knowledge Base](../playbooks/knowledge-base.md) | Organizing documents into a reference library |
 
-<p class="small-note">Everything here is free. If it helped, you can <a href="https://ko-fi.com/support_jordy">tip on Ko-fi</a>.</p>
+## Software
+
+<div class="dl-product dl-vale">
+  <figure class="dl-shot"><img loading="lazy" src="/assets/vale-demo/vale-cosmos-hero.webp" alt="VALE COSMOS visualizer with its music controls"></figure>
+  <div class="dl-body">
+    <h3>VALE</h3>
+    <p>A Windows voice assistant with four visual fields and music reactions. Speech recognition and voice generation run on your PC. Conversation replies use your configured AI backend, which may send text to a provider.</p>
+    <p>Windows 10 or 11, 64-bit. Preview release.</p>
+    <p><a class="md-button md-button--primary" href="../vale/">Read the setup guide</a> <a href="../vale/demo/">Watch the demo →</a></p>
+  </div>
+</div>
+
+<div class="dl-product dl-tusk">
+  <figure class="dl-shot"><img loading="lazy" src="/assets/tusk/tusk-01-dashboard.webp" alt="TUSK dashboard showing leads and follow-up tasks"></figure>
+  <div class="dl-body">
+    <h3>TUSK</h3>
+    <p>A self-hosted CRM for people selling websites to local businesses. Keep leads, follow-ups, mockups, and invoices together. Optional Google Places and email connections contact external services.</p>
+    <p>Windows, macOS, or Linux with Node.js. MIT licensed.</p>
+    <p><a class="md-button md-button--primary" href="../tusk/">Read the setup guide</a> <a href="https://github.com/jordysupport/tusk">View the source →</a></p>
+  </div>
+</div>
+
+The software is free; any connected AI or other service can have its own limits and charges. Check those before enabling a connection.

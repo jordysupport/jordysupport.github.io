@@ -1,47 +1,52 @@
 ---
 description: >-
-  How to get AI answers with sources you can actually check: ask for clickable sources, open the ones that matter, or use a free research playbook.
+  Ask AI for verifiable research, check the sources behind important claims, and distinguish evidence from an agent's conclusions.
 ---
 
 <span class="kicker">Prompting · Sources</span>
 
-# How to get AI answers with sources you can actually check
+# AI answers with sources you can check { #how-to-get-ai-answers-with-sources-you-can-actually-check }
 
-An AI answer without sources is an opinion with good posture. If you'll act on the answer, you need links you can click — and a habit of clicking them.
+If an answer will affect a decision, ask where its important claims came from. A confident explanation and a list of links can still be wrong.
+
+We look for evidence that supports the particular claim, then consider whether it is recent and relevant enough for the decision.
 
 ## Ask for sources up front
 
-Add these lines to any question that matters:
-
 ```text title="Add this to your prompt"
-Cite a source for every important claim, with a link I can open.
-Separate facts from your own reasoning. If you can't find a
-source, say "no source found" — never invent one.
+Check current sources for the important factual claims.
+Prefer original documents or official information where useful.
+Link each source near the claim it supports. Separate what the
+source says from your own conclusions. If you can't verify a
+claim, label it unverified rather than filling the gap.
 ```
 
-That last rule matters most. AI can [make up convincing sources](../fundamentals/why-ai-makes-things-up.md), so you have to ban it out loud.
+The AI needs access to sources to do this work. If it cannot browse or open the documents, give it the material or ask it to explain what remains unchecked. An instruction to cite sources doesn't prevent [invented citations](../fundamentals/why-ai-makes-things-up.md).
 
 ## Check what comes back
 
-- [ ] Click the two or three sources behind anything you'll act on.
-- [ ] Does the page actually say what the AI claims? Skim for it.
-- [ ] Is it the original source, or a site quoting someone else?
-- [ ] Is the date recent enough for your question?
-- [ ] Broken link or "no source found"? Treat that claim as unverified.
+- [ ] Open the sources behind the claims that affect your decision.
+- [ ] Find the passage, table, or figure that supports each claim.
+- [ ] Read enough around it to catch qualifications or exceptions.
+- [ ] Check who published it and whether it applies to your situation.
+- [ ] Check the date. Rules, availability, and product details can change.
+- [ ] Treat a missing source or inaccessible page as an unresolved gap.
+
+For a number, check the unit, period, and population. For a policy, check whether it covers your location or account. Two accurate facts can still be combined into a misleading conclusion.
 
 ## Red flags
 
-- **Sources that don't open.** A dead link isn't a source.
-- **Real site, wrong page.** The link works but doesn't mention the claim.
-- **Everything from one place.** One source is a starting point, not an answer.
-- **No dates anywhere.** "Currently" without a date is a guess.
+- **A working link with no supporting passage.** The page may be real while the citation is wrong.
+- **A summary that drops a condition.** “Available to selected accounts” should not become “available to everyone.”
+- **Several sites repeating one claim.** Trace them back to the original evidence.
+- **A current-sounding answer built from old information.** Ask what was checked and when.
 
-## Make it automatic
+## Use a research playbook { #make-it-automatic }
 
-This whole habit is packaged as the [research playbook](../playbooks/research-brief.md): it interviews you, researches your question, shows sources, and ends with the same checks. There's a [finished example](../playbooks/research-brief-example.md) so you can see the payoff first.
+The free [research playbook](../playbooks/research-brief.md) gives you a repeatable way to define a question, collect sources, and review the answer. The [worked example](../playbooks/research-brief-example.md) shows the format.
 
-## You're done when
+## Before you rely on the answer { #youre-done-when }
 
-Another person could take your answer and click their way to the evidence — without asking you to explain anything.
+Make sure you can identify what is supported, what is inferred, and what is still unknown. Keep the source links with the answer so another person can check the same evidence.
 
-[Next step: the research playbook](../playbooks/research-brief.md){ .md-button }
+[Next step: The research playbook](../playbooks/research-brief.md){ .md-button }

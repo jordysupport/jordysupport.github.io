@@ -1,121 +1,136 @@
 ---
-title: "Build an AI Knowledge Base: Free Playbook"
+title: "Build a knowledge base: Free AI Playbook"
 description: >-
-  Build a personal knowledge base with AI: turn articles and decisions into short, sourced notes in your vault that future-you can actually use.
+  A free AI playbook for saving useful sources and decisions as short notes with clear origins, dates, and links to related material.
 software_schema:
   name: Knowledge Base Playbook
   operating_system: Windows, macOS, Linux
   category: UtilitiesApplication
-  version: "1.0"
+  version: "1.1"
   download_url: https://jordysupport.com/downloads/knowledge-base-skill.zip
 ---
 
 <div class="playbook-hero" markdown>
 
-<span class="kicker">Playbook · Knowledge</span>
+<span class="kicker">Free playbook · Knowledge Base</span>
 
 # Build a knowledge base
 
-Turn things worth keeping — articles, decisions, how-tos — into short notes your future self (and your AI) can actually use. Works best with [a vault](../fundamentals/obsidian-vaults.md).
+Save an explanation, decision, or how-to while you still know why it matters. The playbook drafts a short note with its source and date, then asks where you want to keep it. A normal folder works; [Obsidian](../fundamentals/obsidian-vaults.md) is optional.
 
 </div>
 
 <div class="playbook-meta">
-  <div><strong>You bring</strong><span>One source worth keeping</span></div>
-  <div><strong>You get</strong><span>A clean note in your vault</span></div>
-  <div><strong>Time</strong><span>10–20 minutes</span></div>
+  <div><strong>You bring</strong><span>A source or decision to keep</span></div>
+  <div><strong>You get</strong><span>A note you can find and check later</span></div>
+  <div><strong>You review</strong><span>Before saving or using the result</span></div>
 </div>
 
-Want to see the payoff before you start? [See a finished example](knowledge-base-example.md).
+[See an example](./knowledge-base-example.md) before you start.
 
-## Option 1 — Install it once (recommended)
+## Option 1: Save the playbook { #option-1-install-it-once-recommended }
 
-[Download the knowledge playbook](../downloads/knowledge-base-skill.zip){ .md-button .md-button--primary }
+Use this option with an agent that can read and write files. Saving the instructions makes them easier to reuse; your agent still needs to read them when you start a new chat.
 
-<p class="small-note">Version 1 · July 2026 · Updates always land at this same link, and this page notes what changed.</p>
+[Download the playbook](../downloads/knowledge-base-skill.zip){ .md-button .md-button--primary }
 
-Never give an AI a file you haven't looked inside. Here's everything in this one.
+<p class="small-note">Version 1.1 · October 5, 2026 · Clearer source dates, links, duplicate checks, and approval before saving notes. The download address stays the same.</p>
+
+Extract the ZIP and read both files before asking an agent to use them. These are plain-text instructions, not an app or an automatic installer.
 
 ??? note "What's inside this zip (read before handing it to your AI)"
-    Two plain-text files you can open yourself:
-
-    - `knowledge-base-skill/INSTALL.md` — install instructions for your AI. Full text below.
-    - `knowledge-base-skill/SKILL.md` — the playbook itself, saved to your vault during install.
+    - `knowledge-base-skill/INSTALL.md`: setup instructions, reproduced below.
+    - `knowledge-base-skill/SKILL.md`: the questions, task instructions, and review checks.
 
     Full text of `INSTALL.md`, word for word:
 
     ```text
-    # INSTALL.md — instructions for the AI agent
+    # INSTALL.md: instructions for the AI agent
 
-    You have been given this folder by the person you are helping.
-    Your job: install the skill inside it so they can reuse it in any
-    future conversation, then offer to run it now.
+    Install this playbook only after the person has reviewed these files
+    and asked you to install it. Do not run the playbook during setup.
 
-    Follow these steps exactly.
+    1. Check whether you can read and write local files. If you cannot,
+       explain the limit and provide these steps for the person to follow.
+       Do not report an installation you did not perform.
 
-    1. **Find their home base.** Ask: "Where do you keep your permanent
-       notes or project files? (This is often called a vault or
-       workspace.)" If they don't have one, offer to create a folder
-       called `Vault` in the current location and use that.
+    2. Ask where they keep permanent notes or project files. Use an exact
+       folder they choose. If they have no folder, suggest `Vault` and
+       ask where to create it.
 
-    2. **Install the skill.** Copy `SKILL.md` from this folder to:
-       `<their vault>/Skills/knowledge-base/SKILL.md`
-       Create the `Skills` folder if it doesn't exist. Do not modify
-       the file. Do not touch anything else in their vault.
+    3. Show the destination:
+       `<chosen folder>/Skills/knowledge-base/SKILL.md`
+       Ask before creating folders or copying the file. If that file
+       already exists, show the difference and ask before replacing it.
+       Leave every other file alone.
 
-    3. **Confirm out loud.** Tell them exactly this:
-       "Installed. From now on, just say **'Start my knowledge playbook'**
-       and I'll walk you through it — no download needed. If we're in a
-       brand-new conversation, say: *Read Skills/knowledge-base/SKILL.md
-       and start it.*"
+    4. Copy this folder's `SKILL.md` unchanged. Read the saved file back
+       to confirm the copy, then report its full path.
 
-    4. **Offer to run it now.** If they say yes, open `SKILL.md` and
-       follow it from the top.
+    5. Explain how to use it:
+       "Read Skills/knowledge-base/SKILL.md and start it."
+       Within a conversation where the file has already been read, the
+       shorter phrase is: "Start my knowledge playbook."
+       A new conversation may need the full path again.
 
-    Safety rules: stay inside the folder the person chose, ask before
-    creating or overwriting any file, and never send anything anywhere
-    without showing it to them first.
+    6. Offer to start the playbook. Wait for the person's answer.
+
+    Stay inside the agreed folders. These files contain instructions,
+    not a guarantee that an AI will follow them. Do not send, publish,
+    or upload anything during installation.
     ```
 
-Give the zip to your AI and send:
+Attach the ZIP or give its exact path, then send:
 
 ```text title="Copy this message"
-Locate the most recently downloaded copy of knowledge-base-skill.zip, extract it, open INSTALL.md, and follow the instructions inside.
+I have reviewed the attached knowledge-base-skill.zip.
+Read INSTALL.md and SKILL.md. Help me install the playbook in
+a folder I choose, following INSTALL.md. Show the destination
+and ask before creating or overwriting files.
 ```
 
-From then on, just say:
+To use the saved copy in a new conversation:
 
-```text title="Your start phrase, forever"
-Start my knowledge playbook
+```text title="Start from the saved file"
+Read Skills/knowledge-base/SKILL.md in my notes folder and start it.
 ```
 
-**What happens next:** it asks what you're saving and why, where notes live in your vault, and what it should link to. It shows you the finished note *before* saving — nothing is written without your OK.
+If the agent has already read the file in this conversation, you can say **"Start my knowledge playbook"**.
 
-## Option 2 — Quick copy-paste (any AI chat)
+It asks why the source matters, where you keep notes, and whether it connects to something already saved. You see the whole note and its destination before a file is written.
+
+## Option 2: Use a chat prompt { #option-2-quick-copy-paste-any-ai-chat }
+
+This needs no installation. Paste the prompt, then provide your material when asked. A chat without file access can give you the result to save yourself.
 
 ```text title="Copy this prompt"
-Interview me one question at a time: the source I want to keep,
-why it matters to me in one line, and how I organize my notes.
-Then write a short note: what the source says in plain language,
-why it matters to me, and a final "Source" line with where it
-came from and today's date. Show me the note before I save it.
-Keep your own opinions out, or label them "my read."
+Help me make a useful reference note. Ask one question at a time
+about the source, why I want to keep it, my notes folder and naming
+rules, and any related notes. Skip what I have already answered.
+
+Read the full source. Say if any part is inaccessible. Write a
+short note with: what the source says, why it matters to me, and
+the source location, publication date if available, and date saved.
+Keep my reasons separate from the source's claims. Label your own
+interpretation. Flag disagreements with existing notes.
+
+Show the full note and proposed filename. Do not save or overwrite
+anything until I approve the content and destination. Do not
+include passwords, keys, or other secrets.
 ```
 
 ## Before you save it
 
-- [ ] Future-you would understand this note cold.
-- [ ] The source line is there.
-- [ ] Nothing was added that isn't in the source.
+- [ ] The note makes sense without the original conversation.
+- [ ] The source location and relevant dates are present.
+- [ ] The summary preserves the source's meaning and limitations.
+- [ ] Your reasons and the AI's interpretation are separate from source claims.
+- [ ] The filename, links, and destination match your existing notes.
 
 ## You're done when
 
-The note is short, sourced, and filed where you'll find it — and adding the next one feels easy.
+You have a reviewed note in an agreed location, with enough context to decide later whether it needs updating.
 
-!!! tip "If this helped"
-    This playbook just gave your notes a system. If it helped, a small tip keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
-
-**Pairs well with:** [Research a topic](research-brief.md): finished briefs are exactly the kind of source worth saving.
+**Related:** [Research a topic](research-brief.md) when you need to investigate before making a note.
 
 [Choose another playbook](index.md){ .md-button }

@@ -1,65 +1,64 @@
 ---
 description: >-
-  A finished example of the free research playbook: a short brief on whether AI chats train on your data, with real sources you can click and check.
+  A worked research brief on AI chat training controls, using current official Claude and ChatGPT sources and keeping policy limits visible.
 ---
 
 <div class="playbook-hero" markdown>
 
-<span class="kicker">Playbook · Research · Example output</span>
+<span class="kicker">Research brief · Worked example</span>
 
-# Example output: a finished research brief
+# Research with evidence you can check { #example-output-a-finished-research-brief }
 
-This is what the [research playbook](research-brief.md) produces. A real question, a short answer, and sources you can click. Nothing here is invented — every claim links to the page it came from.
+Here is a short brief built around a specific question. The sources are real; the reader and decision are sample inputs.
 
 </div>
 
-!!! example "Example output"
-    Everything below the line is the finished brief, exactly as the playbook delivers it. Sources checked July 21, 2026.
+<span id="the-question"></span>
 
----
+!!! example "Sample research task"
+    **Question:** "Can we stop personal Claude and ChatGPT conversations from being used for model training?" **Decision:** which settings to check before using either tool for work. **Audience:** a small business owner. Official sources checked October 5, 2026.
 
-## The question
+## Short answer { #summary }
 
-**Do AI chat tools use what I type to train their models?**
-
-Decision it supports: whether to change any settings before using AI chats for work. Written for a non-technical business owner.
-
-## Summary
-
-It depends on the tool, your plan, and one setting. Both Claude and ChatGPT have a training setting you control on personal accounts, and both offer a private chat mode that is never used for training. Business plans are treated differently. The practical move: check the setting once, and use the private mode for anything sensitive.
+Both services offer controls over model training on personal accounts. Check the setting for the actual account you use, and read the exceptions. Training controls alone do not establish whether a tool is suitable for confidential work.
 
 ## Key findings
 
-**Claude (Free, Pro, Max personal plans).** Anthropic says it uses your chats to improve its models if you allow it in your privacy settings, if a conversation is flagged for safety review, or if you explicitly join a testing program. Incognito chats are not used to improve Claude even when the setting is on. ([Source: Anthropic Privacy Center, "Is my data used for model training?", dated March 16, 2026](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training))
+**Claude personal plans.** Anthropic lists user permission, explicit testing opt-ins, and safety review as routes for using conversation data. Incognito chats are excluded from model improvement. Submitting feedback can allow training use of the related conversation. This article covers personal plans and their Claude Code sessions; commercial products have separate policies. [Anthropic's model training policy](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training)
 
-**You can change the Claude setting any time.** It's under Settings → Privacy → "Help Improve Claude," on desktop and mobile. Turning it off stops new chats from being used in future training. Anthropic notes that data already included in training that has started stays there, and safety-flagged conversations may still be used for its trust-and-safety work. ([Source: Anthropic Privacy Center, "How do I change my model improvement privacy settings?", dated March 16, 2026](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings))
+**Claude's setting.** In Settings → Privacy, Anthropic labels the toggle "Help Improve our AI models." Turning it off stops new chats and coding sessions from being used for future training. It also stops previously stored sessions from being used in future training runs, but does not reverse training already started. Safety review has separate rules. [Anthropic's settings guide](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings)
 
-**ChatGPT (personal accounts).** OpenAI says ChatGPT improves by training on people's conversations unless you opt out, which you can do through its privacy portal or the Data Controls settings. Temporary Chats don't appear in history, don't create memories, and aren't used for training. ([Source: OpenAI Help Center, "How your data is used to improve model performance", accessed July 21, 2026](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance))
+**ChatGPT personal accounts.** Turn off "Improve the model for everyone" under Settings → Data controls. OpenAI says new conversations then will not be used for training. They can still remain in history, and choosing to submit feedback may permit use of the associated conversation. Personal Codex tasks follow this control, with an additional, separate "Include environments" setting for environment data. [OpenAI's data-use policy](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance), [Data controls](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt)
 
-**Business plans differ from personal ones.** OpenAI says it does not train on inputs or outputs from business products — ChatGPT Business, ChatGPT Enterprise, and the API — by default. (Same OpenAI source as above.)
-
-**Thumbs-up / thumbs-down feedback is its own channel.** Both companies say that when you rate a response, the related conversation may be stored and used — with OpenAI, even if you opted out of training. (Both sources above.)
+**ChatGPT Temporary Chat.** A chat is excluded from model improvement while it remains temporary. Saving it converts it to a regular chat, where the account settings apply. Temporary chats can use existing memories when personalized, and a copy may be retained for up to 30 days for safety. [Temporary Chat documentation](https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt)
 
 ## Risks and unknowns
 
-- These pages describe current policy and can change. The Anthropic articles carry a March 2026 date; check the live pages before relying on them.
-- This brief covers Claude and ChatGPT only. Other tools (Gemini, Copilot, and others) have their own policies — not researched here.
-- "Not used for training" is not the same as "not stored." Retention periods are a separate question and weren't the focus of this brief.
+- A training opt-out does not settle storage, retention, access, or your obligations to clients and employers.
+- This brief covers personal accounts. It does not establish the terms of a particular business workspace or connected service.
+- The pages and settings can change. The date checked tells you when this brief was verified.
+- No account was inspected. The settings currently enabled for the sample reader are unknown.
 
-## What it means for the decision
+## What this means for the decision { #what-it-means-for-the-decision }
 
-Two minutes of setup: open the privacy settings in the tool you use, decide whether the training toggle should be on, and learn where the private chat mode is (Incognito in Claude, Temporary Chat in ChatGPT) for anything sensitive. After that, no ongoing effort.
+Our recommendation is to inspect the plan and controls on the account being used, then check whether the intended material is allowed there. For an initial exercise, use public information or fictional notes.
+
+That recommendation is our interpretation of the policy limits. It is separate from the providers' descriptions of their controls.
 
 ## Sources
 
-1. [Is my data used for model training? — Anthropic Privacy Center](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training) (dated March 16, 2026)
-2. [How do I change my model improvement privacy settings? — Anthropic Privacy Center](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings) (dated March 16, 2026)
-3. [How your data is used to improve model performance — OpenAI Help Center](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance) (accessed July 21, 2026)
+- [Anthropic: Is my data used for model training?](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training), dated March 16, 2026.
+- [Anthropic: How do I change my model improvement privacy settings?](https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings), dated August 3, 2026.
+- [OpenAI: How your data is used to improve model performance](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance).
+- [OpenAI: Data controls in ChatGPT](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt).
+- [OpenAI: Temporary chat in ChatGPT](https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt).
 
----
+All five pages were checked October 5, 2026.
 
-## Want a brief like this?
+## What to check in your own brief
 
-The playbook interviews you, does the research, and ends with the same [Before you trust it](research-brief.md#before-you-trust-it) checks used here.
+A working link is the first check. Open it, find the relevant passage, and ask whether its limits change the conclusion. Use the [Before you trust it](research-brief.md#before-you-trust-it) checklist.
 
-[Start the research playbook](research-brief.md){ .md-button .md-button--primary }
+<span id="want-a-brief-like-this"></span>
+
+[Try the research playbook](research-brief.md){ .md-button .md-button--primary }

@@ -1,86 +1,91 @@
 ---
 description: >-
-  A finished example of the free meeting follow-up playbook: messy kickoff notes turned into decisions, owned to-dos, open questions, and a sendable message.
+  Compare sample website kickoff notes with a decisions list, action table, open questions, and follow-up draft. Missing deadlines stay visible.
 ---
 
 <div class="playbook-hero" markdown>
 
-<span class="kicker">Playbook · Meetings · Example output</span>
+<span class="kicker">Meeting follow-up · Worked example</span>
 
-# Example output: from messy notes to a sendable follow-up
+# Turn notes into a follow-up { #example-output-from-messy-notes-to-a-sendable-follow-up }
 
-This is what the [meeting playbook](meeting-follow-up.md) produces. Notes go in; decisions, to-dos with owners, open questions, and a draft message come out. Nothing gets guessed: missing owners stay "unassigned" and missing dates stay "no date."
+The useful part is deciding what the notes actually support. An agreed launch target belongs in the record. A missing mockup deadline needs a question.
 
 </div>
 
-!!! example "The inputs (a sample scenario)"
-    The meeting below is a written-for-this-demo sample: a website kickoff between a freelance designer and a landscaping company. The notes are deliberately messy, because real notes are. **Asked for:** follow-up to the client, friendly but professional. **Leave out:** the comment about the old developer. Everything below the line is the playbook's actual output for those inputs.
+!!! example "Fictional meeting"
+    GreenLine Landscaping, Dana, and Marco are invented for this example. The requested output is a friendly client follow-up. The private remark about the previous developer must be omitted from every output.
 
-The raw notes handed to the playbook:
+## The notes
 
 ```text
-kickoff w/ GreenLine Landscaping - Dana (owner) + Marco (crew lead, late)
-they want the new site before spring rush - Dana said april 1 at the LATEST
-3 pages to start: home, services, contact. photos are old -> Marco taking
-new ones on jobs this month
-dana keeps the domain, we host - she'll send login for the registrar
-budget ok'd at the number from the proposal. deposit this week
-old developer never gave them analytics access, total mess, dana still mad
-about it lol
-they want a "request a quote" form instead of showing prices
-me: send contract + deposit invoice. also mockup of home page by ???
-marco asked if the gallery can wait til summer - dana said fine
+kickoff with GreenLine Landscaping - Dana (owner), Marco (crew lead)
+meeting date not recorded
+Dana wants the site by April 1 at the latest, before spring rush
+start with home, services, contact
+Marco: new job photos this month
+Dana owns the domain, our team will host the site
+Dana to check whether registrar has a way to invite us; no passwords by email
+budget approved at proposal amount; Dana says deposit this week
+private remark about old developer - leave out of follow-up
+request-a-quote form, no prices on the site
+our team: send contract + deposit invoice, homepage mockup by ???
+gallery can wait until summer - Dana agreed
 ```
-
----
 
 ## Decisions
 
-1. Launch target is April 1 at the latest, ahead of the spring rush.
-2. The site starts at three pages: home, services, contact.
-3. Pricing will not be shown; a "request a quote" form replaces it.
-4. Dana keeps ownership of the domain; hosting moves to the designer.
-5. The photo gallery is deferred to summer.
-6. The budget from the proposal is approved.
+- Start with home, services, and contact pages.
+- Use a request-a-quote form without public prices.
+- Dana keeps the domain; our team handles hosting.
+- Defer the gallery until summer.
+- Use the approved proposal budget.
+- Aim for April 1 at the latest. The year is not recorded.
 
 ## Action items
 
 | Owner | Task | Due |
 | --- | --- | --- |
-| Dana | Send registrar login for the domain | no date |
-| Dana | Pay the deposit | this week |
-| Marco | Take new job-site photos | this month |
-| You | Send the contract and deposit invoice | no date |
-| You | Deliver a homepage mockup | **no date stated, flagged below** |
+| Dana | Check the registrar's account invitation options | No date |
+| Dana | Pay the deposit | This week |
+| Marco | Take new job-site photos | This month |
+| Our team | Send the contract and deposit invoice | No date |
+| Our team | Draft the homepage mockup | No date |
+
+The meeting date is missing, so "this week" and "this month" stay as written. They need confirming before anyone puts them on a calendar.
 
 ## Open questions
 
-- When is the homepage mockup due? The notes say "by ???" so the follow-up asks instead of guessing.
-- Does GreenLine need analytics access set up as part of this project? The notes mention it as a past problem but no one assigned it.
+- Which year does the April 1 target refer to?
+- What dates should replace "this week" and "this month"?
+- When is the homepage mockup due?
+- What account access does the registrar support?
 
 ## Draft follow-up message
 
-> Subject: GreenLine website kickoff: what we agreed and what's next
+> Subject: GreenLine website: decisions and next steps
 >
 > Hi Dana,
 >
-> Great kicking things off today. Here's what we agreed, so we're working from the same page:
+> Here is the recap from the kickoff.
 >
-> We're building three pages to start (home, services, contact), with a request-a-quote form instead of listed prices. You keep the domain and I'll handle hosting. The photo gallery waits until summer, and our launch target is April 1 at the latest.
+> We will start with home, services, and contact pages, with a request-a-quote form and no public prices. You will keep the domain, our team will handle hosting, and the gallery can wait until summer. The budget is the amount in the approved proposal.
 >
-> Next steps: I'll send the contract and deposit invoice. On your side, the deposit is set for this week, plus the registrar login whenever you get a minute. Marco is taking fresh photos on jobs this month.
+> We will send the contract and deposit invoice, then draft the homepage. You will check the registrar's account invitation options, and Marco will take new job-site photos.
 >
-> One thing I need from you: when would you like the homepage mockup? I left the date open in my notes and don't want to guess.
+> We recorded an April 1 launch target, a deposit this week, and photos this month. Could you confirm the full launch date and the deposit and photo deadlines? We also need to agree on a date for the homepage mockup.
 >
-> Talk soon,
+> Please use the registrar's invitation feature if it supports one. We do not need passwords sent by email.
+>
+> Thanks,
 > [Your name]
 
----
+## What to check { #why-this-output-is-trustworthy }
 
-## Why this output is trustworthy
+The record separates a launch target from a promise that the site will be ready. It leaves the mockup deadline open and keeps relative dates visible. The excluded remark is absent.
 
-Every item traces to the notes. The mockup deadline was missing, so the draft asks instead of inventing one. The sensitive remark about the old developer stayed out, exactly as requested, while the unassigned analytics question was surfaced rather than silently dropped. The [Before you send it](meeting-follow-up.md#before-you-send-it) checklist runs at the end.
+Before using a real draft, check the [owners, dates, decisions, and private details](meeting-follow-up.md#before-you-send-it) against your notes.
 
-## Want a follow-up like this?
+<span id="want-a-follow-up-like-this"></span>
 
-[Start the meeting playbook](meeting-follow-up.md){ .md-button .md-button--primary }
+[Try the meeting playbook](meeting-follow-up.md){ .md-button .md-button--primary }

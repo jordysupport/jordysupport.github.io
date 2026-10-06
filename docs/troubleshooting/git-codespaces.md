@@ -1,47 +1,81 @@
 ---
 description: >-
-  Git and GitHub Codespaces for beginners: what commits and pushes are in plain English, plus fixes for the errors that most often trip people up.
+  Learn the Git steps that make an agent's file changes reviewable: inspect, stage specific files, commit, and push, plus common sync errors.
 ---
 
 <span class="kicker">Troubleshooting · Git & Codespaces</span>
 
 # Git & Codespaces
 
-You only need Git if you keep a project on GitHub — like this site. Here's the minimum that keeps you safe, in plain words.
+Git gives a project a history of saved changes. When an agent edits files, that history helps you compare the result and recover earlier work.
 
-## Git in one paragraph
+## What the names mean { #git-in-one-paragraph }
 
-**Git** tracks versions of a folder. A **commit** is a snapshot with a note. **Push** sends your snapshots to GitHub. A **Codespace** is a computer in your browser already connected to your project — the easiest way to work on a GitHub project without installing anything.
+A **repository** is a folder tracked by Git. A **commit** records the staged version of its files. **Push** sends local commits to a remote repository, such as one on GitHub.
 
-## The daily loop
+A **Codespace** is a cloud development environment connected to a repository. You can open it in a browser; it runs in a Linux environment, even if your computer uses Windows. Check GitHub's included usage and billing rules before starting one. [GitHub Codespaces documentation](https://docs.github.com/en/codespaces/about-codespaces/what-are-codespaces)
 
-```text
-git status                      ← what changed?
-git add -A                      ← include everything changed
-git commit -m "what I did"      ← snapshot with a note
-git push                        ← send it to GitHub
+## Review, save, then share { #the-daily-loop }
+
+Run these commands from the repository folder, one at a time. This example assumes you changed `notes.md`; replace it with the file you intend to save.
+
+```sh
+git status
+git diff -- notes.md
+git add -- notes.md
+git diff --staged
+git commit -m "Clarify the project notes"
+git status
 ```
 
-Run `git status` before and after. It's Git's "where am I?" command.
+`git diff` shows changes to tracked files that have not been staged. Open new, untracked files yourself. `git add` stages the chosen file, and `git diff --staged` shows what the next commit will include.
 
-## The messages that scare people
+Keep passwords, API keys, and private files out of commits. Broad commands such as `git add -A` can include changes you did not mean to share. [Git's staging documentation](https://git-scm.com/docs/git-add)
 
-- **"nothing to commit"** — you haven't changed anything (or already committed it). Not an error.
-- **"rejected … fetch first"** — GitHub has changes you don't. Run `git pull`, then push again.
-- **"merge conflict"** — the same lines changed in two places, and Git wants a human to pick. Open the file, look for `<<<<<<<` markers, keep the version you want, delete the markers, then add/commit/push. Or paste the conflicted file into AI and say "help me resolve this conflict — I want to keep X."
+When you intend to share the reviewed commit:
 
-## The safety rule
-
-**Commit before you experiment.** A commit is a save point; anything can be undone after one. If you're about to let an agent loose on the project, commit first, always.
-
-## Undo, the safe way
-
-Made a mess since your last commit?
-
-```text
-git restore .        ← put every file back to the last commit
+```sh
+git push
 ```
 
-That's the beginner-safe undo. For anything scarier (undoing pushed commits), ask AI to walk you through it one step at a time rather than pasting internet commands.
+A push can trigger a site's deployment or other automation. Check the repository's publishing setup before pushing.
 
-[Next step: Your first agent](../getting-started/first-agent.md){ .md-button }
+## Common messages { #the-messages-that-scare-people }
+
+**"Nothing to commit."** Git sees no staged changes to record. Check `git status` to see whether the file is untracked, unchanged, or already committed.
+
+**"Rejected" or "fetch first."** The remote may contain commits you do not have. First check `git status` and save or otherwise preserve your local work. If your branch is clean and tracks the intended remote branch, try:
+
+```sh
+git pull --ff-only
+```
+
+This updates the branch only when Git can move it forward without combining divergent histories. If it refuses, inspect the local and remote commits before deciding how to combine them. Do not force-push to clear the error. [Git's pull documentation](https://git-scm.com/docs/git-pull)
+
+**"Merge conflict."** Git needs a decision about overlapping changes. Read both versions, choose the intended content, and remove the `<<<<<<<`, `=======`, and `>>>>>>>` markers. Test the result before staging it. Ask for help with the exact conflict if you are unsure which changes belong.
+
+## Before an agent edits the project { #the-safety-rule }
+
+Check `git status` and inspect the current changes. Make a reviewed commit or another backup of work you need to keep, then give the agent a specific task and file scope.
+
+A commit preserves what it contains. Untracked, ignored, and uncommitted work still needs attention. A local commit also stays on that computer until you push or back up the repository.
+
+## Undo one change carefully { #undo-the-safe-way }
+
+To unstage `notes.md` while keeping its edits in the working file:
+
+```sh
+git restore --staged -- notes.md
+```
+
+To discard edits made since that file's staged version:
+
+```sh
+git restore -- notes.md
+```
+
+The second command replaces the working file. Copy or inspect anything you may want to keep before using it. By default, `git restore` uses the staging area; it does not always restore the last commit. [Git's restore documentation](https://git-scm.com/docs/git-restore)
+
+Avoid broad reset, clean, or restore commands until you know which files they affect. To undo a published commit, inspect the history and choose an approach that preserves other people's work.
+
+[Try your first agent task](../getting-started/first-agent.md){ .md-button }

@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T03:18:06.641833+00:00",
+  "title": "Design System: Jordy Support",
+  "extensions": {
+    "colorMeta": {
+      "green-dark": {
+        "role": "primary",
+        "displayName": "Deep Tool Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.06255 161.71)",
+          "oklch(26.43% 0.06255 161.71)",
+          "oklch(37.86% 0.06255 161.71)",
+          "oklch(49.29% 0.06255 161.71)",
+          "oklch(60.71% 0.06255 161.71)",
+          "oklch(72.14% 0.06255 161.71)",
+          "oklch(83.57% 0.06255 161.71)",
+          "oklch(95.00% 0.06255 161.71)"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Tool Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.07860 161.35)",
+          "oklch(26.43% 0.07860 161.35)",
+          "oklch(37.86% 0.07860 161.35)",
+          "oklch(49.29% 0.07860 161.35)",
+          "oklch(60.71% 0.07860 161.35)",
+          "oklch(72.14% 0.07860 161.35)",
+          "oklch(83.57% 0.07860 161.35)",
+          "oklch(95.00% 0.07860 161.35)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00539 95.10)",
+          "oklch(26.43% 0.00539 95.10)",
+          "oklch(37.86% 0.00539 95.10)",
+          "oklch(49.29% 0.00539 95.10)",
+          "oklch(60.71% 0.00539 95.10)",
+          "oklch(72.14% 0.00539 95.10)",
+          "oklch(83.57% 0.00539 95.10)",
+          "oklch(95.00% 0.00539 95.10)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.01777 131.28)",
+          "oklch(26.43% 0.01777 131.28)",
+          "oklch(37.86% 0.01777 131.28)",
+          "oklch(49.29% 0.01777 131.28)",
+          "oklch(60.71% 0.01777 131.28)",
+          "oklch(72.14% 0.01777 131.28)",
+          "oklch(83.57% 0.01777 131.28)",
+          "oklch(95.00% 0.01777 131.28)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.01640 124.83)",
+          "oklch(26.43% 0.01640 124.83)",
+          "oklch(37.86% 0.01640 124.83)",
+          "oklch(49.29% 0.01640 124.83)",
+          "oklch(60.71% 0.01640 124.83)",
+          "oklch(72.14% 0.01640 124.83)",
+          "oklch(83.57% 0.01640 124.83)",
+          "oklch(95.00% 0.01640 124.83)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Paper Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.01503 98.31)",
+          "oklch(26.43% 0.01503 98.31)",
+          "oklch(37.86% 0.01503 98.31)",
+          "oklch(49.29% 0.01503 98.31)",
+          "oklch(60.71% 0.01503 98.31)",
+          "oklch(72.14% 0.01503 98.31)",
+          "oklch(83.57% 0.01503 98.31)",
+          "oklch(95.00% 0.01503 98.31)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.01065 100.82)",
+          "oklch(26.43% 0.01065 100.82)",
+          "oklch(37.86% 0.01065 100.82)",
+          "oklch(49.29% 0.01065 100.82)",
+          "oklch(60.71% 0.01065 100.82)",
+          "oklch(72.14% 0.01065 100.82)",
+          "oklch(83.57% 0.01065 100.82)",
+          "oklch(95.00% 0.01065 100.82)"
+        ]
+      },
+      "button-light": {
+        "role": "neutral",
+        "displayName": "Button Light",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "button-dark": {
+        "role": "neutral",
+        "displayName": "Button Dark",
+        "tonalRamp": [
+          "oklch(15.00% 0.01663 141.08)",
+          "oklch(26.43% 0.01663 141.08)",
+          "oklch(37.86% 0.01663 141.08)",
+          "oklch(49.29% 0.01663 141.08)",
+          "oklch(60.71% 0.01663 141.08)",
+          "oklch(72.14% 0.01663 141.08)",
+          "oklch(83.57% 0.01663 141.08)",
+          "oklch(95.00% 0.01663 141.08)"
+        ]
+      },
+      "slate-green": {
+        "role": "primary",
+        "displayName": "Slate Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.07571 162.19)",
+          "oklch(26.43% 0.07571 162.19)",
+          "oklch(37.86% 0.07571 162.19)",
+          "oklch(49.29% 0.07571 162.19)",
+          "oklch(60.71% 0.07571 162.19)",
+          "oklch(72.14% 0.07571 162.19)",
+          "oklch(83.57% 0.07571 162.19)",
+          "oklch(95.00% 0.07571 162.19)"
+        ]
+      },
+      "slate-link": {
+        "role": "primary",
+        "displayName": "Slate Link",
+        "tonalRamp": [
+          "oklch(15.00% 0.06229 162.42)",
+          "oklch(26.43% 0.06229 162.42)",
+          "oklch(37.86% 0.06229 162.42)",
+          "oklch(49.29% 0.06229 162.42)",
+          "oklch(60.71% 0.06229 162.42)",
+          "oklch(72.14% 0.06229 162.42)",
+          "oklch(83.57% 0.06229 162.42)",
+          "oklch(95.00% 0.06229 162.42)"
+        ]
+      },
+      "slate-header": {
+        "role": "neutral",
+        "displayName": "Slate Header",
+        "tonalRamp": [
+          "oklch(15.00% 0.01606 168.63)",
+          "oklch(26.43% 0.01606 168.63)",
+          "oklch(37.86% 0.01606 168.63)",
+          "oklch(49.29% 0.01606 168.63)",
+          "oklch(60.71% 0.01606 168.63)",
+          "oklch(72.14% 0.01606 168.63)",
+          "oklch(83.57% 0.01606 168.63)",
+          "oklch(95.00% 0.01606 168.63)"
+        ]
+      },
+      "slate-ink": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.00827 121.64)",
+          "oklch(26.43% 0.00827 121.64)",
+          "oklch(37.86% 0.00827 121.64)",
+          "oklch(49.29% 0.00827 121.64)",
+          "oklch(60.71% 0.00827 121.64)",
+          "oklch(72.14% 0.00827 121.64)",
+          "oklch(83.57% 0.00827 121.64)",
+          "oklch(95.00% 0.00827 121.64)"
+        ]
+      },
+      "slate-muted": {
+        "role": "neutral",
+        "displayName": "Slate Muted Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.01655 126.90)",
+          "oklch(26.43% 0.01655 126.90)",
+          "oklch(37.86% 0.01655 126.90)",
+          "oklch(49.29% 0.01655 126.90)",
+          "oklch(60.71% 0.01655 126.90)",
+          "oklch(72.14% 0.01655 126.90)",
+          "oklch(83.57% 0.01655 126.90)",
+          "oklch(95.00% 0.01655 126.90)"
+        ]
+      },
+      "slate-border": {
+        "role": "neutral",
+        "displayName": "Slate Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.01569 137.84)",
+          "oklch(26.43% 0.01569 137.84)",
+          "oklch(37.86% 0.01569 137.84)",
+          "oklch(49.29% 0.01569 137.84)",
+          "oklch(60.71% 0.01569 137.84)",
+          "oklch(72.14% 0.01569 137.84)",
+          "oklch(83.57% 0.01569 137.84)",
+          "oklch(95.00% 0.01569 137.84)"
+        ]
+      },
+      "slate-panel": {
+        "role": "neutral",
+        "displayName": "Slate Panel",
+        "tonalRamp": [
+          "oklch(15.00% 0.01159 145.25)",
+          "oklch(26.43% 0.01159 145.25)",
+          "oklch(37.86% 0.01159 145.25)",
+          "oklch(49.29% 0.01159 145.25)",
+          "oklch(60.71% 0.01159 145.25)",
+          "oklch(72.14% 0.01159 145.25)",
+          "oklch(83.57% 0.01159 145.25)",
+          "oklch(95.00% 0.01159 145.25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Homepage Display",
+        "purpose": "Short homepage title with a fluid size."
+      },
+      "page-title": {
+        "displayName": "Guide Page Title",
+        "purpose": "Guide title with the shared chapter rule."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Main reading sections."
+      },
+      "title": {
+        "displayName": "Task Title",
+        "purpose": "Serif name in a numbered task row."
+      },
+      "body": {
+        "displayName": "Reading Body",
+        "purpose": "Guide explanations and lists."
+      },
+      "label": {
+        "displayName": "Example Label",
+        "purpose": "Request, draft, and check labels in the worked example."
+      },
+      "button": {
+        "displayName": "Button Text",
+        "purpose": "Shared weight and family for rectangular actions."
+      },
+      "code": {
+        "displayName": "Code and Numbers",
+        "purpose": "Code, compact metadata, and numbered steps."
+      }
+    },
+    "shadows": [
+      {
+        "name": "custom-flat",
+        "value": "none",
+        "purpose": "Custom buttons, reading cards, tables, admonitions, and header."
+      }
+    ],
+    "motion": [
+      {
+        "name": "custom-state",
+        "value": "120ms ease",
+        "purpose": "Custom button background/text and card border changes."
+      },
+      {
+        "name": "material-link-color",
+        "value": "125ms",
+        "purpose": "Inherited reading-link color changes."
+      },
+      {
+        "name": "material-tab-opacity",
+        "value": "250ms",
+        "purpose": "Inherited desktop-tab opacity changes."
+      },
+      {
+        "name": "material-tab-transform",
+        "value": "400ms cubic-bezier(0.1, 0.7, 0.1, 1)",
+        "purpose": "Inherited desktop-tab transform behavior."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "All transitions removed under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "custom-compact",
+        "value": "52rem"
+      },
+      {
+        "name": "reading-wide",
+        "value": "76.25em"
+      },
+      {
+        "name": "material-tabs-hidden-max",
+        "value": "76.234375em"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "description": "Shared solid green learning action.",
+      "html": "<a class=\"ds-primary\" href=\"#start-learning\">Start learning</a>",
+      "css": ".ds-primary{display:inline-block;padding:.625em 2em;border:1.5px solid var(--js-green-dark,#22503b);border-radius:3px;box-shadow:none;font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);font-weight:600;font-size:.88rem;line-height:1.75;text-decoration:none;cursor:pointer;transition:background-color 120ms ease,color 120ms ease;background:var(--js-green-dark,#22503b);color:var(--md-primary-bg-color,#fff)}.ds-primary:hover{background:var(--js-green,#2e6b4f);border-color:var(--js-green,#2e6b4f);color:var(--md-primary-bg-color,#fff)}.ds-primary:focus-visible{outline:2px solid var(--js-green,#2e6b4f);outline-offset:4px;}[data-md-color-scheme=\"slate\"] .ds-primary,:host-context([data-md-color-scheme=\"slate\"]) .ds-primary{color:#10160f}@media(prefers-reduced-motion:reduce){*{transition:none!important}}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Outlined Button",
+      "kind": "button",
+      "description": "Secondary action with a fine green outline.",
+      "html": "<a class=\"ds-outline\" href=\"#try-a-playbook\">Try a playbook</a>",
+      "css": ".ds-outline{display:inline-block;padding:.625em 2em;border:1.5px solid var(--js-green-dark,#22503b);border-radius:3px;box-shadow:none;font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);font-weight:600;font-size:.88rem;line-height:1.75;text-decoration:none;cursor:pointer;transition:background-color 120ms ease,color 120ms ease;background:transparent;color:var(--js-green-dark,#22503b)}.ds-outline:hover{background:var(--js-panel,#f3f2ea);border-color:var(--js-green-dark,#22503b);color:var(--js-green-dark,#22503b)}.ds-outline:focus-visible{outline:2px solid var(--js-green,#2e6b4f);outline-offset:4px;}@media(prefers-reduced-motion:reduce){*{transition:none!important}}",
+      "refersTo": "button-outline"
+    },
+    {
+      "name": "Newsletter Submit",
+      "kind": "button",
+      "description": "Compact optional-signup control with its disabled treatment.",
+      "html": "<button class=\"ds-subscribe\" type=\"button\">Subscribe</button>",
+      "css": ".ds-subscribe{padding:.55rem 1.1rem;border:1.5px solid var(--js-green-dark,#22503b);border-radius:3px;background:var(--js-green-dark,#22503b);color:#fff;font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);font-size:.8rem;font-weight:600;cursor:pointer;transition:background-color 120ms ease}.ds-subscribe:hover{background:var(--js-green,#2e6b4f);border-color:var(--js-green,#2e6b4f)}.ds-subscribe:focus-visible{outline:2px solid var(--js-green,#2e6b4f);outline-offset:4px;}.ds-subscribe:disabled{opacity:.6;cursor:default}[data-md-color-scheme=\"slate\"] .ds-subscribe,:host-context([data-md-color-scheme=\"slate\"]) .ds-subscribe{color:#10160f}@media(prefers-reduced-motion:reduce){*{transition:none!important}}",
+      "refersTo": "signup-button"
+    },
+    {
+      "name": "Newsletter Email Field",
+      "kind": "input",
+      "description": "Reading-canvas field with muted placeholder and clear keyboard focus.",
+      "html": "<input class=\"ds-email\" type=\"email\" placeholder=\"Email address\" aria-label=\"Email address\" autocomplete=\"email\">",
+      "css": ".ds-email{padding:.55rem .7rem;border:1px solid var(--js-border,#d9d7cc);border-radius:3px;background:var(--md-default-bg-color,#fbfaf6);color:var(--js-ink,#23281f);font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);font-size:.8rem}.ds-email::placeholder{color:var(--js-muted,#5d6157)}.ds-email:focus{outline:2px solid var(--js-green,#2e6b4f);outline-offset:1px}.ds-email:focus-visible{outline:2px solid var(--js-green,#2e6b4f);outline-offset:4px;}",
+      "refersTo": "signup-input"
+    },
+    {
+      "name": "Desktop Navigation Tabs",
+      "kind": "nav",
+      "description": "Material desktop tabs with the site's flat header, small type, and opacity states.",
+      "html": "<nav class=\"ds-tabs\" aria-label=\"Main navigation\"><ul class=\"ds-tabs-list\"><li class=\"ds-tabs-item ds-tabs-current\"><a class=\"ds-tabs-link\" href=\"#home\" aria-current=\"page\">Home</a></li><li class=\"ds-tabs-item\"><a class=\"ds-tabs-link\" href=\"#learn\">Learn</a></li><li class=\"ds-tabs-item\"><a class=\"ds-tabs-link\" href=\"#practice\">Practice</a></li><li class=\"ds-tabs-item\"><a class=\"ds-tabs-link\" href=\"#downloads\">Downloads</a></li></ul></nav>",
+      "css": ".ds-tabs{background:var(--md-primary-fg-color,#22503b);color:var(--md-primary-bg-color,#fff);border-bottom:1px solid rgba(255,255,255,.16);font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);line-height:1.3;overflow:auto}.ds-tabs-list{display:flex;list-style:none;margin:0;padding:0;white-space:nowrap}.ds-tabs-item{height:2.4rem;padding:0 .6rem}.ds-tabs-link{display:flex;margin-top:.8rem;font-size:.76rem;color:inherit;text-decoration:none;opacity:.9;outline-color:var(--md-accent-fg-color,#2e6b4f);outline-offset:.2rem;transition:transform .4s cubic-bezier(.1,.7,.1,1),opacity .25s}.ds-tabs-current>.ds-tabs-link{opacity:1;text-decoration:underline;text-underline-offset:.5rem}.ds-tabs-link:hover,.ds-tabs-link:focus-visible{opacity:1;color:inherit}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Worked Example",
+      "kind": "card",
+      "description": "Homepage example organized into request, draft, and reader check.",
+      "html": "<aside class=\"ds-worked\" aria-label=\"Example meeting task\"><p class=\"ds-note-title\">Try it with meeting notes</p><div class=\"ds-note-part\"><span>Your request</span><p>“Turn these notes into decisions and next steps. Flag anything we haven't agreed on.”</p></div><div class=\"ds-note-part\"><span>The draft</span><ul><li>Decisions made</li><li>Tasks, owners, and dates</li><li>Questions still open</li></ul></div><div class=\"ds-note-part\"><span>Your check</span><p>Compare the draft with the original notes before sending it.</p></div><a class=\"ds-note-link\" href=\"#meeting-playbook\">See the meeting playbook →</a></aside>",
+      "css": ".ds-worked{padding:1.3rem 1.6rem;border:1px solid var(--js-border,#d9d7cc);border-top:3px solid var(--js-green,#2e6b4f);background:var(--js-panel,#f3f2ea);color:var(--js-ink,#23281f);font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);line-height:1.75}.ds-note-title{margin:0 0 .8rem;font-family:\"IBM Plex Serif\", Georgia, serif;font-size:1.2rem;font-weight:600}.ds-note-part{padding:.7rem 0;border-top:1px solid var(--js-border,#d9d7cc)}.ds-note-part>span{font-size:.7rem;color:var(--js-green-dark,#22503b);font-weight:600}.ds-note-part p,.ds-note-part ul{margin:.25rem 0 0;font-size:.78rem}.ds-note-part li{margin-bottom:0}.ds-note-link{display:inline-block;margin-top:.6rem;font-size:.78rem;font-weight:600;color:var(--md-typeset-a-color,#22503b);text-decoration:none;transition:color 125ms}.ds-note-link:hover{color:var(--md-accent-fg-color,#2e6b4f);text-decoration:underline;text-underline-offset:.18em}.ds-note-link:focus-visible{outline:2px solid var(--js-green,#2e6b4f);outline-offset:4px;}@media screen and (max-width:52rem){.ds-worked{padding:1rem 1.1rem}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}",
+      "refersTo": "worked-example"
+    },
+    {
+      "name": "Task Row",
+      "kind": "custom",
+      "description": "Numbered task link with serif title, muted description, and green arrow.",
+      "html": "<a class=\"ds-task\" href=\"#research-brief\"><span class=\"ds-task-number\" aria-hidden=\"true\">01</span><span><strong>Research a question</strong><span class=\"ds-task-description\">Gather evidence, compare sources, and write a brief.</span></span><span class=\"ds-task-arrow\" aria-hidden=\"true\">↗</span></a>",
+      "css": ".ds-task{display:grid;grid-template-columns:2.6rem minmax(0,1fr) 1rem;align-items:center;gap:.8rem;padding:1.1rem .7rem 1.1rem 0;border-bottom:1px solid var(--js-border,#d9d7cc);color:var(--js-ink,#23281f);font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);line-height:1.75;text-decoration:none;transition:color 125ms}.ds-task:hover{background:var(--js-panel,#f3f2ea);text-decoration:none}.ds-task:focus-visible{outline:2px solid var(--js-green,#2e6b4f);outline-offset:4px;}.ds-task-number{font-family:var(--md-code-font-family, \"IBM Plex Mono\", SFMono-Regular, Consolas, Menlo, monospace);font-size:.7rem;color:var(--js-muted,#5d6157)}.ds-task strong{display:block;font-family:\"IBM Plex Serif\", Georgia, serif;font-size:1.06rem;font-weight:600}.ds-task-description{display:block;margin-top:.15rem;font-size:.8rem;color:var(--js-muted,#5d6157)}.ds-task-arrow{font-size:1.2rem;color:var(--js-green,#2e6b4f)}@media screen and (max-width:52rem){.ds-task strong{font-size:1rem}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}",
+      "refersTo": "task-row"
+    },
+    {
+      "name": "Library Row",
+      "kind": "custom",
+      "description": "Playbook name, short description, and two adjacent actions.",
+      "html": "<div class=\"ds-library\"><div class=\"ds-library-info\"><strong>Research a topic</strong><span>Investigate a question and get a short brief with linked evidence and clear unknowns.</span></div><p class=\"ds-library-actions\"><a class=\"ds-library-primary\" href=\"#playbook\">Open playbook</a><a class=\"ds-library-outline\" href=\"#example\">See example</a></p></div>",
+      "css": ".ds-library{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 1.1rem;border-bottom:1px solid var(--js-border,#d9d7cc);background:var(--js-panel,#f3f2ea);color:var(--js-ink,#23281f);font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);line-height:1.75}.ds-library-info strong{display:block;font-family:\"IBM Plex Serif\", Georgia, serif;font-size:1rem}.ds-library-info span{display:block;margin-top:.15rem;font-size:.84rem;color:var(--js-muted,#5d6157)}.ds-library-actions{margin:0;flex-shrink:0}.ds-library-actions a{display:inline-block;padding:.625em 2em;border:1.5px solid var(--js-green-dark,#22503b);border-radius:3px;box-shadow:none;font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif);font-weight:600;font-size:.88rem;line-height:1.75;text-decoration:none;cursor:pointer;transition:background-color 120ms ease,color 120ms ease;}.ds-library-primary{background:var(--js-green-dark,#22503b);color:#fff}.ds-library-primary:hover{background:var(--js-green,#2e6b4f);border-color:var(--js-green,#2e6b4f)}.ds-library-outline{margin-left:.35rem;background:transparent;color:var(--js-green-dark,#22503b)}.ds-library-outline:hover{background:var(--js-panel,#f3f2ea);color:var(--js-green-dark,#22503b)}.ds-library-actions a:focus-visible{outline:2px solid var(--js-green,#2e6b4f);outline-offset:4px;}[data-md-color-scheme=\"slate\"] .ds-library-primary,:host-context([data-md-color-scheme=\"slate\"]) .ds-library-primary{color:#10160f}@media screen and (max-width:52rem){.ds-library{flex-direction:column;align-items:stretch}.ds-library-actions a{display:block;margin:.45rem 0 0;width:100%;text-align:center}.ds-library-outline{margin-left:0}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}",
+      "refersTo": "library-row"
+    },
+    {
+      "name": "Playbook Strip",
+      "kind": "custom",
+      "description": "Three divided cells that explain choosing, using, and checking a task.",
+      "html": "<div class=\"ds-strip\"><div><strong>1 · Choose a task</strong><span>Open the playbook and compare its example with what you need.</span></div><div><strong>2 · Use the instructions</strong><span>Paste the prompt, or review the ZIP and save it with a file-capable agent.</span></div><div><strong>3 · Check the result</strong><span>Review the sources, missing details, and draft before using it.</span></div></div>",
+      "css": ".ds-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:1rem 0 1.5rem;border:1px solid var(--js-border,#d9d7cc);border-radius:4px;overflow:hidden;color:var(--js-ink,#23281f);font-family:var(--md-text-font-family, \"IBM Plex Sans\", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif)}.ds-strip>div{padding:.85rem 1rem;border-right:1px solid var(--js-border,#d9d7cc);background:var(--js-panel,#f3f2ea)}.ds-strip>div:last-child{border-right:0}.ds-strip strong,.ds-strip span{display:block}.ds-strip strong{margin-bottom:.2rem;font-family:var(--md-code-font-family, \"IBM Plex Mono\", SFMono-Regular, Consolas, Menlo, monospace);font-size:.7rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--js-green-dark,#22503b)}.ds-strip span{font-size:.86rem;line-height:1.5}@media screen and (max-width:52rem){.ds-strip{grid-template-columns:1fr}.ds-strip>div{border-right:0;border-bottom:1px solid var(--js-border,#d9d7cc)}.ds-strip>div:last-child{border-bottom:0}}",
+      "refersTo": "playbook-strip"
+    }
+  ],
+  "narrative": {
+    "northStar": "Field Manual",
+    "overview": "The existing theme describes itself as ink on paper with one tool-green accent. Warm reading surfaces, serif headings, and plain controls support a site of guides, examples, and downloads. This document records that implemented visual world rather than proposing a replacement identity.\n\nPlex Sans carries explanations and controls; Plex Serif marks chapters, task names, and example titles. Rules, rows, and softly contrasting panels organize information without shadows or hover lift. The homepage pairs a plain introduction with an example that shows a request, a draft, and the reader's check. Its composition is a homepage pattern, not a required layout for every guide.",
+    "keyCharacteristics": [
+      "Warm paper and dark ink in the light scheme.",
+      "Green for actions, links, focus outlines, and chapter rules.",
+      "Plex Serif headings with Plex Sans reading text and Plex Mono code.",
+      "Flat surfaces, fine dividers, and small control and panel radii.",
+      "Numbered task rows and divided playbook strips.",
+      "Brief state transitions with reduced-motion support."
+    ],
+    "rules": [
+      {
+        "name": "The Shared Accent Rule",
+        "body": "Use the green family for shared learning controls and reading patterns. Keep product-page accent colors local to their existing product surfaces.",
+        "section": "colors"
+      },
+      {
+        "name": "The Chapter Rule",
+        "body": "Keep ordinary guide titles serif and retain their short green rule (2.6rem wide, 0.28rem high). The homepage title and dark product heroes explicitly omit that rule.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stack Rule",
+        "body": "Preserve source order when layouts become single columns. Keep descriptions, controls, and each strip's labels together at the compact threshold.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Shared reading cards and controls do not gain shadows or hover lift. Use the existing border and surface-color states.",
+        "section": "elevation & depth"
+      },
+      {
+        "name": "The Small Corner Rule",
+        "body": "Preserve the documented square and small-radius shapes. Do not convert controls or panels into pills.",
+        "section": "shapes"
+      },
+      {
+        "name": "The State Motion Rule",
+        "body": "Use the existing short color and border transitions for custom components. Preserve the reduced-motion override that removes transitions; do not add content-reveal motion to reading patterns.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** pair serif headings and task titles with sans-serif explanations.",
+      "**Do** use green for shared actions, links, focus, and chapter markers.",
+      "**Do** separate related content with fine dividers and the existing panel tones.",
+      "**Do** preserve keyboard focus outlines and the reduced-motion override.",
+      "**Do** stack the documented row and strip layouts at their existing compact threshold.",
+      "**Do** use actual product screenshots on their existing download surfaces."
+    ],
+    "donts": [
+      "**Don't** add gradients, shadows, hover lift, or pill shapes to shared reading patterns.",
+      "**Don't** turn localized VALE or TUSK accents into the learning site's primary palette.",
+      "**Don't** impose the homepage's two-column introduction on every guide.",
+      "**Don't** reintroduce uppercase kickers into the current reading pages.",
+      "**Don't** present a decorative mock interface as a worked example or product capture."
+    ]
+  }
+}

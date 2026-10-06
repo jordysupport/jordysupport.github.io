@@ -1,55 +1,59 @@
 ---
 description: >-
-  How to give your AI long-term memory with a vault: a plain folder of notes (often in free Obsidian) that any AI can read — and you can always check.
+  Create a small folder of project notes and reusable instructions that you and your AI agent can read, update, and carry between tools.
 ---
 
 <span class="kicker">How agents work · Vaults</span>
 
 # A vault for your agent
 
-A [**vault**](../resources/glossary.md#vault) is just a folder of plain-text notes — often managed with a free app called [Obsidian](https://obsidian.md). It becomes your AI's long-term memory: everything important lives in files you can open, read, and fix.
+A [**vault**](../resources/glossary.md#vault) is a folder of notes. [Obsidian](https://obsidian.md) is one way to manage them; a text editor works too. For an agent, the useful part is a set of readable files containing the project facts and instructions it needs.
 
-## Why files beat "AI memory" features
+## Why keep notes in files? { #why-files-beat-ai-memory-features }
 
-- **You can see them.** No mystery about what the AI "knows" about you.
-- **You can fix them.** Wrong note? Edit it. Done.
-- **They work everywhere.** Any AI that can read files can use your vault. You're not locked in.
+You can read and correct a note, keep a backup, and give it to another tool. You can also see what has become outdated. Built-in AI memory may help with preferences, while files give you a more explicit project record.
 
-## A starter vault (five minutes)
+Keep the notes selective. An agent does not need your entire personal history to summarize a meeting or draft a page.
 
-Create a folder like this — with Obsidian or just your file manager:
+## A starter vault { #a-starter-vault-five-minutes }
+
+Create a folder with a few places for the work:
 
 ```text
 MyVault/
-├── About-Me.md      ← who you are, how you like things done
-├── Projects/        ← one note per project
-├── Skills/          ← installed playbooks live here
-└── Output/          ← things your AI drafts for you
+├── About-Me.md      ← preferences relevant to the work
+├── Projects/        ← one note per active project
+├── Skills/          ← reusable task instructions
+└── Output/          ← drafts for you to review
 ```
 
-In `About-Me.md`, write a few honest lines: what you do, what you're working on, how you like answers (short? step-by-step?).
+In `About-Me.md`, write a few practical preferences: the language you use, the kind of work you do, and how you want drafts presented. Leave out sensitive details.
+
+A project note can begin with four headings: **Goal**, **Decisions**, **Current state**, and **Next action**. Date information such as account status or software versions. Add the source or location for facts the next session needs to check.
 
 ## Using it with an agent
 
-Start your agent inside the vault folder and say:
+Give the agent access to the notes it needs, then point to them explicitly:
 
-```text title="Copy this"
-Read About-Me.md and the relevant note in Projects/ before
-helping me. Save anything worth keeping to the right note, and
-show me before saving.
+```text title="Load the relevant notes"
+Read About-Me.md and Projects/[project-name].md before working
+on this task. Use those notes as background. Verify any current
+status needed for today's work. Do not load unrelated notes.
+
+Afterward, propose an update to the project note with confirmed
+decisions, changes, unresolved questions, and the next action.
+Show me the update before saving it. Keep secrets out of notes.
 ```
+
+Check the access settings before opening a vault in an agent. Notes stored on your computer may still be sent to a cloud model when the tool reads them. Local storage alone does not determine how the AI processes them.
 
 ## Two rules for a healthy vault
 
-1. **The AI proposes, you approve.** It shows the note before saving.
-2. **Short notes beat long ones.** A note you'd actually reread wins.
+1. **Update the existing note.** Replace outdated status instead of leaving several conflicting versions. Keep a backup before large changes.
+2. **Save evidence and decisions.** A concise handoff is easier to use than a copy of the whole conversation. Label an untested suggestion as a suggestion.
 
-This is also where [playbooks](../playbooks/index.md) install themselves — into `Skills/` — which is why your AI can run them in any future chat.
+The site's [playbooks](../playbooks/index.md) can live in `Skills/`. Read each playbook's installation instructions and tell your agent which file to load. Saving a file does not automatically make every AI app discover it.
 
-[Next: subagents](subagents.md){ .md-button .md-button--primary }
+[Next: Subagents](subagents.md){ .md-button .md-button--primary }
 
-!!! tip "If this helped"
-    If this helped you set up a vault, a small tip on Ko-fi keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
-
-[Next step: Subagents](subagents.md){ .md-button }
+[Support these free guides on Ko-fi](https://ko-fi.com/support_jordy).

@@ -1,52 +1,52 @@
 ---
 description: >-
-  Every AI term on this site translated into plain English: agent, token, context, vault, MCP, prompt, subagent and more — no jargon, no hype.
+  Plain-English definitions of AI agents, context, tokens, tools, MCP, memory, and other terms used in the Jordy Support guides.
 ---
-
-<span class="kicker">Resources · Glossary</span>
 
 # Glossary
 
-Every term used on this site, in plain English. If a page uses a word that isn't here, [tell me](https://linktr.ee/jordy_support) and I'll add it.
+These are the meanings used in our guides. Tool names and settings can differ between products.
 
-**Agent**{ #agent } — an AI that can *do* things (read files, write drafts, run steps), not just chat.
+**Agent**{ #agent }: An AI system that takes steps toward a goal using tools, such as web search or file editing. Its access depends on the tools and permissions available.
 
-**Automation**{ #automation } — a job set up to run without you starting it each time.
+**Automation**{ #automation }: A task configured to run when an event happens or on a schedule. It may include an AI step, but it doesn't have to.
 
-**Commit**{ #commit } — in Git, a saved snapshot of your project with a note about what changed.
+**Commit**{ #commit }: A saved snapshot of tracked project files in Git, with a message explaining the change. Files you haven't added are not part of that snapshot.
 
-**Context / context window**{ #context } — everything the AI can see right now: your message, the conversation so far, attached files. If it's not in the window, the AI doesn't know it.
+**Context / context window**{ #context }: The information supplied to a model for its current response. This can include messages, instructions, selected files, and tool results. A context window has a size limit; a tool may shorten or retrieve information to fit.
 
-**Folder agent**{ #folder-agent } — an agent that works inside one folder on your computer (Claude Code, Cursor).
+**Folder agent**{ #folder-agent }: Our shorthand for an agent working with files in a project folder. Starting it in a folder does not, by itself, prevent access elsewhere.
 
-**Git**{ #git } — a tool that tracks versions of a project folder so you can save, share, and undo.
+**Git**{ #git }: Software for tracking changes to project files. It helps compare versions and recover committed work. It isn't a backup of everything on your computer.
 
-**Hallucination**{ #hallucination } — when AI confidently states something false. The fix is sources you can check, not trust.
+**Hallucination**{ #hallucination }: An incorrect or invented detail in an AI response, sometimes presented confidently. Check important claims against evidence.
 
-**LLM (large language model)**{ #llm } — the technology behind AI chat tools. You can just say "the AI."
+**LLM (large language model)**{ #llm }: A model trained to work with language. It generates responses from the information it receives and patterns learned during training.
 
-**MCP**{ #mcp } — the standard plug that connects AI tools to apps like your calendar or files. Think "USB for AI."
+**MCP**{ #mcp }: Model Context Protocol, a standard for connecting AI applications to tools and information. A connection still needs appropriate access controls; the standard doesn't make its contents trustworthy.
 
-**Model**{ #model } — a specific AI (Claude, GPT, Gemini are families of models). Newer models are generally more capable.
+**Memory**{ #memory }: Information a tool saves for use later. Some products retrieve it automatically; others require you to ask for a file to be read. Saved information may be incomplete or outdated.
 
-**Playbook**{ #playbook } — on this site: one useful job packaged so your AI can install it, remember it, and run it by interview. See [how playbooks work](../playbooks/index.md).
+**Model**{ #model }: The trained system that generates an AI response. Different models vary in cost, speed, supported inputs, and how well they handle a task.
 
-**Prompt**{ #prompt } — your request to the AI. Nothing fancier than that.
+**Playbook**{ #playbook }: A set of instructions for a repeatable job. Our [playbooks](../playbooks/index.md) include prompts, examples, and downloadable files.
 
-**Project instructions**{ #project-instructions } — rules you write once that apply to every chat in a project.
+**Prompt**{ #prompt }: The request or instructions you give an AI tool.
 
-**Skill**{ #skill } — the file a playbook installs into your vault so the AI can run the job later.
+**Project instructions**{ #project-instructions }: Written guidance an AI tool loads for a project. Which files it reads and how often depends on the tool. Instructions don't replace permission controls.
 
-**Subagent**{ #subagent } — a helper AI that the main AI hands part of a job to.
+**Skill**{ #skill }: A reusable set of instructions, sometimes with supporting files. Our downloadable skills are text files that an agent can read from your notes.
 
-**Terminal**{ #terminal } — the text box where you type commands to your computer.
+**Subagent**{ #subagent }: A separate agent assigned part of a larger task. It may receive only selected context, and its work still needs review.
 
-**Token**{ #token } — the small chunks of text AI reads and writes; pricing and limits are counted in them. You rarely need to think about tokens directly.
+**Terminal**{ #terminal }: An interface for running text commands. Commands can read, change, or delete files, install software, and contact services.
 
-**Tool**{ #tool } — anything the AI can use besides talking: file access, web search, an app connection.
+**Token**{ #token }: A unit a model uses to process input and output. Depending on the model and input, it can represent part of a word or other data. Usage limits and API charges often count tokens.
 
-**Vault**{ #vault } — a folder of plain-text notes that serves as your (and your AI's) long-term memory.
+**Tool**{ #tool }: A capability an agent can call, such as searching the web, reading a file, or updating an app.
 
-**Workflow**{ #workflow } — the full path a job takes: trigger → input → AI step → check → approval → delivery.
+**Vault**{ #vault }: A folder of notes, often managed in Obsidian. An agent can use it as a reference if it has access and reads the relevant files.
 
-[Next step: Learning links](learning-links.md){ .md-button }
+**Workflow**{ #workflow }: The steps a task follows from its starting input to its finished result, including any checks and approvals.
+
+[Find documentation for your tool](learning-links.md){ .md-button }

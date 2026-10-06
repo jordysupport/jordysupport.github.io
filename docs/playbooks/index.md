@@ -1,82 +1,79 @@
 ---
-title: "Free AI Playbooks: The Library"
+title: "Free AI Playbooks"
 description: >-
-  AI playbooks: teach your AI a job once — research, meeting notes, content — then run it any time with one phrase. Free downloads, plain English.
+  Four reusable AI tasks with free downloads, copy-paste prompts, worked examples, and checks for research, writing, meetings, and reference notes.
 ---
 
 <div class="playbook-hero" markdown>
 
 <span class="kicker">Playbooks</span>
 
-# Teach your AI a job once. Use it forever.
+# Give your agent a useful task { #teach-your-ai-a-job-once-use-it-forever }
 
-A [playbook](../resources/glossary.md#playbook) is one useful job — research, meeting notes, content — packaged so your AI learns it in a minute and can run it any time you ask.
+Choose a task, bring your own material, and use the instructions to guide the work. We include an example and a review checklist with each playbook so you can judge the result.
+
+All four are free. You can download the instructions or start with a chat prompt.
 
 </div>
 
 ## How it works
 
 <div class="playbook-steps">
-  <div><strong>1 · Download</strong><span>Grab the small zip file for the playbook you want.</span></div>
-  <div><strong>2 · Hand it over</strong><span>Open its page and copy the filename-specific install message. Your AI saves the playbook to your notes.</span></div>
-  <div><strong>3 · Just ask</strong><span>From then on, say "start my research playbook." It interviews you — no forms, no re-downloads.</span></div>
+  <div><strong>1 · Choose a task</strong><span>Open the playbook and compare its example with what you need.</span></div>
+  <div><strong>2 · Use the instructions</strong><span>Paste the prompt, or review the ZIP and save it with a file-capable agent.</span></div>
+  <div><strong>3 · Check the result</strong><span>Review the sources, missing details, and draft before using it.</span></div>
 </div>
 
-That's the whole setup. The AI asks where you keep your notes, saves the playbook there, and tells you the start phrase to use forever.
+The downloads contain plain-text Markdown files. Saving one gives you a reusable reference; it does not make an agent remember it automatically. In a new conversation, tell the agent which file to read.
 
-!!! tip "No agent? No problem."
-    Every playbook page also has a plain copy-paste prompt that works in any normal AI chat.
-
-## The Library
-
-Every playbook, free, installed the same way. Each one links a finished example, so you can see the payoff before you download anything.
+## The library
 
 <div class="library-list">
   <div class="library-row">
     <div class="library-info">
       <strong>Research a topic</strong>
-      <span>One question in, a short brief with real sources out. 15–30 minutes.</span>
+      <span>Investigate a question and get a short brief with linked evidence and clear unknowns.</span>
     </div>
     <p class="library-actions">
-      <a class="md-button md-button--primary" href="research-brief/">Open</a>
-      <a class="md-button" href="research-brief-example/">Example</a>
+      <a class="md-button md-button--primary" href="research-brief/">Open playbook</a>
+      <a class="md-button" href="research-brief-example/">See example</a>
     </p>
   </div>
   <div class="library-row">
     <div class="library-info">
       <strong>Repurpose content</strong>
-      <span>One article, video, or post becomes drafts for every channel. 10–20 minutes.</span>
+      <span>Adapt an article, transcript, or set of notes into drafts for the formats you use.</span>
     </div>
     <p class="library-actions">
-      <a class="md-button md-button--primary" href="content-repurpose/">Open</a>
-      <a class="md-button" href="content-repurpose-example/">Example</a>
+      <a class="md-button md-button--primary" href="content-repurpose/">Open playbook</a>
+      <a class="md-button" href="content-repurpose-example/">See example</a>
     </p>
   </div>
   <div class="library-row">
     <div class="library-info">
       <strong>Process a meeting</strong>
-      <span>Messy notes become decisions, to-dos, and a sendable follow-up. 10–15 minutes.</span>
+      <span>Separate agreed decisions, assigned work, and open questions, then draft a follow-up.</span>
     </div>
     <p class="library-actions">
-      <a class="md-button md-button--primary" href="meeting-follow-up/">Open</a>
-      <a class="md-button" href="meeting-follow-up-example/">Example</a>
+      <a class="md-button md-button--primary" href="meeting-follow-up/">Open playbook</a>
+      <a class="md-button" href="meeting-follow-up-example/">See example</a>
     </p>
   </div>
   <div class="library-row">
     <div class="library-info">
       <strong>Build a knowledge base</strong>
-      <span>Things worth keeping become short, sourced notes in your vault. 10–20 minutes.</span>
+      <span>Keep a source or decision as a short note with its origin, date, and useful context.</span>
     </div>
     <p class="library-actions">
-      <a class="md-button md-button--primary" href="knowledge-base/">Open</a>
-      <a class="md-button" href="knowledge-base-example/">Example</a>
+      <a class="md-button md-button--primary" href="knowledge-base/">Open playbook</a>
+      <a class="md-button" href="knowledge-base-example/">See example</a>
     </p>
   </div>
 </div>
 
 <div class="signup-panel">
-  <span class="kicker">New playbooks, sent to you</span>
-  <p>The library grows, and every playbook lands here free, no signup. Leave an email and new ones hit your inbox the day they ship, along with occasional practical tips and tools worth knowing about. Nothing sold, nothing shared, unsubscribe any time.</p>
+  <span class="kicker">Optional email updates</span>
+  <p>Subscribe for new guides and playbooks. We use Kit to manage the list; your email address is sent to Kit when you subscribe. Everything is available here without joining, and you can unsubscribe from any issue.</p>
   <form class="signup-form" action="https://app.kit.com/forms/9786057/subscriptions" method="post">
     <input class="signup-input" type="email" name="email_address" placeholder="Email address" aria-label="Email address" autocomplete="email" required>
     <button class="signup-button" type="submit">Subscribe</button>
@@ -98,8 +95,8 @@ Every playbook, free, installed the same way. Each one links a finished example,
       method: "POST",
       body: new FormData(form),
       headers: { Accept: "application/json" }
-    }).then(function (r) { return r.json(); }).then(function (d) {
-      if (d && d.status !== "failed") {
+    }).then(function (r) { if (!r.ok) throw new Error("Request failed"); return r.json(); }).then(function (d) {
+      if (d && (d.status === "success" || d.subscription)) {
         form.querySelector(".signup-input").value = "";
         status.textContent = "Done. Check your email to confirm your subscription.";
       } else {
@@ -115,9 +112,8 @@ Every playbook, free, installed the same way. Each one links a finished example,
 })();
 </script>
 
-## Two rules that never change
+## Review and scope { #two-rules-that-never-change }
 
-1. **You review before anything is used, sent, or published.**
-2. **The AI stays inside the folder you gave it.**
+The instructions ask the agent to keep outputs as drafts, use the material you provide, and ask before saving files or working outside your chosen scope. Check the tool's permissions too: written instructions alone do not restrict its access.
 
-Every playbook ships with both baked in. And none of them hand you a form to fill out: each one interviews you one question at a time, in plain English, so you can't do it wrong.
+You decide what to save, send, or publish. Use the checklist on each playbook page before taking that step.

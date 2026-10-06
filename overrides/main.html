@@ -2,7 +2,7 @@
 
 {% block htmltitle %}
   {% if page and page.is_homepage %}
-    <title>Jordy Support: Free Plain-English AI Guides for Non-Techies</title>
+    <title>Learn to use AI agents - Jordy Support</title>
   {% else %}
     {{ super() }}
   {% endif %}
@@ -12,8 +12,7 @@
   {{ super() }}
   {% if not page.is_homepage and not page.meta.hide_support_outro %}
   <aside class="support-outro">
-    <span class="kicker">Free help, kept free</span>
-    <p>Everything on this site is free to read and use, with no required signup. If this page saved you time or a headache, <a href="https://ko-fi.com/support_jordy" rel="noopener">a small Ko-fi tip</a> helps keep it that way. Either way, take the help.</p>
+    <p>All guides and downloads are free, with no signup required. <a href="/playbooks/">Find a task to try</a> or <a href="mailto:jordy@jordysupport.com">send us a correction</a>.</p>
   </aside>
   {% endif %}
 {% endblock %}
@@ -21,7 +20,7 @@
 {% block extrahead %}
   {{ super() }}
   {% if page %}
-  {% set og_title = "Jordy Support: Free Plain-English AI Guides for Non-Techies" if page.is_homepage else ((page.meta.title or page.title) ~ " - Jordy Support") %}
+  {% set og_title = "Learn to use AI agents - Jordy Support" if page.is_homepage else ((page.meta.title or page.title) ~ " - Jordy Support") %}
   {% set og_desc = page.meta.description or config.site_description %}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Jordy Support">

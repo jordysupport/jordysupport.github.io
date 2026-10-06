@@ -1,45 +1,50 @@
 ---
 description: >-
-  AI automation ideas ranked by risk: safe starters where nothing sends or deletes, then medium and higher-risk workflows to earn your way into.
+  Practical AI workflow ideas for notes, research, files, reports, and email, with clear outputs and review points.
 ---
 
 <span class="kicker">Automation · Ideas</span>
 
-# Ideas to steal
+# Ideas to try { #ideas-to-steal }
 
-Ranked by risk. Start in the first list, earn your way down.
+Choose a job you already repeat. A useful first workflow saves preparation time and leaves you with a result you can check.
 
-## Low risk — start here
+## Start with drafts and suggestions { #low-risk-start-here }
 
-Nothing sends, deletes, or spends. Worst case: a bad draft.
+| Job | What the agent prepares | What you check |
+| --- | --- | --- |
+| Meeting follow-up | Decisions and action items linked to the notes | Owners, dates, and whether anything was omitted |
+| Reading digest | A short summary of articles you saved | Whether each summary matches its source |
+| Folder cleanup | A list of proposed renames and moves | The destination and whether names would collide |
+| Routine replies | Draft responses based on approved information | Accuracy, tone, and whether the reply fits the request |
 
-- **Meeting notes → follow-up draft**, waiting in a folder for your review.
-- **Weekly reading digest**: summarize the articles you saved this week.
-- **File tidier**: propose renames/moves for a messy folder — as a list you approve.
-- **Draft replies** to routine emails, saved as drafts, never sent.
+These workflows can still expose private information or produce incorrect drafts. Give them only the access they need, and keep source files intact.
 
-## Medium risk — after a few clean weeks
+## Add small changes with clear rules { #medium-risk-after-a-few-clean-weeks }
 
-Touches real data or reaches other people *after* your approval.
+Once the draft workflow works, you might let it:
 
-- **Report assembler**: pull the week's numbers into your template; you review and send.
-- **Content pipeline**: article → repurposed drafts → your review → scheduled.
-- **Inbox sorter**: label and prioritize email; you still read what matters.
+- Add an “awaiting review” label to incoming requests that match a defined rule.
+- Copy approved figures into a report template and flag missing values.
+- Create a task from a meeting action with a source link, leaving unknown owners unassigned.
+- Prepare website edits in a preview for review before publication.
 
-## High risk — most people should stop before here
+Choose one change at a time. Keep a record of what changed and a way to undo it. For moves and updates, try the workflow on copies or sample records first.
 
-Sends, changes, or spends without a human in the moment. Only with months of trust, tight limits, and a kill switch you've tested.
+## Review actions with real consequences { #high-risk-most-people-should-stop-before-here }
 
-- Auto-sending anything. Auto-purchasing anything. Auto-deleting anything.
+Sending messages, publishing, buying, changing permissions, and deleting data deserve a separate decision. Define the recipient or destination, the allowed content, and the approval point.
 
-## The pattern
+If you need any of these actions to run unattended, test them with realistic failure cases and set explicit limits. “The drafts looked good” is not enough evidence that an action is ready to run on its own.
 
-Notice every good idea has the same shape: **AI does the boring assembly, a human does the judging.** Automations fail when that line gets blurry.
+## Choose your first workflow { #the-pattern }
+
+Ask three questions:
+
+1. Do you do this often enough for the setup to be useful?
+2. Can you check the output quickly against a source?
+3. Can a failed run wait for you without causing a problem?
+
+If the answers are yes, use the blueprint to turn the idea into a small, testable job.
 
 [Plan yours with the blueprint](workflow-blueprint.md){ .md-button .md-button--primary }
-
-!!! tip "If this helped"
-    If one of these ideas is now on your list, a small tip on Ko-fi keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
-
-[Next step: Plan your first workflow](workflow-blueprint.md){ .md-button }

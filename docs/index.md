@@ -1,85 +1,94 @@
 ---
+title: Learn to use AI agents
+hide:
+  - navigation
+  - toc
 description: >-
-  Free, plain-English AI guides for people who aren't techies. Learn what to type, what to check, and how to stay in control of AI agents and automation.
+  Learn to use AI agents for research, writing, meeting notes, and everyday work. Free guides, practical examples, and downloadable playbooks.
 ---
 
-<div class="hero" markdown>
+<div class="home-intro" markdown>
 
-<span class="kicker">Agentic AI &amp; Automation Pipeline Guides · Free · Plain English</span>
+<div class="home-copy" markdown>
 
-# AI help for people who aren't techies.
+# Learn to use AI agents for everyday work. { #ai-help-for-people-who-arent-techies }
 
-Short guides that show you what to type, what to check, and how to stay in control — whether you use a normal AI chat or a full agent.
+An AI agent can work through a task, use tools, and create something you can use. We show you how to give it a clear job and check what it does.
 
-[I'm brand new — start here](getting-started/index.md){ .md-button .md-button--primary }
-[Skip to the playbooks](playbooks/index.md){ .md-button }
+Start with one small task. The guides, examples, and downloads are free, with no signup required.
+
+[Start learning](getting-started/index.md){ .md-button .md-button--primary }
+[Try a playbook](playbooks/index.md){ .md-button }
+
+</div>
+
+<aside class="worked-note" aria-label="Example meeting task">
+  <p class="note-title">Try it with meeting notes</p>
+  <div class="note-part"><span>Your request</span><p>“Turn these notes into decisions and next steps. Flag anything we haven't agreed on.”</p></div>
+  <div class="note-part"><span>The draft</span><ul><li>Decisions made</li><li>Tasks, owners, and dates</li><li>Questions still open</li></ul></div>
+  <div class="note-part"><span>Your check</span><p>Compare the draft with the original notes before sending it.</p></div>
+  <a href="playbooks/meeting-follow-up/">See the meeting playbook →</a>
+</aside>
 
 </div>
 
 ## What do you want to get done?
 
-<div class="grid cards" markdown>
+<div class="task-list">
+  <a class="task-row" href="playbooks/research-brief/"><span class="task-number" aria-hidden="true">01</span><span><strong>Research a question</strong><span>Gather evidence, compare sources, and write a brief.</span></span><span class="task-arrow" aria-hidden="true">↗</span></a>
+  <a class="task-row" href="playbooks/content-repurpose/"><span class="task-number" aria-hidden="true">02</span><span><strong>Turn existing content into new drafts</strong><span>Adapt an article or transcript for another audience or format.</span></span><span class="task-arrow" aria-hidden="true">↗</span></a>
+  <a class="task-row" href="playbooks/meeting-follow-up/"><span class="task-number" aria-hidden="true">03</span><span><strong>Make sense of meeting notes</strong><span>Pull out decisions, tasks, and unanswered questions.</span></span><span class="task-arrow" aria-hidden="true">↗</span></a>
+  <a class="task-row" href="playbooks/knowledge-base/"><span class="task-number" aria-hidden="true">04</span><span><strong>Organize information you'll need again</strong><span>Build a small reference library with links back to the originals.</span></span><span class="task-arrow" aria-hidden="true">↗</span></a>
+</div>
 
--   **Get research you can actually trust**
+<div class="home-paths" markdown>
 
-    Ask one question, get a short answer with real sources you can click and check.
+<section markdown>
 
-    [Research a topic →](playbooks/research-brief.md)
+## New to agents?
 
--   **Turn one thing into many posts**
+Choose a setup, try your first task, then learn what an agent can see and change. You can begin with software you already use.
 
-    One article or video becomes newsletter, social, and script drafts — without making things up.
+[Follow the starting guide →](getting-started/index.md)
 
-    [Repurpose content →](playbooks/content-repurpose.md)
+</section>
 
--   **Never lose a meeting again**
+<section markdown>
 
-    Messy notes in, clean decisions, to-dos, and a ready-to-send follow-up out.
+## Already using one?
 
-    [Process a meeting →](playbooks/meeting-follow-up.md)
+Improve your instructions, give it the right source material, and build a repeatable workflow once the result holds up.
 
--   **Something's broken**
+[Improve a prompt →](prompting/index.md) · [Plan a workflow →](automation/workflow-blueprint.md)
 
-    A fix-it-in-order checklist that beats reinstalling everything.
-
-    [Troubleshoot it →](troubleshooting/index.md)
-
--   **Meet VALE**
-
-    A living, music-reactive visualizer and local voice line for Windows. Give Codex or Claude one prompt and let your agent install it for you.
-
-    [See VALE and download →](vale/index.md)
-
--   **Sell websites with TUSK**
-
-    A free, local-first CRM that finds businesses with weak websites, scores who to call first, and tracks every deal from dial to invoice.
-
-    [See TUSK and download →](tusk/index.md)
+</section>
 
 </div>
 
-## The five habits that make AI useful
+## What's an agent? { #whats-an-agent-30-second-version }
 
-<div class="path-strip">
-  <div><span class="step-no">01</span>Say the job clearly</div>
-  <div><span class="step-no">02</span>Give it the right info</div>
-  <div><span class="step-no">03</span>Limit what it can touch</div>
-  <div><span class="step-no">04</span>Check the result</div>
-  <div><span class="step-no">05</span>Then automate</div>
+A chat tool answers your messages. An agent can also take steps toward a goal, such as searching the web, reading documents, or editing files. What it can do depends on the tools and permissions you give it.
+
+You still decide whether the work is useful. A fluent answer can be wrong, and a completed task can miss the point.
+
+[See how agents work →](fundamentals/index.md)
+
+## Before you automate { #the-five-habits-that-make-ai-useful }
+
+Give the agent a clear task, provide the information it needs, and limit its access. Review the result before you let the same job run repeatedly.
+
+[Learn to check a workflow →](automation/reliability.md) · [Fix a problem →](troubleshooting/index.md)
+
+## Keep a playbook for next time { #new-playbooks-your-ai-remembers }
+
+Each playbook includes instructions, a worked example, and a free ZIP you can save in your notes. To reuse it, ask your agent to read the saved file.
+
+[Browse the playbooks →](playbooks/index.md)
+
+<div class="home-footer" markdown>
+
+**More from Jordy Support**
+
+[Free software and downloads](downloads/index.md) · [Prompt Academy newsletter](newsletter/index.md) · [AI & Technology Services](consulting.md)
+
 </div>
-
-Most AI projects fail because a step got skipped — usually checking the result or limiting access. A smarter model can't rescue a vague job.
-
-## What's an "agent"? (30-second version)
-
-An **agent** is just an AI that can do things — read your files, write drafts, run steps — instead of only chatting. A good one works inside one folder, shows you what it changed, and waits for your OK.
-
-The goal here is never maximum automation. It's **help you can check**.
-
-## New: playbooks your AI remembers
-
-Each playbook now comes as a small download. Hand it to your AI once, and it saves the playbook to your notes. After that you just say "start my research playbook" — it interviews you and does the rest. No re-downloading, no re-explaining.
-
-[See how playbooks work](playbooks/index.md){ .md-button .md-button--primary }
-
-<p class="small-note">Everything here is free. If it helped, you can <a href="https://ko-fi.com/support_jordy">tip on Ko-fi</a> · <a href="https://linktr.ee/jordy_support">all links</a>.</p>

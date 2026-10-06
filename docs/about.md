@@ -1,32 +1,36 @@
 ---
 hide_support_outro: true
 description: >-
-  Who makes Jordy Support and why every guide is free. Plain-English AI help for creators, small business owners, and beginners doing real work.
+  Jordy Support publishes free guides and examples for people learning to use AI agents. Read about the site, its sources, and optional personal help.
 ---
-
-<span class="kicker">About</span>
 
 # About Jordy Support
 
-Free, plain-English guides to agentic AI and automation pipelines, for people doing real work — creators, small business owners, community folks, and curious beginners.
+We help people learn to use AI agents for everyday work. The site covers research, writing, meeting notes, and repeatable tasks, with examples you can try yourself.
 
 ## Why this exists
 
-I spent a lot of time in AI communities helping people get set up. The same problems came up again and again, and the fixes were nearly always simple habits, not technical genius. This site is those answers, written down once, properly.
+Jordy Support grew out of helping people get started in AI learning communities. We put those recurring questions into guides so you can work through them at your own pace.
 
-## What you'll always find here
+## What you'll find here { #what-youll-always-find-here }
 
-- **Plain words.** Every term translated the moment it appears.
-- **Safety by default.** Every prompt on this site has "plan first, ask before acting" built in.
-- **Honest limits.** What AI is bad at gets said out loud.
-- **Free.** No paywall, no required signup.
+- Guides that explain the terms as they come up.
+- Prompts you can adapt to your own task.
+- Worked examples that show what a useful result looks like.
+- Checks for facts, permissions, and changes before you rely on the work.
+
+Every guide and download is free. You don't need an account or a newsletter subscription to use them.
+
+AI tools change, and so do their settings. We link to official documentation where it matters. If something here is unclear or out of date, email [jordy@jordysupport.com](mailto:jordy@jordysupport.com).
 
 ## Credit where due
 
-This project grew out of helping people in AI learning communities, including [Jared Rhod's](https://jaredrhod.com/). His work remains his; it's linked in [learning links](resources/learning-links.md) as a reference.
+The project grew in part from participating in AI learning communities, including [Jared Rhod's](https://jaredrhod.com/). His work belongs to him. You'll find that reference alongside official documentation in our [learning links](resources/learning-links.md).
 
-## Support it (optional)
+## Support it, or ask for help { #support-it-optional }
 
-If something here saved you an evening: [tip on Ko-fi](https://ko-fi.com/support_jordy) · [all links](https://linktr.ee/jordy_support). Either way, it stays free.
+If you'd like to support the free site, there's an optional [Ko-fi tip jar](https://ko-fi.com/support_jordy).
 
-[Next step: Start here](getting-started/index.md){ .md-button }
+For help with AI workflows, technology, or a business website, see [AI & Technology Services](consulting.md). We discuss scope and pricing privately by email.
+
+[Start learning](getting-started/index.md){ .md-button .md-button--primary }

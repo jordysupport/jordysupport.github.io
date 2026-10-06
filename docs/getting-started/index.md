@@ -1,61 +1,63 @@
 ---
 description: >-
-  How to start using AI when you're not technical: pick one small job, choose a tool, make a safe practice folder, and check results. About 30 minutes.
+  Try AI on a small, useful task. Choose the right setup, give it clear boundaries, and check the result before using it.
 ---
 
 <span class="kicker">Start here</span>
 
 # Start here
 
-You don't need to be technical. You need four things: a clear job, the right info, a safe place to practice, and a way to check the result. This page gets you there in about 30 minutes.
+Pick something you already know how to check: a summary of your notes, a draft reply, or a list of tasks from a meeting. Your first attempt should leave you with a useful draft and a clear view of how the AI got there.
 
-## The 30-minute path
+These guides focus on **agentic AI**: AI that can use tools and carry a task through several steps. You can begin in a chat and add file or app access when the work calls for it.
+
+## Your first task { #the-30-minute-path }
 
 <div class="path-strip">
-  <div><span class="step-no">01</span>Pick one small job</div>
-  <div><span class="step-no">02</span>Pick your tool</div>
-  <div><span class="step-no">03</span>Make a practice folder</div>
-  <div><span class="step-no">04</span>Run it & watch</div>
-  <div><span class="step-no">05</span>Check the result</div>
+  <div><span class="step-no">01</span>Choose a task</div>
+  <div><span class="step-no">02</span>Choose a tool</div>
+  <div><span class="step-no">03</span>Prepare the files</div>
+  <div><span class="step-no">04</span>Run the task</div>
+  <div><span class="step-no">05</span>Review the work</div>
 </div>
 
 ### 1. Pick one small job
 
-Good first jobs have an input you provide and an output you can read and judge:
+Choose a task with a clear finish. For example:
 
-- turn your rough notes into a clean summary;
-- draft a follow-up email from meeting notes;
-- turn one long article into a few short posts.
+- Summarize two pages of notes, keeping the names and dates intact.
+- Draft a follow-up email from a meeting transcript. Leave missing details blank.
+- Turn an article you wrote into three short posts, using only its claims.
 
-Skip "run my whole business" or "manage my inbox" for now — too many decisions, too much risk.
+Keep the first attempt away from your live inbox, customer records, and anything that would be costly to get wrong.
 
 ### 2. Pick your tool
 
-For your first job, a normal AI chat (Claude, ChatGPT, Gemini) is enough. Not sure? [Use the 2-minute picker](choose-a-setup.md).
+A chat with no connected apps is enough for a draft from pasted text. A file upload works when the material is in a document. Use a folder agent when you want the AI to read several files and save its work. [Choose your setup](choose-a-setup.md) explains the differences.
 
 ### 3. Make a practice folder
 
-If you're using an AI that can touch files, make one new folder with **copies** of a few non-private files. Never start it inside your whole Documents folder or email.
+For file work, create a folder with copies of a few non-sensitive files. Keep drafts in a separate output folder. Check the agent's access settings before you start; opening a folder does not automatically restrict everything it can reach.
 
 ### 4. Run it and watch
 
-Paste your request, watch what it does, and ask it to explain anything confusing. Say no to anything unexpected.
+Describe the input, the output, and the boundaries. A request like “summarize these notes” is more useful when it also says where to save the summary and how to handle missing information.
+
+Use the [first agent walkthrough](first-agent.md) for a complete request you can copy.
 
 ### 5. Check the result
 
-Read the output like you'd check a new employee's first task: Is it accurate? Did it make anything up? Would you put your name on it?
+Compare the draft with the source. Look for missing points, invented details, and changes to names or numbers. If the agent edited files, open them and review the changes.
 
-## Your first win should be boring
+## What a successful first run looks like { #your-first-win-should-be-boring }
 
-Not "wow, the AI amazed me." Just: *it did the small job, stayed where I put it, and I could verify the result.* That boring win is the foundation for everything bigger.
+You have the output you requested, you can trace its facts to the input, and the agent stayed within the work you allowed. If something failed, keep the example. It gives you a specific thing to fix before trying a larger task.
 
 ## Three rules worth keeping
 
-- **Copies before originals.** Let it practice on duplicates.
-- **Draft before publish.** You review everything before it goes anywhere.
-- **Save what worked.** Keep the good instructions in a file so you never rewrite them.
+- **Practice on copies.** Keep the originals somewhere the agent cannot edit.
+- **Review before sending or publishing.** A finished draft still needs your approval.
+- **Save useful instructions.** Keep the request that worked so you can adapt it next time.
 
 [Choose your setup](choose-a-setup.md){ .md-button .md-button--primary }
 [Build your first agent](first-agent.md){ .md-button }
-
-[Next step: Choose your setup](choose-a-setup.md){ .md-button }

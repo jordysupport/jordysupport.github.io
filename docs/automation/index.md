@@ -1,42 +1,53 @@
 ---
 description: >-
-  AI automation basics in plain English: what automation really means, the honest path from manual to automatic, and why automating comes last, not first.
+  Learn how scheduled automation differs from an AI agent, choose a useful first workflow, and decide which actions need review.
 ---
 
 <span class="kicker">Automation</span>
 
 # Automation basics
 
-[**Automation**](../resources/glossary.md#automation) means a job runs without you starting it each time. It's the last step, not the first: automate only what you've already done manually with AI and trust.
+[Automation](../resources/glossary.md#automation) runs work from a trigger, such as a schedule, a new file, or a button. An AI agent can make decisions and use tools within that work. A scheduled job may use an agent, a fixed set of steps, or both.
 
-## The honest promotion path
+A weekly digest is a useful example: the schedule starts the job, the agent reads new notes and drafts a summary, and a check catches missing files before you review it.
+
+## From a task to a recurring workflow { #the-honest-promotion-path }
 
 <div class="path-strip">
-  <div><span class="step-no">01</span>Do it yourself once</div>
-  <div><span class="step-no">02</span>Do it with AI in chat</div>
-  <div><span class="step-no">03</span>Make it a playbook</div>
-  <div><span class="step-no">04</span>Run it on a schedule</div>
-  <div><span class="step-no">05</span>Remove approvals slowly</div>
+  <div><span class="step-no">01</span>Choose a recurring job</div>
+  <div><span class="step-no">02</span>Run it with real inputs</div>
+  <div><span class="step-no">03</span>Save the instructions</div>
+  <div><span class="step-no">04</span>Add checks and limits</div>
+  <div><span class="step-no">05</span>Schedule it and review</div>
 </div>
 
-Each step earns the next. Most people try to jump from 1 to 4 — that's where the horror stories come from.
+We suggest starting with one output you can inspect. Compare several runs with the original material, including a run with a missing or awkward input. That will show which parts need a rule, a better source, or your judgment.
+
+A [playbook](../playbooks/index.md) can hold the recurring instructions. The scheduler, tool permissions, and checks still need to be set up in the app that runs it.
 
 ## What's actually worth automating
 
-Good candidates are **frequent, boring, and checkable**: weekly report drafts, sorting incoming files, first-pass replies, meeting summaries. Bad candidates are rare, high-stakes, or fuzzy: anything legal, anything involving money, anything you'd struggle to check.
+Look for work that repeats and has a clear result:
 
-## The one design rule
+- Turn new meeting notes into an action list with links to the originals.
+- Gather figures from a known set of reports into a draft summary.
+- Label incoming files according to a naming rule.
+- Prepare replies from approved customer information.
 
-Every automation needs an answer to: **"What happens when it fails?"** Because it will — an input will be weird, a service will be down. If your answer is "I get a message and the job waits for me," you're fine. If it's "nothing, it just keeps going," stop and fix that first.
+Ask whether you can tell a good result from a bad one without repeating the whole job yourself. If you can't, keep the work assisted until you have a workable check.
+
+For exact tasks such as adding totals or copying fields, use a fixed rule or ordinary software where possible. Let the AI handle the parts that need interpretation.
+
+## Plan for a failed run { #the-one-design-rule }
+
+Decide what happens if a file is missing, a tool loses access, or a result cannot be verified. The job might stop, save an incomplete draft, or put the item in a review queue.
+
+Make that state visible. A missing output should not look like a successful run.
 
 ## Go deeper
 
-- [Plan a workflow](workflow-blueprint.md) — the 7 boxes every automation needs.
-- [Make it reliable](reliability.md) — the failure-proofing checklist, in plain words.
-- [Ideas to steal](ideas.md) — starter automations ranked by risk.
-
-!!! tip "If this helped"
-    If this saved you from automating too early, a small tip on Ko-fi keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+- [Plan a workflow](workflow-blueprint.md): define the inputs, permissions, and result.
+- [Make it reliable](reliability.md): handle duplicates, partial work, and failures.
+- [Ideas to try](ideas.md): choose a first job with a clear review point.
 
 [Next step: Plan a workflow](workflow-blueprint.md){ .md-button }

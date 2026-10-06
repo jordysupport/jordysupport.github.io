@@ -1,122 +1,137 @@
 ---
-title: "Repurpose Content with AI: Free Playbook"
+title: "Repurpose content: Free AI Playbook"
 description: >-
-  Turn one article, video, or post into drafts for newsletter, social, and video with AI — without invented facts. A free plain-English playbook.
+  A free AI playbook for turning a source you own into useful drafts for email, social posts, or a video script without adding unsupported claims.
 software_schema:
   name: Content Repurpose Playbook
   operating_system: Windows, macOS, Linux
   category: UtilitiesApplication
-  version: "1.0"
+  version: "1.1"
   download_url: https://jordysupport.com/downloads/content-repurpose-skill.zip
 ---
 
 <div class="playbook-hero" markdown>
 
-<span class="kicker">Playbook · Content</span>
+<span class="kicker">Free playbook · Content Repurpose</span>
 
 # Repurpose content
 
-Turn one good article, video, or post into ready-to-edit drafts for every other channel — without the AI [inventing anything](../fundamentals/why-ai-makes-things-up.md).
+Have an article, transcript, or useful set of notes? Turn it into a few drafts for the places you actually publish. Keep the meaning, adapt the length and shape, and review each version before using it.
 
 </div>
 
 <div class="playbook-meta">
-  <div><strong>You bring</strong><span>One source</span></div>
-  <div><strong>You get</strong><span>Channel-ready drafts</span></div>
-  <div><strong>Time</strong><span>10–20 minutes</span></div>
+  <div><strong>You bring</strong><span>Content you can reuse</span></div>
+  <div><strong>You get</strong><span>Drafts for your chosen formats</span></div>
+  <div><strong>You review</strong><span>Before saving or using the result</span></div>
 </div>
 
-Want to see the payoff before you start? [See a finished example](content-repurpose-example.md).
+[See an example](./content-repurpose-example.md) before you start.
 
-## Option 1 — Install it once (recommended)
+## Option 1: Save the playbook { #option-1-install-it-once-recommended }
 
-[Download the repurpose playbook](../downloads/content-repurpose-skill.zip){ .md-button .md-button--primary }
+Use this option with an agent that can read and write files. Saving the instructions makes them easier to reuse; your agent still needs to read them when you start a new chat.
 
-<p class="small-note">Version 1 · July 2026 · Updates always land at this same link, and this page notes what changed.</p>
+[Download the playbook](../downloads/content-repurpose-skill.zip){ .md-button .md-button--primary }
 
-Never give an AI a file you haven't looked inside. Here's everything in this one.
+<p class="small-note">Version 1.1 · October 5, 2026 · Clearer source access, reuse checks, and rules for preserving meaning across formats. The download address stays the same.</p>
+
+Extract the ZIP and read both files before asking an agent to use them. These are plain-text instructions, not an app or an automatic installer.
 
 ??? note "What's inside this zip (read before handing it to your AI)"
-    Two plain-text files you can open yourself:
-
-    - `content-repurpose-skill/INSTALL.md` — install instructions for your AI. Full text below.
-    - `content-repurpose-skill/SKILL.md` — the playbook itself, saved to your vault during install.
+    - `content-repurpose-skill/INSTALL.md`: setup instructions, reproduced below.
+    - `content-repurpose-skill/SKILL.md`: the questions, task instructions, and review checks.
 
     Full text of `INSTALL.md`, word for word:
 
     ```text
-    # INSTALL.md — instructions for the AI agent
+    # INSTALL.md: instructions for the AI agent
 
-    You have been given this folder by the person you are helping.
-    Your job: install the skill inside it so they can reuse it in any
-    future conversation, then offer to run it now.
+    Install this playbook only after the person has reviewed these files
+    and asked you to install it. Do not run the playbook during setup.
 
-    Follow these steps exactly.
+    1. Check whether you can read and write local files. If you cannot,
+       explain the limit and provide these steps for the person to follow.
+       Do not report an installation you did not perform.
 
-    1. **Find their home base.** Ask: "Where do you keep your permanent
-       notes or project files? (This is often called a vault or
-       workspace.)" If they don't have one, offer to create a folder
-       called `Vault` in the current location and use that.
+    2. Ask where they keep permanent notes or project files. Use an exact
+       folder they choose. If they have no folder, suggest `Vault` and
+       ask where to create it.
 
-    2. **Install the skill.** Copy `SKILL.md` from this folder to:
-       `<their vault>/Skills/content-repurpose/SKILL.md`
-       Create the `Skills` folder if it doesn't exist. Do not modify
-       the file. Do not touch anything else in their vault.
+    3. Show the destination:
+       `<chosen folder>/Skills/content-repurpose/SKILL.md`
+       Ask before creating folders or copying the file. If that file
+       already exists, show the difference and ask before replacing it.
+       Leave every other file alone.
 
-    3. **Confirm out loud.** Tell them exactly this:
-       "Installed. From now on, just say **'Start my repurpose playbook'**
-       and I'll walk you through it — no download needed. If we're in a
-       brand-new conversation, say: *Read Skills/content-repurpose/SKILL.md
-       and start it.*"
+    4. Copy this folder's `SKILL.md` unchanged. Read the saved file back
+       to confirm the copy, then report its full path.
 
-    4. **Offer to run it now.** If they say yes, open `SKILL.md` and
-       follow it from the top.
+    5. Explain how to use it:
+       "Read Skills/content-repurpose/SKILL.md and start it."
+       Within a conversation where the file has already been read, the
+       shorter phrase is: "Start my repurpose playbook."
+       A new conversation may need the full path again.
 
-    Safety rules: stay inside the folder the person chose, ask before
-    creating or overwriting any file, and never send anything anywhere
-    without showing it to them first.
+    6. Offer to start the playbook. Wait for the person's answer.
+
+    Stay inside the agreed folders. These files contain instructions,
+    not a guarantee that an AI will follow them. Do not send, publish,
+    or upload anything during installation.
     ```
 
-Give the zip to your AI and send:
+Attach the ZIP or give its exact path, then send:
 
 ```text title="Copy this message"
-Locate the most recently downloaded copy of content-repurpose-skill.zip, extract it, open INSTALL.md, and follow the instructions inside.
+I have reviewed the attached content-repurpose-skill.zip.
+Read INSTALL.md and SKILL.md. Help me install the playbook in
+a folder I choose, following INSTALL.md. Show the destination
+and ask before creating or overwriting files.
 ```
 
-From then on, just say:
+To use the saved copy in a new conversation:
 
-```text title="Your start phrase, forever"
-Start my repurpose playbook
+```text title="Start from the saved file"
+Read Skills/content-repurpose/SKILL.md in my notes folder and start it.
 ```
 
-**What happens next:** it asks for your source, which formats you want, who the audience is, and your rules (tone, length, links). Then it drafts one format at a time so you can react as you go.
+If the agent has already read the file in this conversation, you can say **"Start my repurpose playbook"**.
 
-## Option 2 — Quick copy-paste (any AI chat)
+It asks for the source, the formats you need, the audience, and any limits on voice or length. You review one draft at a time, so corrections carry into the next version.
+
+## Option 2: Use a chat prompt { #option-2-quick-copy-paste-any-ai-chat }
+
+This needs no installation. Paste the prompt, then provide your material when asked. A chat without file access can give you the result to save yourself.
 
 ```text title="Copy this prompt"
-Interview me one question at a time: my source content, which
-formats I want (newsletter, LinkedIn, X thread, video script,
-summary), my audience, and my rules on tone and length. Then
-draft each format one at a time. Use only facts from my source —
-never add new claims or invented quotes. Everything is a draft
-for my review.
+Help me adapt one piece of content for other formats. Ask one
+question at a time about the source, the formats I need, my
+audience, and my rules for tone, length, and links. Skip anything
+I have already answered.
+
+Read the full source. If you cannot access it, ask me for the text
+or transcript. Use only claims the source supports. Keep its
+qualifications and uncertainty. Do not add statistics, quotes,
+testimonials, or personal experience. Flag anything that needs
+checking or permission to reuse.
+
+Draft one format at a time for my review. Make it sound natural
+for that format, with no em dashes or stock sales language.
+Everything stays a draft. Do not save, schedule, or publish it.
 ```
 
 ## Before you post anything
 
-- [ ] Every claim traces back to your source.
-- [ ] Each draft actually fits its channel.
-- [ ] The tone sounds like you.
-- [ ] Nothing would embarrass you published as-is.
+- [ ] Each factual claim is supported by the source.
+- [ ] The draft keeps qualifications that matter to the meaning.
+- [ ] Quotes are accurate, and you have permission to reuse the material.
+- [ ] The length, links, and voice fit the destination.
+- [ ] Names and private details are suitable for the intended audience.
 
 ## You're done when
 
-You have drafts you'd be comfortable editing lightly and posting — and nothing in them surprised you.
+You have the drafts you asked for, with changes to meaning and missing evidence resolved before publication.
 
-!!! tip "If this helped"
-    This playbook just turned one source into a week of drafts. If it helped, a small tip keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
-
-**Pairs well with:** [Research a topic](research-brief.md): research once, then publish it everywhere.
+**Related:** [Research a topic](research-brief.md) if the source needs fact-checking before you reuse it.
 
 [Choose another playbook](index.md){ .md-button }

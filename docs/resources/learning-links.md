@@ -1,29 +1,31 @@
 ---
 description: >-
-  A short, honest list of free AI learning resources actually worth your time: readable official docs and beginner-friendly guides, nothing padded.
+  Official documentation for ChatGPT, Codex, Claude, Obsidian, and MCP, plus the learning community connected to Jordy Support.
 ---
-
-<span class="kicker">Resources · Links</span>
 
 # Learning links
 
-A short list, on purpose. Everything here is free to start and worth your time.
+Use the documentation for the tool you're actually running. A tutorial for another product or an older version may describe different settings.
 
-## Official docs that are actually readable
+## Official documentation { #official-docs-that-are-actually-readable }
 
-- [Claude help center](https://support.claude.com) — using Claude, Projects, and connectors.
-- [Claude Code docs](https://docs.claude.com) — the folder agent used in many examples here.
-- [OpenAI help center](https://help.openai.com) — the ChatGPT equivalent.
-- [Obsidian help](https://help.obsidian.md) — for building your vault.
-- [Zapier learning center](https://zapier.com/learn) — gentle automation intros, tool-agnostic ideas.
+| Tool | Reference |
+| --- | --- |
+| ChatGPT | [OpenAI Help Center](https://help.openai.com/) for accounts, features, and data controls |
+| Codex | [Codex documentation](https://developers.openai.com/codex/) for the app, CLI, and agent settings |
+| Claude | [Claude Help Center](https://support.claude.com/) for using Claude and managing your account |
+| Claude Code | [Claude Code documentation](https://code.claude.com/docs/en/overview) for setup, permissions, and project instructions |
+| Obsidian | [Obsidian Help](https://help.obsidian.md/) for notes, links, and vaults |
+| MCP | [Model Context Protocol documentation](https://modelcontextprotocol.io/docs/getting-started/intro) for tool connections |
 
 ## Communities
 
-- [Jared Rhod's site](https://jaredrhod.com/) — the AI-marketing community this project grew out of; his material stays his, and it's linked here as a reference.
-- Whatever community you already trust — one active community you actually participate in beats five you lurk in.
+[Jared Rhod's site](https://jaredrhod.com/) is connected to the learning communities this project grew out of. His material is his own; we link to it as a reference.
 
-## A rule for everything else
+When asking for help in a community, include the tool, the task, and the exact error. Remove private details from screenshots and logs first.
 
-Before following any tutorial: check the date (AI advice ages in months), prefer official docs over screenshots of them, and never paste a command you can't explain — ask AI to explain it first.
+## Before following a tutorial { #a-rule-for-everything-else }
 
-[Next step: Start here](../getting-started/index.md){ .md-button }
+Check its date and compare the steps with current official documentation. Read commands before running them. If you don't understand one, ask what it changes, where it gets software, and whether it needs your credentials. An AI explanation can help, but it can also be wrong.
+
+[Start with one task](../getting-started/index.md){ .md-button }

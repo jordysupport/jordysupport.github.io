@@ -1,48 +1,60 @@
 ---
 description: >-
-  Why AI makes things up: hallucination explained in plain English, plus simple habits that catch invented facts, fake sources, and confident guesses.
+  Learn how to catch unsupported AI claims, invented sources, incorrect numbers, and reports of actions that never happened.
 ---
 
-<span class="kicker">How agents work · Hallucination</span>
+<span class="kicker">How agents work · Accuracy</span>
 
 # Why AI makes things up (and how to catch it)
 
-Sometimes an AI states something false with total confidence — a fact, a quote, a source that doesn't exist. People call this [**hallucination**](../resources/glossary.md#hallucination). It's not lying, and it's not a glitch you can turn off. It's how the tool works, so the fix is a checking habit, not a setting.
+An AI can give a fluent answer with a false detail: an invented citation, an incorrect date, or a feature the software does not have. This is often called [**hallucination**](../resources/glossary.md#hallucination). With agents, the same problem can appear as “I saved the file” when no file was saved.
 
 ## Why it happens, in plain words
 
-An AI writes by predicting what text should come next, based on patterns it learned. It's very good at producing text that *looks right*. It has no built-in step that asks "is this actually true?"
+Language models generate responses from learned patterns and the information available in their context. That ability helps them draft and explain, but it does not guarantee each claim matches a real source.
 
-So when it doesn't know something, it doesn't feel a gap the way you would. The pattern-machine keeps going — and fills the gap with something plausible. Plausible is the problem: wrong answers arrive in the same confident tone as right ones.
+Search and file tools give an agent evidence to work with. It can still read the wrong source, miss a condition, or draw a conclusion the source does not support. [OpenAI's accuracy guidance](https://developers.openai.com/api/docs/guides/optimizing-llm-accuracy) covers problems with both retrieved context and model output.
 
-## Where it bites hardest
+## Where to check carefully { #where-it-bites-hardest }
 
-- **Sources and citations.** Invented links, invented titles, real authors attached to papers they never wrote.
-- **Numbers and dates.** Close-but-wrong figures that survive a skim.
-- **Quotes.** Things a real person plausibly *could* have said, but didn't.
-- **Niche details.** The less material exists about a topic, the more the AI fills in.
-- **Long jobs.** Late in a big task, with a full [context window](context-memory.md), small inventions creep in.
+| Claim | What to compare it with |
+| --- | --- |
+| A quote, title, or citation | The actual source, including the passage cited. |
+| A date, price, version, or rule | A current authoritative page. |
+| A calculation | The inputs and a calculator or spreadsheet formula. |
+| A fact from an uploaded document | The relevant page, row, or section in that document. |
+| A completed action | The saved file, app record, or tool result showing what happened. |
+
+If the claim affects a decision, make the check before acting on it. You can check a low-stakes draft yourself; specialist decisions may need a qualified reviewer.
 
 ## How to catch it
 
-- [ ] Click the sources behind anything you'll act on. A source you can't open isn't a source. (More in [answers you can check](../prompting/ai-answers-with-sources.md).)
-- [ ] Check names, numbers, and dates against the original material.
-- [ ] Ask the same important question a second time, fresh. Two different confident answers means at least one is made up.
-- [ ] Tell it up front: "say what you don't know — never invent a source." Banning the guess out loud helps.
-- [ ] Keep the [Before you trust it](../playbooks/research-brief.md#before-you-trust-it) checklist from the research playbook for anything that matters.
+- [ ] Ask for sources alongside factual claims. Use the guide to [answers you can check](../prompting/ai-answers-with-sources.md).
+- [ ] Open the cited source and find the supporting passage. A working link alone proves little.
+- [ ] Check names, numbers, dates, and conditions against the original.
+- [ ] Ask the agent to separate direct evidence, its interpretation, and what remains unknown.
+- [ ] For actions, inspect the result in the file or app. Distinguish drafted, saved, sent, and confirmed received.
+- [ ] Use the research playbook's [Before you trust it](../playbooks/research-brief.md#before-you-trust-it) checklist for a larger brief.
 
-## What doesn't work
+```text title="Ask for an evidence check"
+Review the claims in this answer. For each important claim,
+identify the source and the passage or record that supports it.
+Mark inferences as inferences. Remove or flag anything you cannot
+verify. Do not create a citation to fill a gap.
+```
 
-- **Asking "are you sure?"** It will apologize and produce a new confident answer — which may also be wrong.
-- **Trusting tone.** Confidence and correctness are unrelated. That's the whole trap.
-- **One giant prompt saying "be accurate."** Helpful, not sufficient. Checking is still your job.
+## What doesn't establish accuracy { #what-doesnt-work }
 
-## You're done when
+**“Are you sure?”** may produce a revision, but supplies no new evidence.
 
-You treat every AI answer as a draft until the parts you'll act on are checked — and checking takes you minutes, because you asked for sources up front.
+**A second answer** can expose disagreement. Matching answers can still repeat the same error, so check the source either way.
 
-!!! tip "If this helped"
-    If this saves you from acting on one made-up fact, it earned its keep. A small tip on Ko-fi keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+**A confident tone** tells you how the response is written. It does not show how well the claim is supported.
 
-[Next step: get answers with sources you can check](../prompting/ai-answers-with-sources.md){ .md-button }
+## Make verification part of the task { #youre-done-when }
+
+Tell the agent what evidence you expect before it starts. A request for a brief with source passages, unknowns, and a saved file is easier to check than an unrestricted request to “research this.”
+
+[Next: Answers with sources you can check](../prompting/ai-answers-with-sources.md){ .md-button .md-button--primary }
+
+[Support these free guides on Ko-fi](https://ko-fi.com/support_jordy).

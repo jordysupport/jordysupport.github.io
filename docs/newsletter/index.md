@@ -1,18 +1,16 @@
 ---
 hide_support_outro: true
 description: >-
-  Prompt Academy: the free newsletter from Jordy Support. One practical AI habit per issue, new playbooks the day they ship, plain English, every two weeks.
+  Prompt Academy is the free Jordy Support newsletter about using AI. Read the archive or choose to receive future issues by email.
 ---
-
-<span class="kicker">Newsletter · Every two weeks · Free</span>
 
 # Prompt Academy
 
-One practical thing worth doing with AI, what shipped on this site, and the occasional tool worth an honest take. Plain English, under a two-minute read, every two weeks.
+Short notes on using AI, with a task to try or a habit to improve. Every issue is available here for free. Email signup is optional.
 
 <div class="signup-panel">
-  <span class="kicker">Get Prompt Academy by email</span>
-  <p>Every issue lands here free either way. Subscribers get it in their inbox, and new playbooks arrive the day they ship. Nothing sold, nothing shared, unsubscribe any time.</p>
+  <h2>Get future issues by email</h2>
+  <p>We use Kit to manage subscriptions and send the newsletter. Your email address is sent to Kit when you subscribe. You can unsubscribe using the link in an issue.</p>
   <form class="signup-form" action="https://app.kit.com/forms/9786057/subscriptions" method="post">
     <input class="signup-input" type="email" name="email_address" placeholder="Email address" aria-label="Email address" autocomplete="email" required>
     <button class="signup-button" type="submit">Subscribe</button>
@@ -34,8 +32,8 @@ One practical thing worth doing with AI, what shipped on this site, and the occa
       method: "POST",
       body: new FormData(form),
       headers: { Accept: "application/json" }
-    }).then(function (r) { return r.json(); }).then(function (d) {
-      if (d && d.status !== "failed") {
+    }).then(function (r) { if (!r.ok) throw new Error("Request failed"); return r.json(); }).then(function (d) {
+      if (d && (d.status === "success" || d.subscription)) {
         form.querySelector(".signup-input").value = "";
         status.textContent = "Done. Check your email to confirm your subscription.";
       } else {
@@ -51,15 +49,10 @@ One practical thing worth doing with AI, what shipped on this site, and the occa
 })();
 </script>
 
-## Every issue
+## What to expect { #every-issue }
 
-- **One thing worth doing**: a practical habit or workflow, not news.
-- **What shipped**: new playbooks and guides, the day they go up.
-- **Worth knowing**: tools with honest takes, only things actually used here.
-- **A question answered**: reply to any issue and yours can be next.
+A practical example, a question worth checking, or an update to a guide. Read the archive below to see the format before subscribing.
 
 ## The archive
-
-Every issue lives here free, subscriber or not.
 
 - [Issue #001: Ask it twice](001.md) · August 2026

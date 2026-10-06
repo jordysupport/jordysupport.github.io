@@ -1,15 +1,13 @@
 ---
 description: >-
-  Watch VALE running live on Windows: a real screen capture of the COSMOS field reacting to music — not a mockup — plus download links and stills.
+  Watch a silent Windows capture of VALE’s COSMOS field, with playback controls, still images, and downloadable media.
 ---
 
 <div class="vale-demo-hero" markdown>
 
-<span class="kicker">VALE / Live Render Capture</span>
+# Watch VALE in motion. { #see-the-field-breathe }
 
-# See the field breathe.
-
-This is VALE running on Windows, not a concept mockup. The COSMOS field layers a live stellar system, music state, transport controls, captions, and cinema controls into one full-screen environment.
+This screen capture shows the COSMOS field running on Windows. Watch the particles and music display move, or use the still images below. The video has no sound.
 
 [Download VALE for Windows](https://github.com/jordysupport/jordysupport.github.io/releases/latest/download/VALE-Windows-x64.zip){ .md-button .md-button--primary }
 [Installation and controls](index.md){ .md-button }
@@ -17,7 +15,7 @@ This is VALE running on Windows, not a concept mockup. The COSMOS field layers a
 </div>
 
 <div class="vale-demo-stage">
-  <video autoplay loop muted playsinline controls preload="metadata" poster="/assets/vale-demo/vale-cosmos-hero.webp" aria-label="Silent screen capture of the VALE COSMOS field moving in real time">
+  <video loop muted playsinline controls preload="metadata" poster="/assets/vale-demo/vale-cosmos-hero.webp" aria-label="Silent screen capture of the VALE COSMOS field moving in real time">
     <source src="/assets/vale-demo/vale-cosmos-demo-silent.mp4" type="video/mp4">
     <img src="/assets/vale-demo/vale-cosmos-loop-compact.gif" alt="VALE COSMOS field moving in a silent loop">
   </video>
@@ -32,23 +30,9 @@ This is VALE running on Windows, not a concept mockup. The COSMOS field layers a
 
 ## What you are seeing
 
-<div class="vale-demo-notes" markdown>
+The display combines animated particles with track information and playback controls. VALE also has captions, field switching, and cinema mode. See the [download page](index.md) for controls and setup requirements.
 
--   **A field, not a wallpaper**
-
-    The stellar core, dust lanes, particles, and type system keep moving as one scene instead of sitting behind the controls.
-
--   **Music state in the composition**
-
-    Track art, title, transport controls, progress, and tempo live inside the lower-right telemetry panel.
-
--   **Controls that disappear into cinema mode**
-
-    Field switching, captions, screen selection, and frame-rate controls stay available without turning the render into a dashboard.
-
-</div>
-
-## Fresh render stills
+## Still images { #fresh-render-stills }
 
 <div class="vale-still-grid">
   <figure>
@@ -65,7 +49,7 @@ This is VALE running on Windows, not a concept mockup. The COSMOS field layers a
   </figure>
 </div>
 
-## Upload-ready media
+## Download the media { #upload-ready-media }
 
 Every asset below comes from the supplied VALE capture. The video contains **no audio stream**, and the GIF is silent by format.
 
@@ -79,8 +63,5 @@ Every asset below comes from the supplied VALE capture. The video contains **no 
 - [Still 03 · WebP](/assets/vale-demo/vale-cosmos-still-03.webp)
 
 </div>
-
-!!! note "A real render, with no added soundtrack"
-    The page uses the MP4 for the clearest, smallest motion preview and keeps the GIF as an easy upload option. Neither asset carries audio.
 
 [Back to the VALE download page](index.md){ .md-button }

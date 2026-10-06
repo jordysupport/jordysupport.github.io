@@ -1,71 +1,78 @@
 ---
 description: >-
-  A finished example of the free content repurpose playbook: one guide turned into a newsletter blurb, a LinkedIn post, and an X thread, with zero invented facts.
+  See one short practice guide adapted into an email, a LinkedIn post, and a three-post thread, with the source text included for comparison.
 ---
 
 <div class="playbook-hero" markdown>
 
-<span class="kicker">Playbook · Content · Example output</span>
+<span class="kicker">Content repurpose · Worked example</span>
 
-# Example output: one guide, three drafts
+# One guide, three drafts { #example-output-one-guide-three-drafts }
 
-This is what the [repurpose playbook](content-repurpose.md) produces. One source goes in, channel-ready drafts come out, and nothing appears in any draft that isn't in the source.
+A shorter version can lose a detail that matters. This example lets you compare each draft with its source and see what was kept.
 
 </div>
 
-!!! example "The inputs"
-    **Source:** this site's own guide, [Why AI makes things up](../fundamentals/why-ai-makes-things-up.md). **Formats asked for:** newsletter blurb, LinkedIn post, X thread. **Audience:** non-technical people using AI at work. **Rules:** plain words, no hype, no em-dashes. Everything below the line is the playbook's actual output for those answers.
+!!! example "Sample inputs"
+    This is a written example, not a record of a client project or a measured result. The requested formats are an email blurb, a LinkedIn post, and a short thread. The audience is people trying an agent for the first time. The voice is plain and practical.
 
----
+## Source text
 
-## Draft 1: newsletter blurb
+```text
+For your first file task with an AI agent, create a folder called
+ai-practice. Copy a few non-sensitive notes into it and leave the
+originals where they are.
 
-> **The most dangerous AI answer is the confident one.**
+Ask the agent to read those copies and draft a checklist in a new
+file. Give the exact folder and output filename. Tell it to leave
+the source files unchanged and ask before working outside that folder.
+
+Open the output yourself. Compare it with the notes and check for
+missed details or tasks it added. Ask for a correction if needed.
+You do not need to connect email or other accounts for this exercise.
+```
+
+## Draft 1: email blurb { #draft-1-newsletter-blurb }
+
+> **Try an agent on a few copies of your notes**
 >
-> Sometimes an AI states something false with total confidence: a fact, a quote, a source that doesn't exist. It isn't lying and it isn't a glitch. The tool writes by predicting what text should come next, and it has no built-in step that asks "is this actually true?"
+> Make an `ai-practice` folder and copy in a few notes that contain no sensitive information. Keep the originals where they are.
 >
-> The fix is a checking habit, not a setting. Click the sources behind anything you'll act on. Check names, numbers, and dates against the original. Ask the same important question twice in fresh chats; two different confident answers means at least one is made up.
+> Give the agent one job: read those copies and draft a checklist in a new file. Specify the folder and filename, tell it to leave the source files alone, and ask it to check with you before working elsewhere.
 >
-> And skip the one that feels natural: asking "are you sure?" doesn't work. It will apologize and produce a new confident answer, which may also be wrong.
+> Open the checklist and compare it with the notes. Look for missing details or added tasks, then request any corrections. You can do this exercise without connecting email or other accounts.
 
 ## Draft 2: LinkedIn post
 
-> AI doesn't know when it's wrong. That's not a bug you can turn off.
+> A useful first task for an AI agent: turn a few notes into a checklist.
 >
-> These tools write by predicting what text should come next. They're excellent at producing text that looks right, and they have no internal step that checks whether it is right. When the AI doesn't know something, it fills the gap with something plausible, delivered in the same confident tone as a correct answer.
+> Set up the exercise before giving it the task:
 >
-> Where it bites hardest: citations, numbers, quotes, and niche topics with little written about them.
+> - Create an `ai-practice` folder.
+> - Copy in a few non-sensitive notes. Keep the originals elsewhere.
+> - Specify the output filename and tell the agent to leave the sources unchanged.
+> - Ask it to check with you before working outside that folder.
 >
-> Three habits that catch it:
+> Then open the result. Compare it with the notes, including any tasks the agent may have added. Ask it to fix what you find.
 >
-> 1. Click the sources behind anything you'll act on. A link you can't open isn't a source.
-> 2. Ask the same important question a second time, fresh. Two different confident answers means at least one is invented.
-> 3. Say up front: "tell me what you don't know, never invent a source."
->
-> Confidence and correctness are unrelated. Treat every AI answer as a draft until the parts you'll act on are checked.
+> No email or account connections are needed for this exercise.
 
-## Draft 3: X thread
+## Draft 3: three-post thread { #draft-3-x-thread }
 
-> **1/** An AI will state something false with total confidence. A fact, a quote, a source that doesn't exist. People call it hallucination. It's not lying, and there's no setting that turns it off.
+> **1/3** Trying an AI agent with files? Create an `ai-practice` folder and copy in a few non-sensitive notes. Leave the originals where they are.
 >
-> **2/** Why it happens: the AI writes by predicting what text should come next. It's very good at "looks right." It has no built-in step that asks "is this true?"
+> **2/3** Ask for a checklist in a new file. Give the folder and filename. Tell it to leave the sources unchanged and ask before working elsewhere. No email or account connections needed.
 >
-> **3/** So when it doesn't know, it doesn't feel the gap the way you would. It fills the gap with something plausible. Plausible is the problem: wrong arrives in the same tone as right.
->
-> **4/** Where it bites hardest: invented citations, close-but-wrong numbers, quotes people never said, and niche topics where little material exists.
->
-> **5/** What doesn't work: asking "are you sure?" It apologizes and produces a new confident answer. Which may also be wrong.
->
-> **6/** What works: click every source you'll act on. Check names, numbers, dates. Ask the important question twice in fresh chats and compare.
->
-> **7/** Treat every AI answer as a draft until the parts you'll act on are checked. Full guide, free, no signup: jordysupport.com
+> **3/3** Open the checklist yourself. Compare it with the notes: missing details, changed meaning, added tasks. Ask for corrections before using it.
 
----
+## What to check { #why-this-output-is-trustworthy }
 
-## Why this output is trustworthy
+All three drafts keep the folder boundary, copies of the source, a new output file, and a human review. None adds a time saved, a success rate, or a personal story.
 
-Every claim in all three drafts traces back to the source guide. The playbook's rules forbid new facts and invented quotes, and it drafts one format at a time so you can react before it moves on. The [Before you post anything](content-repurpose.md#before-you-post-anything) checklist runs at the end.
+The shorter thread has less explanation. If your audience needs help creating a folder, include a link to instructions you have checked rather than squeezing every step into the post.
 
-## Want drafts like these?
+Use the [Before you post anything](content-repurpose.md#before-you-post-anything) checklist on your own drafts.
 
-[Start the repurpose playbook](content-repurpose.md){ .md-button .md-button--primary }
+<span id="want-drafts-like-these"></span>
+
+[Try the content playbook](content-repurpose.md){ .md-button .md-button--primary }

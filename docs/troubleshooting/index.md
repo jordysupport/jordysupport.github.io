@@ -1,39 +1,50 @@
 ---
 description: >-
-  Fix computer and AI problems in the right order: read the error, retry once, ask what changed, shrink the problem, search the message, then reinstall.
+  Work through a failed AI task or computer setup by checking the error, isolating the cause, and making one change at a time.
 ---
 
 <span class="kicker">Troubleshooting</span>
 
-# Fix it in order
+# Work out what failed { #fix-it-in-order }
 
-When something breaks, people reinstall everything, try random fixes, and make it worse. This order works for almost any computer problem — AI-related or not.
+When a task stops working, save the error and check what happened before changing anything. We use this order to keep the next step small and useful.
 
-## The universal order
+## Start with the evidence { #the-universal-order }
 
-1. **Read the actual error.** Copy the exact message. Don't summarize it as "it's broken" — the message usually names the problem.
-2. **Change nothing; try again once.** Lots of failures are one-time hiccups.
-3. **Ask: what changed?** It worked before. What's different — an update, a new file, a rename, a different folder?
-4. **Shrink the problem.** Does it fail with a tiny test file? In a fresh folder? Finding where it *works* tells you where it breaks.
-5. **Search the exact message.** Paste the error, in quotes, into a search engine or an AI.
-6. **Then, and only then, reinstall.**
+1. **Capture the error.** Copy the exact text and the command or action that produced it. Remove passwords, tokens, and private details before sharing.
+2. **Check whether it is safe to retry.** A file read can usually be repeated. A payment, message, upload, or other submission may already have succeeded; check its status first.
+3. **Look for the last change.** An update, renamed file, expired sign-in, moved folder, or different account can explain a new failure.
+4. **Try a small example.** Use a copy of a simple file in a practice folder. Does the same step fail there?
+5. **Check the tool's official help.** Search the exact error and confirm that any fix applies to your operating system and version.
+6. **Change one thing and test again.** Reinstall only if the evidence points to an installation problem. Save files and settings you need before removing anything.
 
-## Ask AI the right way
+## Ask for a diagnosis { #ask-ai-the-right-way }
+
+Give the AI enough evidence to distinguish a missing program from a wrong path or a permissions problem.
 
 ```text title="Copy this"
-Something failed. Here's the exact error message: [paste it].
-Here's what I was doing: [one sentence]. Here's what changed
-recently: [anything you know]. Walk me through fixing it one
-step at a time — one step per message, and tell me what each
-step does before I run it.
+Help me diagnose this failure.
+
+What I was trying to do: [one sentence]
+Exact command or action: [paste it]
+Exact error, with secrets removed: [paste it]
+Operating system and tool version: [what I know]
+Last successful attempt: [when, if known]
+Recent changes: [what changed, or "unknown"]
+
+Start with a read-only check. Give me one step at a time and explain
+what it will tell us. Wait for the result before choosing the next
+step. Tell me before a step changes files, settings, or accounts.
+Do not repeat a submission until we know whether it succeeded.
 ```
 
-The "one step per message" part matters — it stops the AI from dumping ten commands you can't judge.
+If the AI keeps proposing the same failed fix, bring it back to the observed result: "That returned this error. What does it rule out?"
 
-## By system
+## Find the relevant guide { #by-system }
 
-- [Terminal basics](terminal-basics.md) — the five commands that cover 90% of it.
-- [Windows](windows.md) · [macOS](macos.md) — the usual suspects on each.
-- [Git & Codespaces](git-codespaces.md) — for site and code projects.
+- [Terminal basics](terminal-basics.md): folders, commands, and common error messages.
+- [Windows](windows.md): shell differences, file paths, and security blocks.
+- [macOS](macos.md): permissions, app warnings, and command lookup.
+- [Git & Codespaces](git-codespaces.md): reviewing changes, commits, and sync problems.
 
-[Next step: Terminal basics](terminal-basics.md){ .md-button }
+[Open terminal basics](terminal-basics.md){ .md-button }

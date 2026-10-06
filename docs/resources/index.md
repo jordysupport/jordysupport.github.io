@@ -1,27 +1,22 @@
 ---
 description: >-
-  The Jordy Support reference shelf: a plain-English AI glossary, a short list of learning links worth your time, and what this free site is about.
+  Definitions, official documentation, troubleshooting guides, and the free Prompt Academy newsletter from Jordy Support.
 ---
 
-<span class="kicker">Resources</span>
+# Resources { #resource-hub }
 
-# Resource hub
+Look up a term, find the documentation for your tool, or work through a problem.
 
-The reference shelf: plain-word definitions, links worth your time, and what this site is.
+| Need | Where to go |
+| --- | --- |
+| A word explained | [Glossary](glossary.md) |
+| Documentation for a tool | [Learning links](learning-links.md) |
+| Help when something fails | [Troubleshooting](../troubleshooting/index.md) |
+| Short notes on using AI | [Prompt Academy](../newsletter/index.md) |
+| More about this site | [About Jordy Support](../about.md) |
 
-<div class="grid cards" markdown>
+## Find your place in the guides { #the-site-in-one-screen }
 
--   **Glossary** — every AI term on this site, translated into plain English. [Open →](glossary.md)
--   **Learning links** — the short list of outside resources that are actually worth it. [Open →](learning-links.md)
--   **About** — who makes this, and why it's free. [Open →](../about.md)
+Start with [your first agent task](../getting-started/first-agent.md) if you haven't tried one. Read [how agents work](../fundamentals/index.md) to understand the tools, context, and permissions involved.
 
-</div>
-
-## The site in one screen
-
-1. [Start here](../getting-started/index.md) — your first 30 minutes.
-2. [How agents work](../fundamentals/index.md) — enough theory to supervise one.
-3. [Prompting](../prompting/index.md) — ask clearly, get better answers.
-4. [Playbooks](../playbooks/index.md) — jobs your AI installs once and remembers.
-5. [Automation](../automation/index.md) — make trusted jobs run themselves.
-6. [Troubleshooting](../troubleshooting/index.md) — fix things in the right order.
+For a task you're already doing, try the [prompt library](../prompting/prompt-library.md) or a [playbook](../playbooks/index.md). Once you can get a useful result consistently, [plan an automation](../automation/workflow-blueprint.md).

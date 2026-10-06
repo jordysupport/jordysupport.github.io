@@ -1,67 +1,66 @@
 ---
 description: >-
-  A finished example of the free knowledge base playbook: a real privacy policy article turned into a short, sourced vault note future-you can actually use.
+  See an official privacy article turned into a short reference note, with the source's claims separated from the reader's reasons for saving it.
 ---
 
 <div class="playbook-hero" markdown>
 
-<span class="kicker">Playbook · Knowledge · Example output</span>
+<span class="kicker">Knowledge base · Worked example</span>
 
-# Example output: a real article becomes a vault note
+# Keep a source you can revisit { #example-output-a-real-article-becomes-a-vault-note }
 
-This is what the [knowledge playbook](knowledge-base.md) produces. One source worth keeping goes in; a short, sourced note comes out, shown to you before anything is saved.
+This example uses a real Anthropic privacy article. The note keeps the policy summary separate from the reader's reason for saving it.
 
 </div>
 
-!!! example "The inputs"
-    **Source:** a real article from the Anthropic Privacy Center, ["Is my data used for model training?"](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training) (live link, checked August 10, 2026). **Why keep it:** "I use Claude for client work and need to remember what the privacy toggle actually does." **Vault layout:** notes live in `Reference/`, lowercase tags. Everything below the line is the note exactly as the playbook delivers it for approval.
+!!! example "Sample inputs, real source"
+    **Source:** Anthropic's [Is my data used for model training?](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training), checked October 5, 2026. **Reader's reason:** "We use Claude and want to remember which data settings to check before work." **Notes folder:** `Reference/`, with lowercase tags.
 
----
-
-## The note, as delivered for approval
+## Draft note { #the-note-as-delivered-for-approval }
 
 ```markdown
-# Claude training toggle - what it actually controls
+---
+tags:
+  - ai
+  - privacy
+  - reference
+---
 
-tags: #ai #privacy #reference
+# Claude: data used for model training
 
 ## What the source says
 
-On personal Claude plans (Free, Pro, Max), Anthropic uses your chats
-to improve its models in three cases: you allow it in privacy
-settings, a conversation is flagged for safety review, or you
-explicitly join a testing program.
+This article covers personal Claude plans, including their use of
+Claude Code. Commercial products have separate policies.
 
-Two details worth remembering:
+Anthropic describes model improvement through user permission,
+explicit testing opt-ins, and safety review. Incognito chats are
+excluded from model improvement. Feedback can allow use of the
+related conversation for training.
 
-- Incognito chats are not used to improve Claude even when the
-  setting is on.
-- Turning the setting off stops NEW chats from being used. Data
-  already in training that has started stays there.
+## Why we are keeping this
 
-The setting lives at Settings -> Privacy -> "Help Improve Claude."
-
-## Why it matters to me
-
-Client work goes through Claude. The safe habit: keep the toggle
-where I decided, and use Incognito for anything sensitive rather
-than trusting memory about the setting.
+We need to check our actual plan and settings before using Claude
+for work. This note is a reminder to review the policy, not approval
+to put client or employer information into the tool.
 
 ## Source
 
 Anthropic Privacy Center, "Is my data used for model training?"
 https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training
-Article dated March 16, 2026. Saved August 10, 2026.
+Article dated March 16, 2026. Checked and saved October 5, 2026.
 ```
 
-The playbook then asks: "Save to `Reference/claude-training-toggle.md`?" Nothing is written until you say yes.
+The proposed destination is `Reference/claude-model-training.md`. The playbook shows the draft and asks before saving or replacing a file.
 
----
+## What to check { #why-this-output-is-trustworthy }
 
-## Why this output is trustworthy
+The "What the source says" section summarizes the article. The reason for keeping it comes from the sample reader. Those are different kinds of information, so they have separate sections.
 
-The summary contains only what the source article says; the "why it matters" section is explicitly the reader's own reasoning, kept separate. The source line carries both the article's date and the save date, so future-you knows exactly how stale it might be. The [Before you save it](knowledge-base.md#before-you-save-it) checklist runs at the end.
+The note records both the article date and the date checked. When you revisit it, open the source again before relying on the policy.
 
-## Want notes like this?
+Use the [Before you save it](knowledge-base.md#before-you-save-it) checklist to check your own note.
 
-[Start the knowledge playbook](knowledge-base.md){ .md-button .md-button--primary }
+<span id="want-notes-like-this"></span>
+
+[Try the knowledge playbook](knowledge-base.md){ .md-button .md-button--primary }

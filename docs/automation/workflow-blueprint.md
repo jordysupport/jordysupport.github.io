@@ -1,42 +1,59 @@
 ---
 description: >-
-  Plan an AI workflow before you build it: seven boxes — trigger, input, AI step, check, output, failure plan, off switch — you fill in on paper first.
+  Plan an AI workflow with seven practical decisions: trigger, input, work, checks, approval, delivery, and failure handling.
 ---
 
 <span class="kicker">Automation · Blueprint</span>
 
 # Plan a workflow
 
-Before you build anything, fill in seven boxes on paper. If you can't fill a box, you're not ready to build — and that's the blueprint working.
+Write a short brief before you connect tools or set a schedule. It should explain what the workflow produces, what it can access, and how you will know whether it worked.
 
 ## The seven boxes
 
-1. **Trigger** — what starts it? (A schedule? A new email? You clicking go?)
-2. **Input** — what does it work on, and what does "valid input" look like?
-3. **AI step** — the one job the AI does (use your [playbook](../playbooks/index.md) or a tested prompt).
-4. **Check** — how is the output verified? (Format check, source check, sanity limits.)
-5. **Approval** — where do *you* look at it before it counts?
-6. **Delivery** — where does the result go?
-7. **Failure plan** — what happens when a step breaks? Who finds out, and how?
+1. **Trigger:** What starts the job? A schedule, a new item, or your request?
+2. **Input:** Which files or records does it use? How will it recognize missing, old, or incomplete material?
+3. **AI step:** What judgment does the agent make? Which tools may it use?
+4. **Check:** What must be true before the result is accepted?
+5. **Approval:** Which actions may happen automatically, and which wait for you?
+6. **Delivery:** Where does the output go? What confirms it arrived?
+7. **Failure plan:** What stops the job, what is saved, and who needs to know?
+
+You can answer in a few lines. If an answer is uncertain, test that part before relying on the workflow.
 
 ## Worked example: weekly meeting digest
 
-1. **Trigger:** Friday, 3pm.
-2. **Input:** this week's meeting notes from one folder.
-3. **AI step:** run the meeting playbook on each file.
-4. **Check:** every action item must name a source meeting.
-5. **Approval:** draft lands in my review folder; nothing sends itself.
-6. **Delivery:** after my OK, the digest goes to the team channel.
-7. **Failure plan:** if a file won't process, skip it, list it at the top of the draft, and never send a partial digest without saying it's partial.
+This sample workflow produces a reviewable summary rather than sending messages on its own.
 
-## The order matters
+| Decision | Example |
+| --- | --- |
+| Trigger | Friday afternoon, after the week's notes are saved. |
+| Input | Files dated this week in the meeting-notes folder. List the files read. |
+| AI step | Extract decisions and action items. Use read access to this folder and write access to the draft folder. |
+| Check | Each action links to its source note. Owners and dates match the notes; missing details are flagged. |
+| Approval | Save the digest for review. Sending to the team requires approval. |
+| Delivery | Write one dated draft in the review folder and confirm that the file exists. |
+| Failure plan | If any expected file cannot be read, mark the digest incomplete and list the gaps. Hold delivery to the team. |
 
-People love designing boxes 1–3 and skip 4–7. Flip it: **design the failure plan and approval point first.** They're what make the rest safe to build.
+## Set limits before the first run { #the-order-matters }
+
+Choose a maximum amount of work per run, such as ten files or one draft. Set a time or spending limit where your tool supports it, and identify the control that pauses the schedule.
+
+Decide how a rerun works. If Friday's job is interrupted, should it replace the draft, resume from a checkpoint, or start fresh? It should be able to recognize the work it has already completed.
+
+## Copy the brief
+
+```text title="Workflow brief"
+Result: [one concrete output]
+Trigger: [when or how it starts]
+Inputs: [sources and selection rules]
+Tools and permissions: [what it may access or change]
+Checks: [facts, totals, fields, or links to verify]
+Approval: [where it waits for a person]
+Destination: [where the output is saved or delivered]
+Failure handling: [when to stop and what to report]
+Limits and pause control: [how to bound or stop a run]
+Rerun behavior: [how to avoid duplicate work or actions]
+```
 
 [Make it reliable](reliability.md){ .md-button .md-button--primary }
-
-!!! tip "If this helped"
-    If the seven boxes saved you a false start, a small tip on Ko-fi keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
-
-[Next step: Make it reliable](reliability.md){ .md-button }

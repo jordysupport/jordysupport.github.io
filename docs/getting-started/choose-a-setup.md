@@ -1,40 +1,40 @@
 ---
 description: >-
-  Which AI setup do you actually need? A 2-minute picker comparing normal chat, file uploads, and folder agents — use the smallest tool that does the job.
+  Choose between an AI chat, file uploads, a folder agent, and an automation tool based on the work you need done.
 ---
 
 <span class="kicker">Start here · Setup</span>
 
 # Choose your setup
 
-Use the smallest tool that does your job. Bigger setups mean more power *and* more ways to make a mess.
+Choose based on what the AI needs to access and what you want it to produce. For a one-off draft, pasted text may be enough. For repeated work across files or apps, tools can save you the copying and sorting.
 
-## The 2-minute picker
+## A quick picker { #the-2-minute-picker }
 
-| If you want to… | Use this | Examples |
+| Your task | A suitable setup | What to check |
 | --- | --- | --- |
-| Get advice or a one-off draft | A normal AI chat | Claude, ChatGPT, Gemini |
-| Work with a few files you upload | A chat that accepts files | Claude, ChatGPT (attach the file) |
-| Let AI read & edit a project folder | A folder agent | Claude Code, Cursor |
-| Move info between apps automatically | An automation tool | Zapier, Make, n8n |
+| Draft, explain, or organize text you provide | An AI chat | Keep app connections off if the task does not need them. |
+| Summarize or compare a few documents | A chat with file uploads | Review the contents before uploading, including extra sheets or pages. |
+| Read a project folder and save or edit files | A folder agent, such as Codex or Claude Code | Check file, command, and network permissions. Keep a backup. |
+| Run the same task when a form, email, or schedule triggers it | An automation tool, such as Zapier, Make, or n8n | Test the steps and decide what happens when one fails. |
 
-Start at the top. Move down only when the row above genuinely can't do the job.
+The categories overlap. A chat can have tools and app connections, and an automation can include AI. The product name alone does not tell you what it can do.
 
 ## What's the difference, in plain words?
 
-**Chat** — you paste things in, it talks back. Nothing on your computer changes. Safest place to start.
+**Chat:** You provide material and get a response. With no action tools enabled, this is a straightforward way to work on a draft.
 
-**Chat with files** — same, but you attach a document and it can read it. Still can't change anything on your computer.
+**Chat with files:** You attach documents for the AI to use. It may read only part of a large file or struggle with a scan or complicated layout, so ask it to identify what it could read.
 
-**Folder agent** — an AI that can open, create, and edit files inside a folder you choose. Powerful, and the reason this site talks so much about practice folders and checking results.
+**Folder agent:** The AI works through a task using file tools and, depending on its permissions, commands or connected apps. It might read three notes, compare them, and save a summary without you pasting each note into the chat.
 
-**Automation tool** — steps that run on their own ("when a form comes in, do X"). Only automate something *after* you've done it manually with AI a few times and trust the result.
+**Automation tool:** A trigger starts a sequence of steps. AI can handle a step such as classifying an inquiry, while fixed rules decide where it goes next. Start with drafts or review queues until the workflow handles your real examples reliably.
 
-## One honest warning
+## Before choosing a larger setup { #one-honest-warning }
 
-Skipping ahead doesn't save time. People who start with a folder agent before they can write a clear request in chat usually end up back at chat anyway — just more frustrated.
+Ask what you are doing by hand that you want the tool to handle. If the answer is “copying these five files into a chat,” a folder agent may help. If the task is one paragraph, connecting your inbox and drive adds access you do not need.
+
+For a first file task, use a tool that shows its actions and lets you restrict access. Permission names and defaults vary by product. Read its current setup instructions rather than assuming a practice folder is a security boundary.
 
 [Back to Start Here](index.md){ .md-button }
 [Build your first agent](first-agent.md){ .md-button .md-button--primary }
-
-[Next step: Your first agent](first-agent.md){ .md-button }

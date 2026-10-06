@@ -1,44 +1,51 @@
 ---
 description: >-
-  Why AI forgets what you told it: context windows and memory explained in plain English, plus simple habits that make an AI remember what matters.
+  Understand the difference between an AI's current context, a tool's memory features, and project notes you can carry between sessions.
 ---
 
 <span class="kicker">How agents work · Memory</span>
 
 # Context & memory
 
-The AI doesn't remember your life. It sees a **window**: your current conversation plus whatever files it just read. When the window's gone, the memory is gone — unless it's written down somewhere.
+An agent needs the relevant information available while it works. A fact can be in an old conversation or a file on your computer without being part of the material the model receives for its next response.
 
 ## Context, in plain words
 
-**Context** = everything the AI can see *right now*. Your message, the chat so far, attached files, open project files. That's it. If it's not in the window, the AI doesn't know it — no matter how many times you've said it in other chats.
+**Context** is the information supplied for the current response: instructions, conversation text, file contents, tool results, and other material the app includes. A file's name or location alone does not mean its contents have been read.
+
+Models have a [context window](https://developers.openai.com/api/docs/guides/conversation-state#managing-the-context-window), which limits how much material fits in a request. Apps handle long sessions in different ways, including summaries or retrieval of selected information.
 
 ## Why the AI "forgot"
 
-- New chat = empty window. Yesterday's conversation isn't in it.
-- Long chat = the oldest parts fall out of the window.
-- "I told the other AI" = different tool, different window.
+Several different problems can look like forgetting:
 
-None of this is the AI being dumb. It's just what a window is.
+- **The information was never loaded.** You mentioned a document, but the agent did not read it.
+- **A long conversation was shortened.** A summary may keep the decision and lose a detail that matters later.
+- **You started another session.** What carries over depends on the app's memory, project, and history features.
+- **The agent missed information it had.** More context does not guarantee it will use every detail correctly.
 
-## Real memory is a file
+Before repeating the entire story, ask which sources the agent used. Then point it to the missing note or restate the specific requirement.
 
-The fix is simple: **anything worth remembering goes in a file the AI can read next time.** Your preferences, your project facts, your good prompts. That's the whole trick behind [vaults](obsidian-vaults.md) — and it's why the [playbooks](../playbooks/index.md) install themselves as files instead of asking you to re-explain the job every time.
+## Keep a project record { #real-memory-is-a-file }
+
+Built-in memory can be useful, but a project note gives you a record you can inspect and move between tools. Save decisions, constraints, source links, and the next action. Include dates for facts that can change. Keep assumptions separate from confirmed facts.
+
+This is the purpose of a [vault](obsidian-vaults.md). It also holds [playbooks](../playbooks/index.md) so an agent can read the same task instructions in a future session. Files help only when the agent knows where they are and loads the relevant ones.
 
 ## The habit
 
-End sessions worth keeping with:
+At the end of work you want to continue, use a request like this:
 
-```text title="Copy this"
-Save what we decided and anything worth remembering to a notes
-file in this folder, so a future session can pick up where we
-left off.
+```text title="Save a handoff"
+Draft an update to our project note. Include decisions we made,
+what changed, what was verified and how, unresolved questions,
+and the next action. Keep assumptions clearly labeled. Leave out
+passwords, keys, and private details the next session won't need.
+Show me the update before saving it.
 ```
 
-[Next: a vault for your agent](obsidian-vaults.md){ .md-button .md-button--primary }
+At the start of the next session, ask the agent to read that note and verify anything that may have changed. A saved status is a record of the previous check, not a fresh check.
 
-!!! tip "If this helped"
-    If this explained why your AI "forgot," a small tip on Ko-fi keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+[Next: A vault for your agent](obsidian-vaults.md){ .md-button .md-button--primary }
 
-[Next step: A vault for your agent](obsidian-vaults.md){ .md-button }
+[Support these free guides on Ko-fi](https://ko-fi.com/support_jordy).

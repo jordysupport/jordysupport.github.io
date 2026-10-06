@@ -1,51 +1,53 @@
 ---
 description: >-
-  Is it safe to let an AI read your files? Yes, if you limit what it can touch. A plain-English guide to sharing files with AI without losing control.
+  Decide which files to share with an AI by checking their contents, the tool's data handling, and the access it has to your computer or accounts.
 ---
 
 <span class="kicker">How agents work · File safety</span>
 
 # Is it safe to let an AI read my files?
 
-Short answer: yes — if you limit what it can touch. The risk isn't "AI reads a file." The risk is giving it access to everything and hoping for the best.
+It depends on the files, the tool, and the access you grant. A public article and a customer export need different treatment. Before sharing either, know what is in it and where the tool sends it.
 
-## The one habit that does most of the work
+## Start with a small set of files { #the-one-habit-that-does-most-of-the-work }
 
-Give the AI **one folder**, made for the job, containing **copies** of only the files the job needs. Not your Documents folder. Not your whole drive.
+Create a task folder containing copies of only the material you need. Check the tool's settings for what it can read, edit, and send over the network. Opening that folder does not, by itself, block access to the rest of your computer.
 
-That's the same [least access habit](safety-permissions.md) behind every guide on this site. If the AI can only see three files, the worst case is small and boring.
+This follows the [limited-access approach](safety-permissions.md) used throughout these guides. Copies protect your originals from accidental edits. They do not remove private information from the copy.
 
 ## What "reading a file" actually means
 
-When an AI reads a file, the text goes into its [context](context-memory.md) — the window of what it can see right now. Two things follow:
+The tool extracts some or all of a file's contents and supplies them to the AI as [context](context-memory.md). A cloud-backed tool may send that content to its provider even when the file stays on your computer. A fully local setup may process it locally; check the actual configuration.
 
-- **It can quote and use anything in that file.** Including the parts you forgot were in there.
-- **In a chat tool, that text goes to the AI service.** Treat it like anything else you'd paste into a website.
+Review the provider's data controls and retention terms for the account you use. Personal accounts, business accounts, and API tools can have different rules. Storage location, processing location, and permission to use the data are separate questions.
 
 ## Before you share a file, check it
 
-- [ ] Open the file yourself first. Skim the whole thing.
-- [ ] No passwords, card numbers, or private keys inside. ([Secrets stay out.](safety-permissions.md))
-- [ ] No other people's private details the job doesn't need.
-- [ ] It's a copy, not your only original.
-- [ ] It's in the one folder you made for this job.
+- [ ] Read the full file, including attachments, comments, and extra sheets that may be included.
+- [ ] Remove passwords, API keys, card details, and unnecessary personal information. See [Keeping it safe](safety-permissions.md).
+- [ ] Confirm you are allowed to share work or customer material with this service.
+- [ ] Use a copy and keep the original somewhere the agent cannot edit.
+- [ ] Confirm which other files and accounts the tool can access.
+- [ ] Decide whether the task really needs the sensitive parts. A redacted example may be enough.
 
 ## Files that need extra care
 
-- **Spreadsheets.** Hidden columns and extra tabs count. The AI reads what you forgot was there.
-- **Exports from other apps.** Email or chat exports often include far more than the messages you meant to share.
-- **Downloads you didn't make.** A file can contain instructions aimed at your AI. Never hand one over unread — this is why every playbook zip on this site [shows you its contents first](../playbooks/index.md).
+**Spreadsheets:** Check hidden sheets, columns, comments, and linked data. Remove what the task does not need rather than relying on what is visible when the file opens.
+
+**Email and chat exports:** Read the export before sharing it. It may contain older messages, contact details, and attachments beyond the exchange you meant to use.
+
+**Unfamiliar downloads:** Read task instructions before letting an agent follow them. A document can contain instructions aimed at the AI. The [playbook pages](../playbooks/index.md) show their installation text so you can review it before use.
 
 ## What about agents, not just chat?
 
-An agent doesn't just read — it can act. Same habit, plus two more rules from [Keeping it safe](safety-permissions.md): copies before originals, and approval before anything is sent, changed, or deleted. The [first agent walkthrough](../getting-started/first-agent.md) is built around exactly this setup.
+An agent may be able to edit or send the material it reads. Inspect both file access and connected tools. Require approval for actions involving other people, live systems, or information leaving the workspace.
 
-## You're done when
+The [first agent walkthrough](../getting-started/first-agent.md) starts with non-sensitive copies and a saved draft, so you can inspect the work before expanding access.
 
-You can name every file the AI can see — because there are only a few, they're copies, and you put them there on purpose.
+## A check before you begin { #youre-done-when }
 
-!!! tip "If this helped"
-    If this settled a worry before it became a mess, a small tip on Ko-fi keeps every guide here free.
-    [Tip on Ko-fi](https://ko-fi.com/support_jordy)
+You should be able to name the files the task needs, explain who can receive their contents, and identify which actions the tool can take. If a setting is unclear, use sample material until you resolve it.
 
-[Next step: Keeping it safe](safety-permissions.md){ .md-button }
+[Next: Keeping it safe](safety-permissions.md){ .md-button .md-button--primary }
+
+[Support these free guides on Ko-fi](https://ko-fi.com/support_jordy).
